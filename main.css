@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    overflow: hidden;
+  }
+
+  .show {
+    display: block;
+  }
+  
+  /* BUTTONS */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  /* FILTER */
+  .filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
