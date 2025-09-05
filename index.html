@@ -44,9 +44,9 @@
     <div id="btn-container">
         <button class="btn active" onclick="filterSelection('all')">All</button>
         <button class="btn" onclick="filterSelection('games')">Games</button>
-        <button class="btn" onclick="filterSelection('3d')">3D</button>
+        <button class="btn" onclick="filterSelection('3d')">3D Art</button>
+        <button class="btn" onclick="filterSelection('2d')">2D Art</button>
         <button class="btn" onclick="filterSelection('animation')">Animation</button>
-        <button class="btn" onclick="filterSelection('illustration')">Illustration</button>
         <button class="btn" onclick="filterSelection('web')">Web Design</button>
     </div>
     <!-- body -->
@@ -79,7 +79,7 @@
            
             const img = document.createElement("img");
             img.src = item.image;
-           // img.classList.add("portfolio-img");
+            img.classList.add("portfolio-img");
             div.appendChild(img);
 
             const paragraph = document.createElement("p");
