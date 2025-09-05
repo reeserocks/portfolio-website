@@ -14,10 +14,10 @@
     <div class="header">
         <h1>Reese Hausman&nbsp;</h1>
         <h1>| Artist & Game Developer</h1>
-        <h2 style="margin-left: auto">About</h2>
+        <button style="margin-left: auto" onclick="openCard()">About</button>
     </div>
     <!-- about -->
-    <div class="about-card">
+    <div id="about-card">
         <h2>Reese Hausman</h2>
         <a href="Hausman, Reese - Resume.pdf">Resume</a>
         <p>Reese Hausman is a third-year Games + Simulation major at Miami University with a minor in Studio Art. Her passions lie in the intersection of art and technology to create an immersive narrative experience, specifically through the lens of character design. Her greatest strengths are her organizational skills, creative curiosity, and iterative thinking.</p>
@@ -60,23 +60,26 @@
     let pages = [];
 
     const getContent = async () => {
-        const url = "https://raw.githubusercontent.com/reeserocks/ground-zero/refs/heads/main/writing.json";
+        const url = "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images.json";
         
         const response = await fetch(url);
         const data = await response.json();
         pages = [...data];
 
         addPages();
+        filterSelection("all");
     }
 
     const addPages = () => {
         pages.forEach((item, i) => {
             const div = document.createElement("div");
             div.id = `page_${i}`;
+
+            item.class.split(" ").forEach(cls => div.classList.add(cls));
            
             const img = document.createElement("img");
             img.src = item.image;
-            img.classList.add("portfolio-img");
+           // img.classList.add("portfolio-img");
             div.appendChild(img);
 
             const paragraph = document.createElement("p");
@@ -89,8 +92,13 @@
 
     getContent();
 
+// ABOUT CARD FUNCTIONALITY
+    function openCard() {
+        const aboutCard = document.getElementById('about-card');
+        aboutCard.classList.toggle('show');
+    }
+
 // FILTER BUTTONS
-    filterSelection("all")
     function filterSelection(type) {
         var x, i;
         x = document.getElementsByClassName("filterDiv");

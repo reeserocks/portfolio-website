@@ -1,17 +1,32 @@
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
   }
 
+.clickable-text {
+  cursor: pointer;
+}
+
+#about-card {
+  display: none;
+}
+
+/* BODY */
   .container {
     overflow: hidden;
   }
 
-  .show {
-    display: block;
+  .content {
+    display: flex;
+  }
+
+/* IMAGES */
+  .portfolio-img {
+      max-width: 100%;
   }
   
-  /* BUTTONS */
+/* BUTTONS */
   .btn {
     border: none;
     outline: none;
@@ -29,14 +44,12 @@
     color: white;
   }
 
-  /* FILTER */
+/* FILTER */
   .filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
     display: none;
+  }
+
+  .filterDiv.show,
+  #about-card.show {
+    display: block;
   }
