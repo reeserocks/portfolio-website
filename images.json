@@ -1,7 +1,26 @@
 [
   {
-    "class": "filterDiv games",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
-    "paragraph": "this is an image"
+    "class": "filterDiv 3d",
+    "image": "",
+    "video":"https://youtu.be/d2MJRL9BjmA",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes'>Through Our Eyes</a>. Modeling in Maya, texturing in Procreate, and rendered in Unreal."
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "video":"",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": ""
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "video":"",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": ""
   }
 ]
