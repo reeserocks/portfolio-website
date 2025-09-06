@@ -77,13 +77,50 @@
 
             item.class.split(" ").forEach(cls => div.classList.add(cls));
            
-            const img = document.createElement("img");
-            img.src = item.image;
-            img.classList.add("portfolio-img");
-            div.appendChild(img);
+            if (item.img) {
+                const img = document.createElement("img");
+                img.src = item.image;
+                img.classList.add("portfolio-img");
+
+                if (item.href) {
+                    const imgLink = document.createElement("a");
+                    imgLink.href = item.image;
+                    imgLink.target = item.href;
+                    imgLink.appendChild(img);
+                    div.appendChild(imgLink);
+                } else {
+                    div.appendChild(img);
+                }
+            }
+
+            if (item.video) {
+                const video = document.createElement("video");
+                video.src = item.video;
+                video.classList.add("portfolio-video");
+                video.controls = true;
+                video.autoplay = true;
+                video.loop = true;
+
+                if (item.href) {
+                    const videoLink = document.createElement("a");
+                    videoLink.href = item.video;
+                    videoLink.target = item.href;
+                    videoLink.appendChild(video);
+                    div.appendChild(videoLink);
+                } else {
+                    div.appendChild(video);
+                }
+            }
+
+            if (item.sketchfab) {
+                const sketchfabWrapper = document.createElement("div");
+                sketchfabWrapper.innerHTML = item.sketchfab;
+                div.appendChild(sketchfabWrapper);
+            }
 
             const paragraph = document.createElement("p");
             paragraph.innerHTML = item.paragraph;
+            paragraph.classList.add("caption");
             div.appendChild(paragraph);
 
             content.appendChild(div);
