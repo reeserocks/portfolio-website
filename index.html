@@ -112,6 +112,12 @@
                 }
             }
 
+            if (item.youtube) {
+                const iframe = document.createElement("iframe");
+                iframe.innerHTML = item.youtube;
+                div.appendChild(iframe);
+            }
+
             if (item.sketchfab) {
                 const sketchfabWrapper = document.createElement("div");
                 sketchfabWrapper.innerHTML = item.sketchfab;

@@ -2,7 +2,8 @@
   {
     "class": "filterDiv 3d",
     "image": "",
-    "video":"https://youtu.be/d2MJRL9BjmA",
+    "video": "",
+    "youtube": "<iframe width="560" height="315" src="https://www.youtube.com/embed/d2MJRL9BjmA?si=udcDqSozzZTKI2vp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>",
     "href": "",
     "sketchfab": "",
     "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes'>Through Our Eyes</a>. Modeling in Maya, texturing in Procreate, and rendered in Unreal."
