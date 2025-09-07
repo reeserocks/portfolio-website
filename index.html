@@ -67,7 +67,6 @@
         pages = [...data];
 
         addPages();
-        filterSelection("all");
     }
 
     const addPages = () => {
@@ -138,6 +137,8 @@
 
             content.appendChild(div);
         });
+
+        filterSelection("all");
     };
 
     getContent();

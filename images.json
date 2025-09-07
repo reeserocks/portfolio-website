@@ -6,20 +6,22 @@
     "youtube": "https://www.youtube.com/embed/d2MJRL9BjmA?autoplay=1&mute=1&loop=1&playlist=d2MJRL9BjmA",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes'>Through Our Eyes</a>. Modeling in Maya, texturing in Procreate, and rendered in Unreal."
+    "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes'>Through Our Eyes</a>. Programs: Maya, Procreate, Substance Painter, Unreal"
   },
   {
     "class": "filterDiv ",
     "image": "",
-    "video":"",
+    "video":"https://github.com/reeserocks/portfolio-website/blob/main/images/25.05_props.mp4",
+    "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": ""
+    "paragraph": "May 2025 | Props created for a military nomad-themed 3D diorama. | Programs: Maya, Procreate"
   },
   {
     "class": "filterDiv ",
     "image": "",
     "video":"",
+    "youtube": "",
     "href": "",
     "sketchfab": "",
     "paragraph": ""
