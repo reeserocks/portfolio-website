@@ -114,7 +114,7 @@
 
             if (item.youtube) {
                 const iframe = document.createElement("iframe");
-                iframe.innerHTML = item.youtube;
+                iframe.src = item.youtube;
                 div.appendChild(iframe);
             }
 
