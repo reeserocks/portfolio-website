@@ -92,28 +92,10 @@
                 }
             }
 
-            if (item.video) {
-                const video = document.createElement("video");
-                video.src = item.video;
-                video.classList.add("portfolio-video");
-                video.controls = true;
-                video.autoplay = true;
-                video.loop = true;
-
-                if (item.href) {
-                    const videoLink = document.createElement("a");
-                    videoLink.href = item.video;
-                    videoLink.target = item.href;
-                    videoLink.appendChild(video);
-                    div.appendChild(videoLink);
-                } else {
-                    div.appendChild(video);
-                }
-            }
-
             if (item.youtube) {
                 const iframe = document.createElement("iframe");
                 iframe.src = item.youtube;
+                iframe.classList.add("portfolio-video");
                 iframe.width = "560";
                 iframe.height = "315";
                 iframe.title = "YouTube video player";

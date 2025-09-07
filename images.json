@@ -2,7 +2,6 @@
   {
     "class": "filterDiv 3d",
     "image": "",
-    "video": "",
     "youtube": "https://www.youtube.com/embed/d2MJRL9BjmA?autoplay=1&mute=1&loop=1&playlist=d2MJRL9BjmA",
     "href": "",
     "sketchfab": "",
@@ -11,8 +10,7 @@
   {
     "class": "filterDiv 3d",
     "image": "",
-    "video":"25.05_props.mp4",
-    "youtube": "",
+    "youtube": "https://www.youtube.com/embed/lPtARu1hzn8?autoplay=1&mute=1&loop=1&playlist=lPtARu1hzn8",
     "href": "",
     "sketchfab": "",
     "paragraph": "May 2025 | Props created for a military nomad-themed 3D diorama. | Programs: Maya, Procreate"
@@ -20,16 +18,14 @@
   {
     "class": "filterDiv ",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.05_finalDiorama.jpg",
-    "video":"",
     "youtube": "",
-    "href": "",
+    "href": "https://reesehausman-3d.carrd.co/#project6-218",
     "sketchfab": "",
     "paragraph": "April 2025 | 3D diorama final renders and references. | Programs: Maya, Procreate, Substance Painter"
   },
   {
     "class": "filterDiv ",
     "image": "",
-    "video":"",
     "youtube": "",
     "href": "",
     "sketchfab": "",
