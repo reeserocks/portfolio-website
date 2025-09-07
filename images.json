@@ -13,7 +13,7 @@
     "youtube": "https://www.youtube.com/embed/lPtARu1hzn8",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | Props created for a military nomad-themed 3D diorama. | Programs: Maya, Procreate"
+    "paragraph": "May 2025 | Props created for a <a href='https://reesehausman-3d.carrd.co/#project6-218'>military nomad-themed 3D diorama</a>. | Programs: Maya, Procreate"
   },
   {
     "class": "filterDiv 3d",
@@ -21,22 +21,30 @@
     "youtube": "",
     "href": "https://reesehausman-3d.carrd.co/#project6-218",
     "sketchfab": "",
-    "paragraph": "April 2025 | 3D diorama final renders and references. | Programs: Maya, Procreate, Substance Painter"
+    "paragraph": "April 2025 | <a href='https://reesehausman-3d.carrd.co/#project6-218'>Military nomad-themed 3D diorama</a> final renders and references. | Programs: Maya, Procreate, Substance Painter"
   },
   {
-    "class": "filterDiv ",
+    "class": "filterDiv 3d",
     "image": "",
-    "youtube": "",
+    "youtube": "https://www.youtube.com/embed/oPmX2Xyiwbg",
     "href": "",
     "sketchfab": "",
-    "paragraph": ""
+    "paragraph": "May 2025 | Detailed zoom render for a <a href='https://reesehausman-3d.carrd.co/#project6-218'>military nomad-themed 3D diorama</a> | Programs: Maya, Procreate, Substance Painter"
   },
   {
-    "class": "filterDiv ",
+    "class": "filterDiv 3d",
     "image": "",
-    "youtube": "",
+    "youtube": "https://www.youtube.com/embed/NRee9z-mxTI",
     "href": "",
     "sketchfab": "",
-    "paragraph": ""
+    "paragraph": "May 2025 | Turntable showcasing a military crab 3d character design."
+  },
+  {
+    "class": "filterDiv 3d",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/plsUoUGc3wo",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2025 | Wireframe turntable showcasing a military crab 3d character design."
   }
 ]
