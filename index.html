@@ -51,7 +51,15 @@
     </div>
     <!-- body -->
     <div class="container">
-        <div class="content"></div>
+        <div class="content">
+            <div id="lightbox" class="lightbox">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-img" id="lightbox-img">
+                <a class="lightbox-prev" onclick="changeLightbox(-1)">&#10094;</a>
+                <a class="lightbox-next" onclick="changeLightbox(1)">&#10095;</a>
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>
     </div>
 
 <script>
@@ -83,12 +91,14 @@
 
                 if (item.href) {
                     const imgLink = document.createElement("a");
-                    imgLink.href = item.image;
-                    imgLink.target = item.href;
+                    imgLink.href = item.href;
+                    imgLink.target = "_blank";
                     imgLink.appendChild(img);
                     div.appendChild(imgLink);
                 } else {
+                    img.addEventListener("click", () => openLightbox(item.image, item.paragraph));
                     div.appendChild(img);
+                    div.appendChild(paragraph);
                 }
             }
 
@@ -173,6 +183,21 @@
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";
         });
+    }
+
+// LIGHTBOX
+    function openLightbox(imageSrc, captionHtml) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+
+        lightboxImg.src = imageSrc;
+        lightboxCaption.innerHTML = captionHtml;
+        lightbox.style.display = 'block';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
     }
 </script>
 </body>
