@@ -100,7 +100,8 @@
                 iframe.height = "315";
                 iframe.title = "YouTube video player";
                 iframe.frameBorder = "0";
-                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+                iframe.src += "&controls=0&modestbranding=1&rel=0&iv_load_policy=3&mute=1";
                 iframe.allowFullscreen = true;
                 div.appendChild(iframe);
             }
