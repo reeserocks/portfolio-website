@@ -116,8 +116,8 @@
             }
 
             if (item.sketchfab) {
-                const sketchfabWrapper = document.createElement("div");
-                sketchfabWrapper.innerHTML = item.sketchfab;
+                const iframe = document.createElement("iframe");
+                iframe.src = item.sketchfab;
                 div.appendChild(sketchfabWrapper);
             }
 
