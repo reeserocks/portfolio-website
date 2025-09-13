@@ -18,14 +18,24 @@
   }
 
   .content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
   }
 
 /* IMAGES */
   .portfolio-img {
-      max-width: 100%;
+      width: 100%;
       cursor: pointer;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 
 /* CAPTION */
@@ -94,8 +104,6 @@
 /* FILTER */
   .filterDiv {
     display: none;
-    max-width: 50%;
-    margin: 10px;
   }
 
   .filterDiv.show,
@@ -105,9 +113,12 @@
 
   /* RESPONSIVENESS */
   @media only screen and (max-width: 768px) {
-    .filterDiv {
+    .content {
+      display: flex;
+      flex-wrap: wrap;
       max-width: 100%;
-      margin: 10px;
+      padding: 2px;
+      margin: auto;
     }
 
     .lightbox-img {
@@ -118,5 +129,10 @@
   @media only screen and (max-width: 992px) {
     .lightbox-img {
       margin-top: 40%;
+    }
+
+    .content {
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
     }
   }
