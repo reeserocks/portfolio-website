@@ -120,7 +120,7 @@
     "paragraph": "January 2025 | Design process for a future 3D character."
   },
   {
-    "class": "filterDiv 2d",
+    "class": "filterDiv 2d animation",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_tesswalk.gif",
     "youtube": "",
     "href": "",
@@ -128,7 +128,7 @@
     "paragraph": "December 2024 | Walk cycles for a character from my 2D game, Heartlines."
   },
   {
-    "class": "filterDiv 2d",
+    "class": "filterDiv 2d animation",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_jaywalk.gif",
     "youtube": "",
     "href": "",
@@ -136,7 +136,7 @@
     "paragraph": "December 2024 | Walk cycles for a character from my 2D game, Heartlines."
   },
   {
-    "class": "filterDiv 2d",
+    "class": "filterDiv 2d animation",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_charliewalk.gif",
     "youtube": "",
     "href": "",
@@ -144,12 +144,52 @@
     "paragraph": "December 2024 | Walk cycles for a character from my 2D game, Heartlines."
   },
   {
-    "class": "filterDiv 2d",
+    "class": "filterDiv games",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_HEARTLINES.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "December 2024 | Poster illustration for my game Heartlines."
+    "paragraph": "December 2024"
+  },
+  {
+    "class": "filterDiv 3d",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/BFoMn2dXSJE",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2024 |"
+  },
+  {
+    "class": "filterDiv 3d",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/ry6sx4ObM-Q",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2025 | "
+  },
+  {
+    "class": "filterDiv 3d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.11_p6.jpg",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2025 | In-progress renders, textures, and concepting for the Ashley character model turntable."
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://github.com/reeserocks/portfolio-website/blob/main/images/24.11_sammy_playlist.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines."
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://github.com/reeserocks/portfolio-website/blob/main/images/24.11_lee_playlist.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2024 | Illustrated portrait of Aempyriel from Heartlines."
   },
   {
     "class": "filterDiv ",
@@ -157,7 +197,7 @@
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | "
+    "paragraph": "May 2024 | "
   },
   {
     "class": "filterDiv ",
@@ -165,7 +205,7 @@
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | "
+    "paragraph": "May 2024 | "
   },
   {
     "class": "filterDiv ",
@@ -173,7 +213,7 @@
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | "
+    "paragraph": "May 2024 | "
   },
   {
     "class": "filterDiv ",
@@ -181,6 +221,22 @@
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | "
+    "paragraph": "May 2024 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2024 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2024 | "
   }
 ]
