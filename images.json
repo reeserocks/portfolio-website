@@ -121,27 +121,11 @@
   },
   {
     "class": "filterDiv 2d animation",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_tesswalk.gif",
+    "image": "https://github.com/reeserocks/portfolio-website/blob/main/images/heartlinesWalkCycles.gif",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "December 2024 | Walk cycles for a character from my 2D game, Heartlines."
-  },
-  {
-    "class": "filterDiv 2d animation",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_jaywalk.gif",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "December 2024 | Walk cycles for a character from my 2D game, Heartlines."
-  },
-  {
-    "class": "filterDiv 2d animation",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_charliewalk.gif",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "December 2024 | Walk cycles for a character from my 2D game, Heartlines."
+    "paragraph": "December 2024 | Walk cycles for the main characters of my 2D game, Heartlines."
   },
   {
     "class": "filterDiv games",

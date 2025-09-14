@@ -122,11 +122,7 @@
   /* RESPONSIVENESS */
   @media only screen and (max-width: 768px) {
     .content {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 100%;
-      padding: 2px;
-      margin: auto;
+      column-count: 1;
     }
 
     .lightbox-img {
@@ -140,7 +136,7 @@
     }
 
     .content {
-      grid-template-columns: 1fr 1fr;
+      column-count: 2;
       width: 100%;
     }
   }
