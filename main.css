@@ -122,7 +122,8 @@
   /* RESPONSIVENESS */
   @media only screen and (max-width: 768px) {
     .content {
-      column-count: 1;
+      display: inline-flex;
+      flex-wrap: wrap;
     }
 
     .lightbox-img {
