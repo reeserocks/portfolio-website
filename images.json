@@ -67,7 +67,7 @@
     "class": "filterDiv games",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.05_THROUGHOUREYES.png",
     "youtube": "",
-    "href": "",
+    "href": "/throughoureyes",
     "sketchfab": "",
     "paragraph": "May 2025 | "
   },
@@ -131,7 +131,7 @@
     "class": "filterDiv games",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.12_HEARTLINES.png",
     "youtube": "",
-    "href": "",
+    "href": "/heartlines",
     "sketchfab": "",
     "paragraph": "December 2024"
   },
@@ -181,23 +181,23 @@
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "September 2024 | "
+    "paragraph": "September 2024 | Poster illustration for Heartlines."
   },
   {
-    "class": "filterDiv ",
-    "image": "",
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.09_heartlines_lineup.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
+    "paragraph": "September 2024 | Character design lineup of all main characters in the Heartlines universe."
   },
   {
-    "class": "filterDiv ",
-    "image": "",
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.09_guardian.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
+    "paragraph": "September 2024 | Guardian angel concept for Heartlines. Focused on blending military uniform/weapon components from across multiple eras and combining those with angelic motifs."
   },
   {
     "class": "filterDiv ",
