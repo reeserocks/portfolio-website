@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="favi.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reese Hausman's Portfolio</title>
-        <link href="main.css" rel="stylesheet">
-        
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favi.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reese Hausman's Portfolio</title>
+    <link href="main.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- header -->
     <div class="header">
-        <h1>Reese Hausman&nbsp;</h1>
-        <h1>| Artist & Game Developer</h1>
-        <button style="margin-left: auto" onclick="openCard()">About</button>
-    </div>
-    <!-- about -->
-    <div id="about-card">
-        <h2>Reese Hausman</h2>
-        <a href="Hausman, Reese - Resume.pdf">Resume</a>
-        <p>Reese Hausman is a third-year Games + Simulation major at Miami University with a minor in Studio Art. Her passions lie in the intersection of art and technology to create an immersive narrative experience, specifically through the lens of character design. Her greatest strengths are her organizational skills, creative curiosity, and iterative thinking.</p>
-        <h3>Find me here:</h3>
-        <ul>
-            <li>
-                <a href="mailto:reesehausmanm@gmail.com" target="_blank">Mail</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/reese-hausman" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://reeserocks.itch.io/" target="_blank">itch.io</a>
-            </li>
-            <li>
-                <a href="https://sketchfab.com/reeserocks" target="_blank">Sketchfab</a>
-            </li>
-            <li>
-                <a href="https://linktr.ee/reekrockk" target="_blank">Social Media</a>
-            </li>
-        </ul>
-    </div>
-    <!-- button filters -->
-    <div id="btn-container">
-        <button class="btn active" onclick="filterSelection('all')">All</button>
-        <button class="btn" onclick="filterSelection('games')">Games</button>
-        <button class="btn" onclick="filterSelection('3d')">3D Art</button>
-        <button class="btn" onclick="filterSelection('2d')">2D Art</button>
-        <button class="btn" onclick="filterSelection('animation')">Animation</button>
-        <button class="btn" onclick="filterSelection('web')">Web Design</button>
+        <div class="headline">
+            <h1 id="name">Reese Hausman&nbsp;</h1>
+            <h1>| Artist & Game Developer</h1>
+            <button style="margin-left: auto" onclick="openCard()">About</button>
+        </div>
+        <!-- about -->
+        <div id="about-card">
+            <h2><a href="Hausman, Reese - Resume.pdf">Resume</a></h2>
+            <p>Reese Hausman is a third-year Games + Simulation major at Miami University with a minor in Studio Art. Her passions lie in the intersection of art and technology to create an immersive narrative experience, specifically through the lens of character design. Her greatest strengths are her organizational skills, creative curiosity, and iterative thinking.</p>
+            <h3>Find me here:</h3>
+            <ul>
+                <li>
+                    <a href="mailto:reesehausmanm@gmail.com" target="_blank">Mail</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/reese-hausman" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://reeserocks.itch.io/" target="_blank">itch.io</a>
+                </li>
+                <li>
+                    <a href="https://sketchfab.com/reeserocks" target="_blank">Sketchfab</a>
+                </li>
+                <li>
+                    <a href="https://linktr.ee/reekrockk" target="_blank">Social Media</a>
+                </li>
+            </ul>
+        </div>
+        <!-- button filters -->
+        <div id="btn-container">
+            <button class="btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('games')">Games</button>
+            <button class="btn" onclick="filterSelection('3d')">3D Art</button>
+            <button class="btn" onclick="filterSelection('2d')">2D Art</button>
+            <button class="btn" onclick="filterSelection('animation')">Animation</button>
+            <button class="btn" onclick="filterSelection('web')">Web Design</button>
+        </div>
     </div>
     <!-- body -->
     <div class="container">
@@ -55,8 +60,6 @@
             <div id="lightbox" class="lightbox">
                 <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
                 <img class="lightbox-img" id="lightbox-img">
-                <a class="lightbox-prev" onclick="changeLightbox(-1)">&#10094;</a>
-                <a class="lightbox-next" onclick="changeLightbox(1)">&#10095;</a>
                 <div class="lightbox-caption" id="lightbox-caption"></div>
             </div>
         </div>
