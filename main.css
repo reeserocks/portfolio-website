@@ -22,6 +22,7 @@
 
   ul {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   li {
@@ -52,6 +53,11 @@
     font-family: "Neuton";
   }
 
+  h3,
+  #resume {
+    text-align: center;
+  }
+
   #name {
     color: #d48195;
   }
@@ -60,6 +66,12 @@
     color: white;
     font-size: 1em;
     font-family: "Nunito Sans";
+  }
+
+  #text-container {
+    width: 70%;
+    margin: auto;
+    font-size: 1.1em;
   }
 
   a:hover {
@@ -199,6 +211,9 @@
 
     .lightbox-img {
       padding-top: 100px;
+    }
+    #text-container {
+      width: 100%;
     }
   }
 
