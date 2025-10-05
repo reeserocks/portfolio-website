@@ -47,10 +47,15 @@
     font-family: "Grandstander";
   }
 
-  h2,
-  h3 {
+  h3
+  {
     color: #a3a3a3;
     font-family: "Neuton";
+  }
+
+  #resume a {
+    color: white;
+    font-family: "Nunito Sans";
   }
 
   h3,
@@ -74,7 +79,8 @@
     font-size: 1.1em;
   }
 
-  a:hover {
+  a:hover,
+  #resume a:hover {
     color: #d48195;
     transition: 0.5s;
   }
