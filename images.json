@@ -264,51 +264,155 @@
     "paragraph": "January 2024 | End of a cutscene animation made for a Game Jam game, meant to be humorous. | Programs: Procreate"
   }, 
   {
-    "class": "filterDiv ",
-    "image": "",
+    "class": "filterDiv 2d animation",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.01_sideDown.gif",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
+    "paragraph": "January 2024 | Walk cycle animations for the main player character. | Programs: Procreate"
   }, 
+  {
+    "class": "filterDiv 2d design",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.01_icon.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "Janurary 2024 | UI icons that depict branching player choices on how to react. | Programs: Procreate"
+  }, 
+  {
+    "class": "filterDiv games",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.01_SCHMELDON.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "January 2024"
+  }, 
+  {
+    "class": "filterDiv games",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.12_IN-PURRPETUITY.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "December 2023"
+  }, 
+  {
+    "class": "filterDiv 2d animation",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.11_logos_gif.gif",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2023 | Animated logo design for an existing company, based on their website's content and values. | Programs: Adobe Illustrator, Procreate"
+  }, 
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.11_charset.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2023 | 8-bit character sprite sheets for my cat-themed RPG Maker 2003 Game. | Programs: Procreate, Gimp"
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.10_gb_showcase.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "October 2023 | 2-bit character sprite sheets, backgrounds, and items for my GB Studio game. | Programs: Procreate"
+  }, 
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.09_elysia_.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "September 2023 | Promotional art for my board game, depicting Elysia at the end of the game. | Programs: Procreate"
+  },
+  {
+    "class": "filterDiv 2d design",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.09_card.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "September 2023 | Front and back of card design for my board game, The Ides Forest. | Programs: Procreate"
+  },
   {
     "class": "filterDiv ",
     "image": "",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
-  }, 
+    "paragraph": "May 2023 | "
+  },
   {
     "class": "filterDiv ",
     "image": "",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
-  }, 
+    "paragraph": "May 2023 | "
+  },
   {
     "class": "filterDiv ",
     "image": "",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
-  }, 
+    "paragraph": "May 2023 | "
+  },
   {
     "class": "filterDiv ",
     "image": "",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
-  }, 
+    "paragraph": "May 2023 | "
+  },
   {
     "class": "filterDiv ",
     "image": "",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | "
+    "paragraph": "May 2023 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2023 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2023 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2023 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2023 | "
+  },
+  {
+    "class": "filterDiv ",
+    "image": "",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2023 | "
   }
 ]
