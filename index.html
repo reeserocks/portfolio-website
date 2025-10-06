@@ -110,6 +110,21 @@
                 }
             }
 
+            if (item.video) {
+                const video = document.createElement("video");
+                video.src = item.video;
+                video.autoplay = true;
+                video.loop = true;
+                video.muted = true;
+                video.playsInline = true;
+                video.classList.add("portfolio-video");
+                div.appendChild(video);
+
+                video.addEventListener("loadeddata", () => {
+                    div.classList.add("loaded");
+                });
+            }
+
             if (item.youtube) {
                 const videoId = item.youtube.split("/embed/")[1].split("?")[0];
                 const separator = item.youtube.includes("?") ? "&" : "?";
@@ -156,7 +171,7 @@
 
         requestAnimationFrame(() => {
             created.forEach((d, idx) => {
-                setTimeout(() => d.classList.add('loaded'), idx * 80);
+                setTimeout(() => d.classList.add('loaded'), idx * 30);
             });
         });
     };

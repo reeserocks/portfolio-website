@@ -99,6 +99,8 @@
     background-color: #0A0A0A;
   }
 
+/* CONTENT */
+
   .content {
     column-count: 3;
     gap: 5px;
