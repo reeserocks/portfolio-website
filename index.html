@@ -83,11 +83,15 @@
     }
 
     const addPages = () => {
+        const fragment = document.createDocumentFragment();
+        const created = [];
+
         pages.forEach((item, i) => {
+
             const div = document.createElement("div");
             div.id = `page_${i}`;
 
-            item.class.split(" ").forEach(cls => div.classList.add(cls));
+            item.class.trim().split(/\s+/).forEach(cls => div.classList.add(cls));
            
             if (item.image) {
                 const img = document.createElement("img");
@@ -107,16 +111,21 @@
             }
 
             if (item.youtube) {
+                const videoId = item.youtube.split("/embed/")[1].split("?")[0];
+                const separator = item.youtube.includes("?") ? "&" : "?";
+
                 const iframe = document.createElement("iframe");
-                iframe.src = item.youtube;
+                iframe.src = `${item.youtube}${separator}autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&mute=1&playlist=${videoId}`;
                 iframe.classList.add("portfolio-video");
                 iframe.width = "600";
                 iframe.height = "337";
                 iframe.title = "YouTube video player";
                 iframe.frameBorder = "0";
-                iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-                iframe.src += "?autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&mute=1";
-                iframe.allowFullscreen = true;
+                iframe.setAttribute(
+                    "allow",
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                );
+
                 div.appendChild(iframe);
             }
 
@@ -129,17 +138,27 @@
             const paragraph = document.createElement("p");
             paragraph.innerHTML = item.paragraph;
             paragraph.classList.add("caption");
+
+            paragraph.querySelectorAll("a").forEach(link => {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            });
+
             div.appendChild(paragraph);
-
-            content.appendChild(div);
+            
+            fragment.appendChild(div);
+            created.push(div);
         });
 
-        paragraph.querySelectorAll("a").forEach(link => {
-            link.setAttribute("target", "_blank");
-            link.setAttribute("rel", "noopener noreferrer");
-        });
-
+        content.appendChild(fragment);
+        
         filterSelection("all");
+
+        requestAnimationFrame(() => {
+            created.forEach((d, idx) => {
+                setTimeout(() => d.classList.add('loaded'), idx * 80);
+            });
+        });
     };
 
     getContent();

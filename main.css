@@ -108,15 +108,26 @@
     background-color: #0f0f0f;
   }
 
+  .content > .filterDiv {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .content > .filterDiv.show {
+    display: inline-block;
+    width: 100%;
+  }
+  .content > .filterDiv.show.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 /* IMAGES */
   .portfolio-img {
     display: block;
     width: 100%;
     cursor: pointer;
-  }
-
-  .portfolio-video {
-    aspect-ratio: 16 / 9;
   }
 
   iframe {
