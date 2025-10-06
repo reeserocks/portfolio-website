@@ -110,17 +110,6 @@
                 }
             }
 
-            if (item.video) {
-                const video = document.createElement("video");
-                video.src = item.video;
-                video.autoplay = true;
-                video.loop = true;
-                video.muted = true;
-                video.playsInline = true;
-                video.classList.add("portfolio-video");
-                div.appendChild(video);
-            }
-
             if (item.youtube) {
                 const videoId = item.youtube.split("/embed/")[1].split("?")[0];
                 const separator = item.youtube.includes("?") ? "&" : "?";
@@ -128,9 +117,6 @@
                 const iframe = document.createElement("iframe");
                 iframe.src = `${item.youtube}${separator}autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&mute=1&playlist=${videoId}`;
                 iframe.classList.add("portfolio-video");
-                iframe.width = "600";
-                iframe.height = "337";
-                iframe.title = "YouTube video player";
                 iframe.frameBorder = "0";
                 iframe.setAttribute(
                     "allow",
