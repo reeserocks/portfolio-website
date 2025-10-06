@@ -119,10 +119,6 @@
                 video.playsInline = true;
                 video.classList.add("portfolio-video");
                 div.appendChild(video);
-
-                video.addEventListener("loadeddata", () => {
-                    div.classList.add("loaded");
-                });
             }
 
             if (item.youtube) {
