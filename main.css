@@ -98,8 +98,13 @@
     font-size: 1.1em;
   }
 
+  i {
+    color: #ffffff;
+  }
+
   a:hover,
-  #resume a:hover {
+  #resume a:hover,
+  i:hover {
     color: #d48195;
     transition: 0.5s;
   }
@@ -144,6 +149,17 @@
     border: none;
   }
 
+  #sketchfab {
+    width: 1em;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sketchfab:hover {
+    color: #d48195;
+    transition: 0.5s;
+  }
+
 /* CAPTION */
   .caption {
     display: none;
@@ -159,6 +175,7 @@
     height: 100vh;
     background-color: rgba(0,0,0,0.9);
     vertical-align: middle;
+    z-index: 9999;
   }
 
   .lightbox-img {
