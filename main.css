@@ -109,6 +109,24 @@
     transition: 0.5s;
   }
 
+  footer {
+    background-color: #0A0A0A;
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer li {
+    font-size: 0.8em;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 /* CONTENT */
   .content {
     column-count: 3;
