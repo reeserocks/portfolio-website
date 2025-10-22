@@ -27,15 +27,29 @@
     align-items: center;
   }
 
+  .headline button {
+    background-color: #d48195;
+  }
+
   .clickable-text {
     cursor: pointer;
   }
 
   #about-card {
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition:
+      max-height 0.6s ease,
+      opacity 0.6s ease,
+      transform 0.6s ease;
   }
 
   #about-card.show {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
     display: block;
   }
 
@@ -58,6 +72,17 @@
     font-family: "Nunito Sans";
   }
 
+  .softwares {
+    margin: 0;
+    text-align: center;
+  }
+
+  .softwares img {
+    display: inline-block;
+    width: 35px;
+    padding-right: 10px;
+  }
+
 /* TEXT */
   h1 {
     font-size: 2em;
@@ -75,6 +100,7 @@
   #resume a {
     color: white;
     font-family: "Nunito Sans";
+    text-decoration: underline;
   }
 
   h3,
