@@ -155,12 +155,10 @@
 
 /* CONTENT */
   .content {
-    column-count: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
     gap: 5px;
-    margin: auto;
-    padding: 10px;
-    width: 95%;
-    background-color: #0f0f0f;
   }
 
   .content > .filterDiv {
@@ -171,7 +169,7 @@
   }
 
   .content > .filterDiv.show {
-    display: inline-block;
+    display: grid;
     width: 100%;
   }
 

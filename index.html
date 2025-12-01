@@ -181,6 +181,36 @@
                 setTimeout(() => d.classList.add('loaded'), idx * 30);
             });
         });
+
+        function applyMasonry() {
+            const grid = document.querySelector('.content');
+            const items = grid.children;
+
+            for (const item of items) {
+                item.style.gridRowEnd = "";
+
+                const rowHeight = 10;
+                const rowGap = 5;
+
+                const height = item.getBoundingClientRect().height;
+                const rowSpan = Math.ceil((height + rowGap) / rowHeight);
+
+                item.style.gridRowEnd = `span ${rowSpan}`;
+            }
+        }
+
+        requestAnimationFrame(() => {
+            created.forEach((d, idx) => {
+                setTimeout(() => {
+                    d.classList.add('loaded');
+                    applyMasonry();
+                }, idx * 30);
+            });
+        });
+
+        window.addEventListener('load', applyMasonry);
+        window.addEventListener('resize', applyMasonry);
+        applyMasonry();
     };
 
     getContent();
