@@ -1,11 +1,27 @@
 [
   {
+    "class": "filterDiv games",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.12_sllt.png",
+    "youtube": "",
+    "href": "https://reeserocks.itch.io/solong-longtime",
+    "sketchfab": "",
+    "paragraph": "December 2025"
+  },
+  {
     "class": "filterDiv 3d",
     "image": "",
     "youtube": "https://youtu.be/dAT37pGl-dM",
     "href": "",
     "sketchfab": "",
-    "paragraph": "October 2025 | UI artwork for the player HUD depicting health, ammo, and states. Programs: Procreate"
+    "paragraph": "December 2025"
+  },
+  {
+    "class": "filterDiv design",
+    "image": "",
+    "youtube": "https://youtu.be/dAT37pGl-dM",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "December 2025"
   },
   {
     "class": "filterDiv 2d design",
