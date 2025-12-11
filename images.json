@@ -24,6 +24,14 @@
     "paragraph": "December 2025"
   },
   {
+    "class": "filterDiv design",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.11_notesProject.png",
+    "youtube": "",
+    "href": "https://multimediaproject-d0c45.web.app",
+    "sketchfab": "",
+    "paragraph": "November 2025"
+  },
+  {
     "class": "filterDiv 2d design",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.10_slltUI.png",
     "youtube": "",
@@ -264,7 +272,7 @@
     "paragraph": "May 2024"
   }, 
   {
-    "class": "filterDiv games",
+    "class": "filterDiv games design",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.05_GROUND-ZERO.png",
     "youtube": "",
     "href": "https://reeserocks.itch.io/ground-zero",
