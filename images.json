@@ -1,17 +1,49 @@
 [
   {
-    "class": "filterDiv games",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.12_sllt.png",
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.05_charlie.png",
     "youtube": "",
-    "href": "https://reeserocks.itch.io/solong-longtime",
+    "href": "",
     "sketchfab": "",
-    "paragraph": "December 2025"
+    "paragraph": "May 2025 | Illustration of my character Charlie from Heartlines. Explores pure black as a comic book-style shadow color. | Programs: Procreate"
   },
   {
     "class": "filterDiv 3d",
     "image": "",
     "youtube": "https://www.youtube.com/embed/dAT37pGl-dM",
     "href": "",
+    "sketchfab": "",
+    "paragraph": "December 2025"
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.09_poster.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "September 2024 | Poster illustration for Heartlines. | Programs: Procreate"
+  },
+  {
+    "class": "filterDiv 3d",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/NRee9z-mxTI",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2025 | Turntable showcasing a military crab 3d character design."
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.09_heartlines_lineup.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "September 2024 | Character design lineup of all main characters in the Heartlines universe. | Programs: Procreate"
+  },
+  {
+    "class": "filterDiv games",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.12_sllt.png",
+    "youtube": "",
+    "href": "https://reeserocks.itch.io/solong-longtime",
     "sketchfab": "",
     "paragraph": "December 2025"
   },
@@ -66,14 +98,6 @@
   {
     "class": "filterDiv 3d",
     "image": "",
-    "youtube": "https://www.youtube.com/embed/NRee9z-mxTI",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "May 2025 | Turntable showcasing a military crab 3d character design."
-  },
-  {
-    "class": "filterDiv 3d",
-    "image": "",
     "youtube": "https://www.youtube.com/embed/plsUoUGc3wo",
     "href": "",
     "sketchfab": "",
@@ -86,14 +110,6 @@
     "href": "",
     "sketchfab": "",
     "paragraph": "May 2025 | Still renders of my military crab 3d character design."
-  },
-  {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.05_charlie.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "May 2025 | Illustration of my character Charlie from Heartlines. Explores pure black as a comic book-style shadow color. | Programs: Procreate"
   },
   {
     "class": "filterDiv games",
@@ -206,22 +222,6 @@
     "href": "",
     "sketchfab": "",
     "paragraph": "November 2024 | Illustrated portrait of Aempyriel from Heartlines. | Programs: Procreate"
-  },
-  {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.09_poster.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "September 2024 | Poster illustration for Heartlines. | Programs: Procreate"
-  },
-  {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.09_heartlines_lineup.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "September 2024 | Character design lineup of all main characters in the Heartlines universe. | Programs: Procreate"
   },
   {
     "class": "filterDiv 2d",
