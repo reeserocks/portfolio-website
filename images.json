@@ -287,6 +287,14 @@
     "sketchfab": "",
     "paragraph": "April 2024 | 3D model of my dorm room using image file textures from pictures I took of my stuff. First foray into a larger-scale 3D project. | Programs: Maya"
   }, 
+   {
+    "class": "filterDiv design",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.03_smallProject.png",
+    "youtube": "",
+    "href": "https://reeserocks.github.io/smallProject/",
+    "sketchfab": "",
+    "paragraph": "March 2024"
+  }, 
   {
     "class": "filterDiv 3d animation",
     "image": "",
