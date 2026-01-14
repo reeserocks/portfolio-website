@@ -25,6 +25,7 @@
   .headline {
     display: flex;
     align-items: center;
+    white-space: nowrap;
   }
 
   .headline button {
@@ -63,6 +64,7 @@
     display: inline;
     margin: auto;
     padding-right: 5%;
+    white-space: nowrap;
   }
 
   a {
@@ -70,6 +72,13 @@
     color: white;
     font-size: 1em;
     font-family: "Nunito Sans";
+  }
+
+  #resumetextContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
   }
 
   .softwares {
@@ -85,27 +94,15 @@
 
 /* TEXT */
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
     color: white;
     flex-shrink: 1;
     font-family: "Grandstander";
   }
 
-  h3
-  {
-    color: #a3a3a3;
-    font-family: "Neuton";
-  }
-
-  #resume a {
-    color: white;
-    font-family: "Nunito Sans";
-    text-decoration: underline;
-  }
-
-  h3,
   #resume {
-    text-align: center;
+    width: 100%;
+    border: none;
   }
 
   #name {
@@ -142,6 +139,7 @@
     padding: 5px;
     margin: auto;
     width: 100%;
+    white-space: nowrap;
   }
 
   footer ul {
@@ -254,16 +252,22 @@
 /* BUTTONS */
   button {
     border: none;
-    padding: 12px 16px;
+    padding: 0.7rem 1rem;
     border-radius: 20px;
     cursor: pointer;
     flex-shrink: 1;
     font-size: 1rem;
+    color: black;
     font-family: "Nunito Sans";
   }
 
   button:hover {
     background-color: #999;
+    transition: 0.2s;
+  }
+
+  .headline button:hover {
+    background-color: #7e3c4b;
     transition: 0.2s;
   }
 
@@ -273,31 +277,58 @@
   }
 
 /* RESPONSIVENESS */
-  @media only screen and (max-width: 768px) {
-    .content {
-      display: inline-flex;
-      flex-wrap: wrap;
-    }
-
-    h1 {
-      font-size: 4vw;
-    }
-
-    .lightbox-img {
-      padding-top: 100px;
-    }
-    #text-container {
-      width: 100%;
-    }
-  }
-
   @media only screen and (max-width: 992px) {
     .content {
       column-count: 2;
       width: 100%;
     }
 
+    h1 {
+      font-size: 1.6em;
+    }
+
     .lightbox-img {
       padding-top: 100px;
+    }
+  }
+
+    @media only screen and (max-width: 768px) {
+    .content {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 1.15em;
+    }
+
+    #btn-container {
+      text-align: center;
+    }
+
+    button {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.8rem;
+    }
+
+    .headline button {
+      font-size: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    #resumetextContainer {
+      display: block;
+    }
+
+    .lightbox-img {
+      padding-top: 100px;
+    }
+
+    #text-container {
+      width: 100%;
+    }
+
+    footer li {
+      font-size: 0.6em;
     }
   }
