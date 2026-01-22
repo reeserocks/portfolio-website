@@ -41,19 +41,19 @@
   },
   {
     "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.11_sammy_playlist.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines. | Programs: Procreate"
-  },
-  {
-    "class": "filterDiv 2d",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.11_lee_playlist.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
     "paragraph": "November 2024 | Illustrated portrait of Aempyriel from Heartlines. | Programs: Procreate"
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.11_sammy_playlist.png",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines. | Programs: Procreate"
   },
   {
     "class": "filterDiv 3d",
@@ -97,11 +97,11 @@
   },
   {
     "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.02_jean_concept.png",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.05_oli_ghost.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "February 2025 | Character design for Jean from Through Our Eyes. She is a alternative masc lesbian with an attitude. I used feedback from my fellow studio members to settle on a final design. | Programs: Procreate"
+    "paragraph": "May 2024 | In-game character dialogue sprite for my character Oliver from melody lain. | Programs: Procreate"
   },
   {
     "class": "filterDiv 2d",
@@ -113,12 +113,12 @@
   }, 
   {
     "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.05_oli_ghost.png",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.02_jean_concept.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | In-game character dialogue sprite for my character Oliver from melody lain. | Programs: Procreate"
-  }, 
+    "paragraph": "February 2025 | Character design for Jean from Through Our Eyes. She is a alternative masc lesbian with an attitude. I used feedback from my fellow studio members to settle on a final design. | Programs: Procreate"
+  },
   {
     "class": "filterDiv games",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.12_sllt.png",
