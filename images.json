@@ -41,11 +41,11 @@
   },
   {
     "class": "filterDiv 3d",
-    "image": "",
-    "youtube": "https://www.youtube.com/embed/T98FfrQtj0I",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.11_enemy.jpg",
+    "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "October 2025"
+    "paragraph": "November 2025 | Enemy for my game So Long, Long Time. Meant to symbolize grief. | Programs: Autodesk Maya, Procreate"
   },
   {
     "class": "filterDiv 2d",
@@ -57,11 +57,19 @@
   },
   {
     "class": "filterDiv 3d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.11_enemy.jpg",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/T98FfrQtj0I",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "October 2025"
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.11_sammy_playlist.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "November 2025 | Enemy for my game So Long, Long Time. Meant to symbolize grief. | Programs: Autodesk Maya, Procreate"
+    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines. | Programs: Procreate"
   },
   {
     "class": "filterDiv 3d",
@@ -78,14 +86,6 @@
     "href": "",
     "sketchfab": "",
     "paragraph": "May 2025 | Detailed zoom render for a <a href='https://reesehausman-3d.carrd.co/#project6-218' target='_blank'>military nomad-themed 3D diorama</a> | Programs: Maya, Procreate, Substance Painter"
-  },
-    {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.11_sammy_playlist.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines. | Programs: Procreate"
   },
   {
     "class": "filterDiv 3d",
