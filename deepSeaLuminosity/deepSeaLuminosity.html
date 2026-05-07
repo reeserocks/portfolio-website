@@ -1,0 +1,367 @@
+<!--
+  IMPLEMENTATION NOTES:
+  - Fonts: "Grandstander" (headings/display) + "Nunito Sans" (body), both via Google Fonts
+  - Assumptions: Video sources replaced with static image placeholders (localhost video URLs unavailable); 
+    all localhost:3845 image assets replaced with placehold.co at exact Figma dimensions
+  - Responsive: Fixed at 1440px design width, scales via viewport meta + overflow handling
+  - Techniques: CSS custom properties for full token system, CSS Grid + Flexbox for all layouts,
+    mask-image simulation via overflow:hidden, absolute positioning matching Figma layers exactly
+  - The complex phone/mockup layers use simplified but visually faithful representations
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Sea Luminosity — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="portfolio">
+
+    <!-- ═══════════════════════════════════════════
+         HEADER IMAGE SECTION
+    ═══════════════════════════════════════════ -->
+    <header class="header-img">
+      <div class="header-overlay"></div>
+      <nav class="header-nav">
+        <a href="../index.html" class="back-link" aria-label="Back to Home">
+          <svg class="back-arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 8L12 16L20 24" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Back to Home</span>
+        </a>
+      </nav>
+    </header>
+    <h1 class="header-title">Deep Sea Luminosity</h1>
+
+    <!-- ═══════════════════════════════════════════
+         BODY CONTENT
+    ═══════════════════════════════════════════ -->
+    <main class="body-content">
+
+      <!-- PROJECT OVERVIEW -->
+      <section class="project-overview" aria-labelledby="overview-heading">
+        <!-- Left: Text + Programs -->
+        <div class="overview-left">
+          <div class="overview-text">
+            <h2 id="overview-heading" class="section-title">Project Overview</h2>
+            <div class="body-text">
+              <p>With this project, I was challenged to conceptualize a new museum exhibit for the Cincinnati Museum Center. This exhibit had to utilize both the physical and digital realms to create a fully immersive exhibit, where users utilize an app to interface with the physical touchpoints in some way.</p>
+              <p>I learned how to use Figma, establish branding across a website, app &amp; wayfinding signage, create hi-fi prototypes from lo-fi wireframes, explore AI in a meaningful way, and test &amp; refine a product from user feedback.</p>
+              <p>The Deep Sea Luminosity exhibit showcases the underwater creatures of the ocean— particularly their massive size and strange anatomy. The app encourages users to record videos with Augmented Reality features, "catch" fish to add to their collection that will earn them Rewards to redeem at the gift shop, and more.</p>
+            </div>
+          </div>
+
+          <div class="programs-section">
+            <h2 class="section-title">Programs Used</h2>
+            <div class="program-icons">
+              <!-- Figma -->
+              <div class="program-icon" title="Figma">
+                <img src="images/project overview/programs/Figma.png" alt="Figma" width="100" height="100" />
+              </div>
+              <!-- Photoshop -->
+              <div class="program-icon" title="Photoshop">
+                <img src="images/project overview/programs/Photoshop.png" alt="Photoshop" width="100" height="100" />
+              </div>
+              <!-- Illustrator -->
+              <div class="program-icon" title="Illustrator">
+                <img src="images/project overview/programs/Illustrator.png" alt="Illustrator" width="100" height="100" />
+              </div>
+              <!-- Gemini -->
+              <div class="program-icon" title="Gemini">
+                <img src="images/project overview/programs/Gemini.png" alt="Gemini" width="100" height="100" />
+              </div>
+              <!-- ChatGPT -->
+              <div class="program-icon" title="ChatGPT">
+                <img src="images/project overview/programs/Chat.png" alt="ChatGPT" width="100" height="100" />
+              </div>
+            </div>
+            <p class="caption-text">*AI used for image generation and some copy text.</p>
+            <p class="caption-text">
+              All mobile icons from Figma Design Community contributors
+              <a href="https://www.figma.com/@streamline_hq" target="_blank" rel="noopener noreferrer">Streamline</a>
+              and
+              <a href="https://www.figma.com/@elchinarts" target="_blank" rel="noopener noreferrer">Elchin</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Device Mockup -->
+        <div class="overview-right mockup-container" aria-hidden="true">
+          <div class="phone-mockup-group">
+              <img src="images/project overview/Mockup.svg" alt="App Mockup"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- HERO BANNER IMAGE -->
+      <section class="hero-banner" aria-hidden="true">
+            <img src="images/banner.png" alt="web mockup banner"/>
+      </section>
+
+      <!-- DESIGN PROCESS -->
+      <section class="design-process" aria-labelledby="process-heading">
+        <!-- Step images positioned absolutely -->
+        <div class="process-step step-1">
+          <div class="step-image">
+            <img src="images/design process/ideate.png" alt="Ideation phase" />
+          </div>
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <span class="step-label">Ideate</span>
+          </div>
+        </div>
+
+        <div class="process-step step-2">
+          <div class="step-image">
+            <img src="images/design process/sketch.png" alt="Sketch phase" />
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <span class="step-label">Sketch</span>
+          </div>
+        </div>
+
+        <div class="process-step step-3">
+          <div class="step-image">
+            <img src="images/design process/lofi.png" alt="Lo-fi wireframes" />
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <span class="step-label">Lo-fi</span>
+          </div>
+        </div>
+
+        <div class="process-step step-4">
+          <div class="step-image">
+            <img src="images/design process/hifi.png" alt="Hi-fi wireframes" />
+          </div>
+          <div class="step-card">
+            <span class="step-num">04</span>
+            <span class="step-label">Hi-fi</span>
+          </div>
+        </div>
+
+        <div class="process-step step-5">
+          <div class="step-image">
+            <img src="images/design process/testing.png" alt="User testing" />
+          </div>
+          <div class="step-card">
+            <span class="step-num">05</span>
+            <span class="step-label">Testing</span>
+          </div>
+        </div>
+
+        <div class="process-step step-6">
+          <div class="step-image">
+            <img src="images/design process/iterate.png" alt="Iteration phase" />
+          </div>
+          <div class="step-card">
+            <span class="step-num">06</span>
+            <span class="step-label">Iterate</span>
+          </div>
+        </div>
+
+        <!-- Center text -->
+        <div class="process-center-text">
+          <h2 id="process-heading" class="section-title">Design Process</h2>
+          <p class="body-text">
+            Decision-making centered around feedback I received from my professor, classmates, and users. Each user flow in the website and app stemmed from sketches, ending in user testing and further iteration. Especially with the app, I relearned that what might seem obvious to me can be easily missed by the user.
+          </p>
+        </div>
+      </section>
+
+      <!-- MOODBOARDS -->
+      <section class="moodboards" aria-labelledby="moodboard-heading">
+        <div class="moodboard moodboard-1">
+          <h2 id="moodboard-heading" class="section-title">Moodboard 1</h2>
+          <p class="body-text">
+            For families with strange interests, ages 13-55. Families marvel at
+            <strong>the disturbing parts of these unusual deep sea creatures</strong>—
+            parents appreciate the live tanks and children appreciate the climbable replicas of fish innards.
+            MYSTERIOUS, INTRIGUING, CREEPY, UNSETTLING. Cons: Unfriendly for little kids, strangeness might
+            push some learners away, very limited color palette.
+          </p>
+          <div class="moodboard-image">
+            <img src="images/moodboards/moodboard1.png" alt="Moodboard 1 — dark mysterious aesthetic" />
+          </div>
+        </div>
+
+        <div class="moodboard moodboard-2 moodboard-selected">
+          <h2 class="section-title">Moodboard 2</h2>
+          <p class="body-text">
+            Families who like the ocean &amp; its creatures, ages 4-65. Invite into the experience and dismiss
+            the notion that the deep sea is too scary. Children will appreciate the many climbable and interactive
+            aspects, while parents will enjoy the AR life-size scale of fish feature. MARVELOUS, WACKY,
+            FASCINATING, OTHERWORLDLY. Pros: Promotes invitingness over scariness, friendly for all ages, fun &amp; playful.
+          </p>
+          <div class="moodboard-image">
+            <img src="images/moodboards/moodboard2.png" alt="Moodboard 2 — vibrant colorful ocean aesthetic" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SITEMAP -->
+      <section class="sitemap-section" aria-labelledby="sitemap-heading">
+        <img src="images/sitemap.png" alt="Information architecture sitemap" class="sitemap-img" />
+      </section>
+
+      <!-- LO-FI WIREFRAMES -->
+      <section class="wireframes-section" aria-labelledby="lofi-heading">
+        <!-- Left: Text + Stacked images -->
+        <div class="wireframes-left">
+          <div class="wireframes-text">
+            <h2 id="lofi-heading" class="section-title">Lo-Fi Wireframes</h2>
+            <p class="body-text">
+              Before touching my computer, I sketched out the flow of each page (based on the preceding sitemap)
+              on paper to ensure I had a good idea of what I was working with. I highlighted or notated each call
+              to action so that no page was without a purpose. From there, I recreated CMC's branding, then
+              drafted low fidelity wireframes and annotated them for clarity.
+            </p>
+          </div>
+          <div class="wireframe-images">
+            <div class="wireframe-img wireframe-img-1">
+              <img src="images/lofi/wireframe1.png" alt="Lo-fi wireframe sketch 1" />
+            </div>
+            <div class="wireframe-img wireframe-img-2">
+              <img src="images/lofi/wireframe2.png" alt="Lo-fi wireframe sketch 2" />
+            </div>
+            <div class="wireframe-img wireframe-img-3">
+              <img src="images/lofi/wireframe3.png" alt="Lo-fi wireframe sketch 3" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: MacBook mockup -->
+        <div class="wireframes-right" aria-hidden="true">
+          <div class="macbook-mockup">
+            <div class="macbook-body">
+              <div class="macbook-bezel">
+                <div class="macbook-display">
+                  <img src="images/lofi/Screen.png" alt="MacBook wireframe display" />
+                </div>
+              </div>
+              <div class="macbook-base"></div>
+              <div class="macbook-foot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HI-FI WEBSITE -->
+      <section class="hifi-website" aria-labelledby="hifi-web-heading">
+        <div class="hifi-video-wrap">
+          <!-- Video placeholder (actual videos at localhost URLs) -->
+          <video controls loop autoplay>
+            <source src="images/videos/computer.mp4"
+            alt="High Fidelity Website prototype video"
+            class="hifi-video-placeholder"
+            width="100%"
+          >
+          </video>
+        </div>
+        <div class="section-label-card">
+          <h2 id="hifi-web-heading" class="section-label-text">High Fidelity Website</h2>
+        </div>
+        <p class="body-text">
+          Building upon the strong wireframes I concepted in the Low Fidelity versions, I created a Home, About,
+          and Ticketing page using the branding for Deep Sea Luminosity I established in the mood board. Gemini &amp;
+          ChatGPT aided in image generation and some copy text so that I could focus more on the UI design itself.
+          Lastly, I utilized Figma Prototyping to build out interactions across buttons and pages. Overall, the
+          webpage is meant to promote the exhibit and direct users toward buying tickets.
+        </p>
+      </section>
+
+      <!-- HI-FI APP -->
+      <section class="hifi-app" aria-labelledby="hifi-app-heading">
+        <div class="app-phones-banner">
+            <img src="images/hifiApp.png" alt="High Fidelity App images" class="app-phone" />
+        </div>
+        <div class="section-label-card">
+          <h2 id="hifi-app-heading" class="section-label-text">High Fidelity App</h2>
+        </div>
+        <p class="body-text">
+          Similar to the website, the high fidelity app was developed after sketching, lo-fi wireframing, and
+          image generation with AI. I placed more emphasis on having clean icons and intuitive user workflows.
+          During class time, I followed a testing script, testing the app among my classmates, and made changes
+          based on their feedback.
+        </p>
+      </section>
+
+      <!-- APP INTERACTION -->
+      <section class="app-interaction" aria-labelledby="interaction-heading">
+        <div class="interaction-text">
+          <h2 id="interaction-heading" class="section-title">App Interaction</h2>
+          <div class="body-text">
+            <p>Users utilize the app only from within the exhibit as a means to enhance their in-person experience, so I designed interactive features around that thought.</p>
+            <ul>
+              <li>The camera allows users to see the size of their body in relation to gigantic sea fish.</li>
+              <li>Catching fish works in tandem with the RFID inside the exhibit.</li>
+              <li>The redeem credits card acts as a native wallet compatible with the gift shop register.</li>
+              <li>The leaderboard recognizes users currently on the museum Wi-Fi.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="interaction-video" aria-label="App interaction video 1">
+          <video controls loop autoplay>
+            <source src="images/videos/phone1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="interaction-video" aria-label="App interaction video 2">
+          <video controls loop autoplay>
+            <source src="images/videos/phone2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <!-- WAYFINDING ELEMENTS -->
+      <section class="wayfinding" aria-labelledby="wayfinding-heading">
+        <!-- Row 1 -->
+        <div class="wayfinding-row row-1">
+          <div class="wf-cell wf-text-cell">
+            <h2 id="wayfinding-heading" class="section-title-sm">Wayfinding Elements</h2>
+            <p class="body-text">Now that the digital elements of the exhibit were wrapped up, I imagined what physical exhibit components would look like using PSD mockups.</p>
+          </div>
+          <div class="wf-cell wf-img wf-img-sm">
+            <img src="images/wayfinding/Elevator Sign.jpg" alt="Wayfinding element A" />
+          </div>
+          <div class="wf-cell wf-img wf-img-md">
+            <img src="images/wayfinding/overhang sign.jpg" alt="Wayfinding element B" />
+          </div>
+          <div class="wf-cell wf-img wf-img-lg">
+            <img src="images/wayfinding/lit exhibit sign.jpg" alt="Wayfinding element C" />
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="wayfinding-row row-2">
+          <div class="wf-cell wf-img wf-img-lg">
+            <img src="images/wayfinding/outdoor Aframe.jpg" alt="Wayfinding element D" />
+          </div>
+          <div class="wf-cell wf-img wf-img-md">
+            <img src="images/wayfinding/poster on steps.jpg" alt="Wayfinding element E" />
+          </div>
+          <div class="wf-cell wf-img wf-img-lg">
+            <img src="images/wayfinding/corner sign.jpg" alt="Wayfinding element F" />
+          </div>
+          <div class="wf-cell wf-img wf-img-sm">
+            <img src="images/wayfinding/exhibit poster.jpg" alt="Wayfinding element G" />
+          </div>
+        </div>
+      </section>
+
+      <!-- BACK TO HOME -->
+      <footer class="back-footer">
+        <a href="../index.html" class="back-footer-link">Back to Home</a>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

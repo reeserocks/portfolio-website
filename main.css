@@ -100,6 +100,12 @@
     font-family: "Grandstander";
   }
 
+  h2 {
+    font-size: 1.25em;
+    color: white;
+    font-family: "Nunito Sans";
+  }
+
   #resume {
     width: 100%;
     border: none;
@@ -151,6 +157,32 @@
     font-size: 0.8em;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+/* PROJECTS */
+  .projects {
+    margin: 5% auto;
+    padding: 0.25em;
+    width: 90%;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+  }
+  
+  .projectCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .projectCard {
+    background-color: #0A0A0A;
+    padding: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .projectCard img {
+    border-radius: 10px;
   }
 
 /* CONTENT */
