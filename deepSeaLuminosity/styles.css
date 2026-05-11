@@ -1,6 +1,3 @@
-/* ═══════════════════════════════════════════════════════════════
-   CSS CUSTOM PROPERTIES — DESIGN TOKEN SYSTEM
-   ═══════════════════════════════════════════════════════════════ */
 :root {
   /* Colors */
   --color-bg:             #0a0a0a;
@@ -224,7 +221,7 @@ ul {
   top: 130px;
   font-family: var(--font-display);
   font-weight: var(--weight-regular);
-  font-size: var(--text-xl);      /* 72px */
+  font-size: var(--text-xl);
   color: var(--color-white);
   white-space: nowrap;
   line-height: normal;
@@ -236,10 +233,10 @@ ul {
 .body-content {
   display: flex;
   flex-direction: column;
-  gap: var(--space-50);       /* 50px between sections */
+  gap: var(--space-50);       
   align-items: flex-start;
-  padding-top: var(--space-72);   /* 72px */
-  padding-left: var(--space-100); /* 100px */
+  padding-top: var(--space-72);   
+  padding-left: var(--space-100); 
   padding-right: var(--space-100);
   width: 100%;
   position: relative;
@@ -461,13 +458,19 @@ ul {
 .design-process {
   position: relative;
   width: 100%;
-  height: 841px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   padding: 20px 0;
+}
+
+.process-inner {
+  position: relative;
+  width: min(1240px, 100%);
+  height: 841px;
+  flex-shrink: 0;
 }
 
 .process-step {
@@ -515,7 +518,6 @@ ul {
   line-height: normal;
 }
 
-/* Step positions from Figma */
 .step-1 { left:  -1px;  top: 134px; }
 .step-2 { left: 467px;  top:  20px; }
 .step-3 { left: 907px;  top: 134px; }
@@ -523,7 +525,6 @@ ul {
 .step-5 { left: 467px;  top: 593px; }
 .step-6 { left:  -1px;  top: 479px; }
 
-/* Center text overlay */
 .process-center-text {
   position: absolute;
   top: 50%;
@@ -677,29 +678,28 @@ ul {
   display: block;
 }
 
-/* Staggered / rotated wireframe images */
 .wireframe-img-1 {
-  width: 361px;
-  height: 208px;
+  width: 95%;
+  aspect-ratio: 361 / 208;
   transform: rotate(-5deg);
   opacity: 0.95;
   position: absolute;
   top: 8px;
-  left: 5px;
+  left: 0;
 }
 
 .wireframe-img-2 {
-  width: 361px;
-  height: 198px;
+  width: 95%;
+  aspect-ratio: 361 / 198;
   transform: rotate(-5deg);
   position: absolute;
   top: 212px;
-  left: 2px;
+  left: 0;
 }
 
 .wireframe-img-3 {
-  width: 361px;
-  height: 189px;
+  width: 95%;
+  aspect-ratio: 361 / 189;
   transform: rotate(-5deg);
   opacity: 0.95;
   position: absolute;
@@ -850,11 +850,12 @@ ul {
 
 .section-label-card {
   position: absolute;
-  top: 801px;
+  top: 785px;
   left: 21px;
   background: var(--color-white);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+  z-index: 2;
 }
 
 .section-label-text {
@@ -884,6 +885,7 @@ ul {
   width: 100%;
   overflow: hidden;
   display: flex;
+  height: 598px;
 }
 
 .app-phone-row {
@@ -915,7 +917,9 @@ ul {
 }
 
 .hifi-app .section-label-card {
-  top: 598px;
+  /* Reset the shared top from .hifi-website */
+  top: auto;
+  top: 570px;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1064,8 +1068,10 @@ ul {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   RESPONSIVE — SCALE DOWN FOR NARROWER VIEWPORTS
+   RESPONSIVE BREAKPOINTS
    ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1440px and below ── */
 @media (max-width: 1440px) {
   .body-content {
     padding-left: clamp(20px, 6.9vw, 100px);
@@ -1077,38 +1083,97 @@ ul {
     font-size: clamp(36px, 5vw, 72px);
   }
 
+  .section-label-card {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-left: 21px;
+    display: inline-block;
+  }
+
   .hifi-video-wrap {
     width: 100%;
     height: auto;
   }
 
-  .section-label-card {
-    position: static;
+  .app-phones-banner {
+    height: auto;
   }
-
-  .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
-    display: none;
-  }
-
-  .web-mockup-bg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .screen-card {
-    position: static;
-    transform: skewX(-8.53deg) scaleY(0.99);
-    display: block;
-    width: 200px;
-    height: 140px;
-  }
-
-  .screen-card:nth-child(-n+3) { display: block; }
 }
 
+/* ── Below 1240px ── */
+@media (max-width: 1239px) {
+  .design-process {
+    display: block;
+    height: auto;
+    overflow: visible;
+    padding: 20px 0;
+  }
+
+  .process-inner {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .process-center-text {
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  .process-center-text .body-text {
+    text-align: left;
+  }
+
+  .process-steps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 32px;
+  }
+
+  .process-step {
+    position: static;
+    width: 100%;
+  }
+
+  .step-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .step-card {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-left: 16px;
+    margin-top: -27px;
+    display: inline-flex;
+  }
+
+  .moodboards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .moodboard { width: 100%; }
+
+  .app-interaction {
+    flex-direction: column;
+    gap: var(--space-32);
+  }
+
+  .interaction-text { padding-left: 0; }
+
+  .interaction-video { width: 100%; max-width: 337px; }
+}
+
+/* ── Below 900px ── */
 @media (max-width: 900px) {
   .project-overview {
     grid-template-columns: 1fr;
@@ -1129,54 +1194,30 @@ ul {
     grid-row: 2;
   }
 
-  .moodboards {
-    flex-direction: column;
+  .wireframe-images {
     height: auto;
-  }
-
-  .moodboard { width: 100%; }
-
-  .app-interaction {
-    flex-direction: column;
-    gap: var(--space-32);
-  }
-
-  .interaction-text { padding-left: 0; }
-
-  .interaction-video { width: 100%; max-width: 337px; }
-
-  .design-process {
-    height: auto;
-    overflow: visible;
-    flex-direction: column;
-    padding: 20px;
+    position: static;
     gap: 20px;
+    align-items: center;
+    overflow: visible;
   }
 
-  .process-step {
+  .wireframe-img-1,
+  .wireframe-img-2,
+  .wireframe-img-3 {
     position: static;
     width: 100%;
-  }
-
-  .step-card {
-    position: static;
+    height: auto;
     top: auto;
     left: auto;
-    max-width: 160pxs;
-    padding: 10px 16px;
-    justify-content: flex-start;
   }
 
-  .process-center-text {
-    position: static;
-    transform: none;
-    width: 100%;
-    text-align: left;
-    order: -1;
+  .process-steps-grid {
+    grid-template-columns: 1fr;
   }
 
-  .process-center-text .body-text {
-    text-align: left;
+  .section-label-card {
+    margin-left: 0;
   }
 
   .wayfinding-row.row-1,
@@ -1188,13 +1229,15 @@ ul {
   .wf-cell { height: 220px; }
 }
 
+/* ── Below 600px ── */
 @media (max-width: 600px) {
   .body-content { gap: 30px; padding-top: 40px; }
 
-  .header-title { font-size: 32px; top: 100px; }
+  .header-title { font-size: 28px; top: 90px; white-space: normal; left: 20px; }
   .header-img { height: 140px; }
 
   .section-title { font-size: 24px; }
+  .section-label-text { font-size: 22px; padding: 12px 20px; }
 
   .wayfinding-row.row-1,
   .wayfinding-row.row-2 {
@@ -1205,4 +1248,10 @@ ul {
 
   .program-icons { gap: 12px; }
   .program-icon { width: 70px; height: 70px; }
+
+  .wireframe-img-1,
+  .wireframe-img-2,
+  .wireframe-img-3 {
+    transform: none;
+  }
 }

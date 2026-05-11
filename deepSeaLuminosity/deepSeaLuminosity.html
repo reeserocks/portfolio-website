@@ -1,17 +1,8 @@
-<!--
-  IMPLEMENTATION NOTES:
-  - Fonts: "Grandstander" (headings/display) + "Nunito Sans" (body), both via Google Fonts
-  - Assumptions: Video sources replaced with static image placeholders (localhost video URLs unavailable); 
-    all localhost:3845 image assets replaced with placehold.co at exact Figma dimensions
-  - Responsive: Fixed at 1440px design width, scales via viewport meta + overflow handling
-  - Techniques: CSS custom properties for full token system, CSS Grid + Flexbox for all layouts,
-    mask-image simulation via overflow:hidden, absolute positioning matching Figma layers exactly
-  - The complex phone/mockup layers use simplified but visually faithful representations
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="favi.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deep Sea Luminosity — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,9 +13,7 @@
 <body>
   <div class="portfolio">
 
-    <!-- ═══════════════════════════════════════════
-         HEADER IMAGE SECTION
-    ═══════════════════════════════════════════ -->
+    <!-- HEADER IMAGE SECTION -->
     <header class="header-img">
       <div class="header-overlay"></div>
       <nav class="header-nav">
@@ -38,9 +27,7 @@
     </header>
     <h1 class="header-title">Deep Sea Luminosity</h1>
 
-    <!-- ═══════════════════════════════════════════
-         BODY CONTENT
-    ═══════════════════════════════════════════ -->
+    <!-- BODY CONTENT -->
     <main class="body-content">
 
       <!-- PROJECT OVERVIEW -->
@@ -106,72 +93,74 @@
       <!-- DESIGN PROCESS -->
       <section class="design-process" aria-labelledby="process-heading">
         <!-- Step images positioned absolutely -->
-        <div class="process-step step-1">
-          <div class="step-image">
-            <img src="images/design process/ideate.png" alt="Ideation phase" />
+        <div class="process-inner">
+          <!-- Center text -->
+          <div class="process-center-text">
+            <h2 id="process-heading" class="section-title">Design Process</h2>
+            <p class="body-text">
+              Decision-making centered around feedback I received from my professor, classmates, and users. Each user flow in the website and app stemmed from sketches, ending in user testing and further iteration. Especially with the app, I relearned that what might seem obvious to me can be easily missed by the user.
+            </p>
           </div>
-          <div class="step-card">
-            <span class="step-num">01</span>
-            <span class="step-label">Ideate</span>
+          
+          <div class="process-step step-1">
+            <div class="step-image">
+              <img src="images/design process/ideate.png" alt="Ideation phase" />
+            </div>
+            <div class="step-card">
+              <span class="step-num">01</span>
+              <span class="step-label">Ideate</span>
+            </div>
           </div>
-        </div>
 
-        <div class="process-step step-2">
-          <div class="step-image">
-            <img src="images/design process/sketch.png" alt="Sketch phase" />
+          <div class="process-step step-2">
+            <div class="step-image">
+              <img src="images/design process/sketch.png" alt="Sketch phase" />
+            </div>
+            <div class="step-card">
+              <span class="step-num">02</span>
+              <span class="step-label">Sketch</span>
+            </div>
           </div>
-          <div class="step-card">
-            <span class="step-num">02</span>
-            <span class="step-label">Sketch</span>
-          </div>
-        </div>
 
-        <div class="process-step step-3">
-          <div class="step-image">
-            <img src="images/design process/lofi.png" alt="Lo-fi wireframes" />
+          <div class="process-step step-3">
+            <div class="step-image">
+              <img src="images/design process/lofi.png" alt="Lo-fi wireframes" />
+            </div>
+            <div class="step-card">
+              <span class="step-num">03</span>
+              <span class="step-label">Lo-fi</span>
+            </div>
           </div>
-          <div class="step-card">
-            <span class="step-num">03</span>
-            <span class="step-label">Lo-fi</span>
-          </div>
-        </div>
 
-        <div class="process-step step-4">
-          <div class="step-image">
-            <img src="images/design process/hifi.png" alt="Hi-fi wireframes" />
+          <div class="process-step step-4">
+            <div class="step-image">
+              <img src="images/design process/hifi.png" alt="Hi-fi wireframes" />
+            </div>
+            <div class="step-card">
+              <span class="step-num">04</span>
+              <span class="step-label">Hi-fi</span>
+            </div>
           </div>
-          <div class="step-card">
-            <span class="step-num">04</span>
-            <span class="step-label">Hi-fi</span>
-          </div>
-        </div>
 
-        <div class="process-step step-5">
-          <div class="step-image">
-            <img src="images/design process/testing.png" alt="User testing" />
+          <div class="process-step step-5">
+            <div class="step-image">
+              <img src="images/design process/testing.png" alt="User testing" />
+            </div>
+            <div class="step-card">
+              <span class="step-num">05</span>
+              <span class="step-label">Testing</span>
+            </div>
           </div>
-          <div class="step-card">
-            <span class="step-num">05</span>
-            <span class="step-label">Testing</span>
-          </div>
-        </div>
 
-        <div class="process-step step-6">
-          <div class="step-image">
-            <img src="images/design process/iterate.png" alt="Iteration phase" />
+          <div class="process-step step-6">
+            <div class="step-image">
+              <img src="images/design process/iterate.png" alt="Iteration phase" />
+            </div>
+            <div class="step-card">
+              <span class="step-num">06</span>
+              <span class="step-label">Iterate</span>
+            </div>
           </div>
-          <div class="step-card">
-            <span class="step-num">06</span>
-            <span class="step-label">Iterate</span>
-          </div>
-        </div>
-
-        <!-- Center text -->
-        <div class="process-center-text">
-          <h2 id="process-heading" class="section-title">Design Process</h2>
-          <p class="body-text">
-            Decision-making centered around feedback I received from my professor, classmates, and users. Each user flow in the website and app stemmed from sketches, ending in user testing and further iteration. Especially with the app, I relearned that what might seem obvious to me can be easily missed by the user.
-          </p>
         </div>
       </section>
 
@@ -181,7 +170,7 @@
           <h2 id="moodboard-heading" class="section-title">Moodboard 1</h2>
           <p class="body-text">
             For families with strange interests, ages 13-55. Families marvel at
-            <strong>the disturbing parts of these unusual deep sea creatures</strong>—
+            the disturbing parts of these unusual deep sea creatures—
             parents appreciate the live tanks and children appreciate the climbable replicas of fish innards.
             MYSTERIOUS, INTRIGUING, CREEPY, UNSETTLING. Cons: Unfriendly for little kids, strangeness might
             push some learners away, very limited color palette.
@@ -255,7 +244,6 @@
       <!-- HI-FI WEBSITE -->
       <section class="hifi-website" aria-labelledby="hifi-web-heading">
         <div class="hifi-video-wrap">
-          <!-- Video placeholder (actual videos at localhost URLs) -->
           <video controls loop autoplay>
             <source src="images/videos/computer.mp4"
             alt="High Fidelity Website prototype video"
