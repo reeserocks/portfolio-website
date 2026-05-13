@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Experience Research — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Grandstander + Nunito Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<main class="portfolio">
+
+  <!-- =HEADER IMAGE + BACK LINK -->
+  <header class="header-img">
+    <div class="header-img__bg" aria-hidden="true">
+      <img
+        src="images/HeaderImg.jpg"
+        alt="header image of post-it notes"
+      />
+    </div>
+    <div class="header-img__overlay" aria-hidden="true"></div>
+
+    <a href="../index.html" class="header-back" aria-label="Back to Home">
+      <svg class="back-arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 8L12 16L20 24" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="header-back__label">Back to Home</span>
+    </a>
+  </header>
+
+  <h1 class="page-title">User Experience Research</h1>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="two-col project-overview" id="overview">
+
+      <!-- LEFT: Intro text + Wayfair logo -->
+      <div class="project-left">
+        <div class="project-intro-text">
+          <h1>Project Introduction</h1>
+          <p>
+            In this research endeavor, I worked alongside a group of five other researchers
+            over the course of a semester to investigate the effectiveness of digital media
+            environment designs, with a focus on Wayfair and other online furniture retailers.
+            We did competitive research, ran usability tests on the Wayfair site, conducted
+            in-depth interviews about online furniture shopping in general, then worked to
+            develop personas and other tools based on our findings.
+          </p>
+        </div>
+
+        <div class="wayfair-logo-wrap">
+          <img
+            src="images/WayfairLogo.png"
+            alt="Wayfair logo"
+          />
+        </div>
+        <p class="caption logo-caption">
+          Logo from
+          <a href="https://www.aboutwayfair.com/media-assets" target="_blank" rel="noopener">Wayfair media assets</a>.
+        </p>
+      </div>
+
+      <!-- RIGHT: Table of Contents -->
+      <nav class="toc" aria-label="Table of Contents">
+        <p class="toc__title">Table of Contents</p>
+        <ol class="toc__list">
+          <li><a href="#heuristic">Heuristic Analysis</a></li>
+          <li><a href="#competitive">Competitive UX Research</a></li>
+          <li><a href="#usability">Usability Testing</a></li>
+          <li>
+            <a href="#idi">In-Depth Interviews</a>
+            <ol class="toc__sublist">
+              <li><a href="#affinity">Affinity Diagramming</a></li>
+              <li><a href="#persona">Persona Development</a></li>
+              <li><a href="#empathy">Empathy Mapping</a></li>
+              <li><a href="#journey">Journey Mapping</a></li>
+            </ol>
+          </li>
+          <li><a href="#cardsort">Card Sort</a></li>
+          <li><a href="#content">Content Strategy Evaluation &amp; Design Persona</a></li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- SECTION 01 — HEURISTIC ANALYSIS -->
+    <section class="heuristic-section" id="heuristic">
+
+      <!-- Mockup banner -->
+      <div class="mockup-banner" aria-hidden="true">
+        <!-- Back screenshot (Page 2) -->
+        <div class="mockup-banner__frame mockup-banner__frame--back">
+          <div class="mockup-screen mockup-screen--back">
+            <img
+              src="images/HeuristicPage2.png"
+              alt="Heuristic analysis screenshot page 2"
+            />
+          </div>
+        </div>
+        <!-- Front screenshot (Page 1) -->
+        <div class="mockup-banner__frame mockup-banner__frame--front">
+          <div class="mockup-screen mockup-screen--front">
+            <img
+              src="images/HeuristicPage1.png"
+              alt="Heuristic analysis screenshot page 1"
+              style="width:100%; height:109.14%; left:0.51%; top:0.34%; position:absolute;"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Text grid: heading left, body right -->
+      <div class="two-col">
+        <!-- col 1 — section heading -->
+        <div class="section-heading" style="justify-content:center;">
+          <span class="section-heading__num">01</span>
+          <span class="section-heading__name">Heuristic Analysis</span>
+        </div>
+
+        <!-- col 2 — body text -->
+        <div class="heuristic-body">
+          <p>
+            After taking a good look at the Wayfair site, my team &amp; I determined three user
+            goals that would guide our analysis. Clear user goals helped us evaluate the site
+            from the eyes of consumers, not designers.
+          </p>
+          <p>
+            From there, we each individually analyzed the site using resources such as the
+            Forrester scorecard, and I learned what usability heuristics were and how to apply
+            them. We then synthesized our analyses as a group, determining that the most
+            critical issues could be found from heuristics with the lowest scores.
+          </p>
+          <p>
+            <strong class="bold-italic">Finding:</strong>
+            <em> Wayfair suffers from information overload— it violates Psychological Usability
+            Heuristics 1.2 "Progressive Disclosure" &amp; 6.1 "Users' attention is grabbed and
+            held in the right moments," revealing too much information to the user at once in an
+            overwhelming manner, such as a long list of categories to sort through.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02 — COMPETITIVE UX RESEARCH -->
+    <section class="comp-research" id="competitive">
+
+      <!-- Full-width blurred image banner -->
+      <div class="comp-image-banner">
+        <div class="comp-image-banner__bg" aria-hidden="true">
+          <img
+            src="images/CompResearchBanner.png"
+            alt="competitive analysis grid banner"
+          />
+        </div>
+        <div class="comp-image-banner__overlay" aria-hidden="true"></div>
+        <div class="comp-banner-text">
+          <div class="section-heading">
+            <span class="section-heading__num">02</span>
+            <span class="section-heading__name">Competitive UX Research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two columns: Gathering Data / Analyzing Data -->
+      <div class="comp-research__columns">
+        <div class="comp-research__col">
+          <p class="comp-research__col-title">Gathering Data</p>
+          <p class="comp-research__col-body">
+            As a group, we brainstormed five dimensions (in addition to our three user goals)
+            to evaluate six online retailer competitors against. We compiled our findings into
+            a shared Google Sheet, noting what makes the competitors stand out against Wayfair.
+          </p>
+        </div>
+        <div class="comp-research__col">
+          <p class="comp-research__col-title">Analyzing Data</p>
+          <p class="comp-research__col-body">
+            Individually, I then wrote a 2-page paper about the strengths and weaknesses of
+            competitor sites, thinking about how Wayfair can stand out against these brands.
+            Through this analysis, I learned more about market trends and business strategy.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pull quote -->
+      <div class="pull-quote">
+        <img
+          class="pull-quote__svg pull-quote__svg--open"
+          src="images/Quotes.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <p class="pull-quote__text">
+          Wayfair has an opportunity to stand out from the competition due to its depth of
+          inventory in the specific category of furniture. This concentration paves the way
+          for features like Wayfair's specific filtering system, letting users sort by highly
+          specific dimensions, materials, room types, style, and more. However, this strength
+          is also a weakness. The number of product options can feel overwhelming, especially
+          when listed so closely side-by-side like they are.
+        </p>
+        <img
+          class="pull-quote__svg pull-quote__svg--close"
+          src="images/Quotes.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+    </section>
+
+    <!-- SECTION 03 — USABILITY TESTING -->
+    <section class="two-col" id="usability" style="align-items:stretch;">
+
+      <!-- col 1 — heading + mockup screenshots -->
+      <div class="usability-left">
+        <div class="section-heading" style="justify-content:center; width:100%;">
+          <span class="section-heading__num">03</span>
+          <span class="section-heading__name">Usability Testing</span>
+        </div>
+        <div class="usability-mockup">
+          <!-- Scenarios doc -->
+          <div class="usability-mockup__frame usability-mockup__frame--scenarios">
+            <div class="usability-screen usability-screen--scenarios">
+              <img
+                src="images/UsabilityScenarios.png"
+                alt="Usability test scenarios document"
+              />
+            </div>
+          </div>
+          <!-- Tally spreadsheet -->
+          <div class="usability-mockup__frame usability-mockup__frame--tally">
+            <div class="usability-screen usability-screen--tally">
+              <img
+                src="images/UsabilityTally.png"
+                alt="Usability test tally spreadsheet"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- col 2 — body text -->
+      <div class="usability-body">
+        <h3>Process</h3>
+        <p>
+          Now that we had a good idea of what we were looking to research about Wayfair,
+          we proceeded into user interviews. We decided that our selection criteria would not
+          be very strict, as most modern people have partaken in online shopping. All of us
+          chose people we knew well, such as roommates or friends, so that the conversational
+          dialogue we were aiming for with the testing script would be more easily achievable.
+          Our young ages also meant that our interviewees had never used the Wayfair site
+          before, granting us richer and useful first impressions of the site.
+        </p>
+        <p>
+          In class, we spent a lot of time practicing the "think-aloud" protocol, which
+          reminds interviewees to explain their thoughts and the actions they are taking.
+          I learned that this would be the most difficult part to upkeep during user interviews,
+          as it is very common for interviewees to forget to think out loud.
+        </p>
+        <p>
+          I also learned how to ask better questions— for example, staying away from leading
+          questions and letting the user fill in the latter half of my half-formed question
+          themself.
+        </p>
+
+        <h3 style="margin-top:1.25rem;">Results</h3>
+        <p>
+          With six people on our team, we ended up with six videos ranging from 20 minutes
+          to 1 hour long. In order to glean quantitative data from the interviews, we created
+          a tally spreadsheet, where we defined success criteria to help us breakdown where
+          the users passed without problems, took wrong turns, and/or failed a scenario.
+        </p>
+        <p>
+          The most interesting data emerged from the "Design Tools" scenario, where users were
+          meant to find tools to give them inspiration and guide them through the design process.
+          We thought they would run to the AI tool Wayfair has, but only one user managed to find
+          the tool, even when multiple users were looking for it. In a digital landscape dominated
+          by AI, we thought Wayfair should do a better job of advocating for its emerging tech tools.
+        </p>
+        <p>
+          To wrap up our takeaways, we presented our findings, backed by real evidence from user
+          interviews, like we were speaking to the Wayfair company.
+        </p>
+
+        <h3 style="margin-top:1.25rem;">Example Finding</h3>
+        <p>
+          <strong class="bold-italic">Users have trouble finding design tools on Wayfair because
+          no clear path is given.</strong>
+          <em> All users struggled in some way to find a design tool, and all users took different
+          paths to finding one of the tools available to help inspire their design. Evidence: 3 users
+          completely failed to complete their task and find inspiration, and 2 users required
+          prompting in order to aid them in completing the task.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 04 — IN-DEPTH INTERVIEWS -->
+    <section class="idi-section" id="idi">
+
+      <!-- Heading row with background photo -->
+      <div class="two-col idi-header-row">
+        <div class="idi-header-row__bg" aria-hidden="true">
+          <img
+            src="images/IDIBanner.png"
+            alt="in-depth interview script with codes"
+          />
+        </div>
+        <div class="idi-header-row__overlay" aria-hidden="true"></div>
+
+        <!-- col 1 — heading -->
+        <div class="section-heading" style="position:relative; z-index:1; justify-content:center; padding:2rem 1.25rem;">
+          <span class="section-heading__num">04</span>
+          <span class="section-heading__name">In-Depth Interviews</span>
+        </div>
+
+        <!-- col 2 — body text -->
+        <div style="position:relative; z-index:1; padding:1.25rem; color:var(--color-white);">
+          <p style="font-size:var(--fs-16); margin-bottom:1rem; line-height:normal;">
+            With the in-depth interviews, we moved away from researching Wayfair specifically
+            and shifted into the greater e-commerce space. We were pickier in selecting
+            interviewees this time, as we wanted people who had actually bought furniture
+            online before, so our age demographic tilted older. Three research questions
+            defined our inquiries, asking what users find important while online shopping,
+            what online tools they use, and what issues they encounter.
+          </p>
+          <p style="font-size:var(--fs-16); margin-bottom:1rem; line-height:normal;">
+            Moderating this kind of interview was much like the usability test, but I needed
+            to be much more careful in how I asked questions, as I didn't have any sort of
+            actionable tasks to fall back on— just the interviewee's life experiences. We
+            wanted to ask questions that would illicit emotional, raw responses, so my team
+            made sure to write down questions in our loose script that would prompt the
+            interviewee to tell a real, multifaceted story.
+          </p>
+          <p style="font-size:var(--fs-16); margin-bottom:1rem; line-height:normal;">
+            During the online interview, I used the AI-powered extension Tactiq to transcribe
+            the meeting, then double-checked it with the footage I had screen recorded. The
+            next step was to code the interview, which was the most confusing part of this
+            research project for me, as quantitative data is easier for my INTJ brain to
+            comprehend. Practicing coding an unrelated interview as prep work luckily helped
+            me overcome this struggle.
+          </p>
+          <p style="font-size:var(--fs-16); line-height:normal;">
+            From what we learned in the IDI and by making all the artifacts shown below, we
+            presented our findings and redesign recommendations to the class as if we were
+            speaking to the Wayfair company.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sub-artifacts: Affinity / Persona / Empathy + Journey Map + Quote -->
+      <div class="three-col idi-sub">
+
+        <!-- Row 1: three artifacts -->
+        <!-- Affinity Diagramming -->
+        <div class="idi-artifact" id="affinity">
+          <div class="idi-artifact__img">
+            <img
+              src="images/AffinityDiagramming.png"
+              alt="Affinity diagramming photo of sticky notes on a whiteboard"
+            />
+          </div>
+          <p class="idi-artifact__title" id="affinity-title">Affinity Diagramming</p>
+          <div class="idi-artifact__body">
+            <p>
+              Affinity diagramming with sticky notes felt different than typing the codes
+              digitally, since it was easier to visually see categories and move notes around
+              when categories were too broad. As a team, we determined the most important
+              emerging themes to be:
+            </p>
+            <ul>
+              <li>Mixing Online &amp; Offline Shopping;</li>
+              <li>Importance of Reviews &amp; Well-Designed Filtering Tools;</li>
+              <li>Expectation–Experience Mismatch.</li>
+            </ul>
+            <p>
+              These themes touched on critical quotes from our interviews and encompassed
+              the categories that had the most codes associated with them. After we were done
+              synthesizing themes, our professor shared an AI summary of our combined
+              interviews, which helped us define the titles of our themes, but did not really
+              help us discover groundbreaking new information.
+            </p>
+          </div>
+        </div>
+
+        <!-- Persona Development -->
+        <div class="idi-artifact" id="persona">
+          <div class="idi-artifact__img">
+            <img
+              src="images/PersonaDevelopment.png"
+              alt="Persona development artifact"
+            />
+          </div>
+          <p class="idi-artifact__title">Persona Development</p>
+          <div class="idi-artifact__body">
+            <p>
+              We started with three user personas, each one derived from a different type of
+              user shown in our IDI research. Then, we narrowed it down from there and ended
+              up with Nick Hammond, a recent grad with the goal to decorate his bare apartment.
+            </p>
+            <p>
+              We went with Nick over our other option of Joanna, a family-oriented rich
+              homeowner, because we felt his limited budget and undetermined personal style
+              matched Wayfair's big deals and assortment of design tools to help users define
+              their aesthetic.
+            </p>
+            <p>
+              After designing Nick's persona on Canva, we shared it with another team in the
+              class for critique. With their feedback in mind, we scrapped a useless
+              "decision-making" section and wrote more about his personal life outside of
+              shopping on Wayfair.
+            </p>
+          </div>
+        </div>
+
+        <!-- Empathy Mapping -->
+        <div class="idi-artifact" id="empathy">
+          <div class="idi-artifact__img">
+            <img
+              src="images/EmpathyMapping.png"
+              alt="Empathy mapping artifact"
+            />
+          </div>
+          <p class="idi-artifact__title">Empathy Mapping</p>
+          <div class="idi-artifact__body">
+            <p>
+              Like the persona, our empathy map was created from a blend of each of our
+              individual takes on Nick's words, thoughts, actions, and feelings. We combined
+              notes that were similar and got rid of notes that didn't feel like they truly
+              aligned with Nick's goals.
+            </p>
+            <p>
+              Distinguishing "thinks" from "says" was a fun challenge, as it is true that
+              people do not often say exactly what they are thinking, so Nick's thoughts are
+              more vulnerable.
+            </p>
+            <p>
+              Some of his "does" notes are taken from actions we saw during our usability
+              tests, or modified from conversations we had during in-depth interviews.
+            </p>
+            <p>
+              Above all else, we wanted Nick to truly reflect all the data we had captured
+              and not "data" we imagined.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2: Journey Map spanning full width -->
+        <div class="journey-map" id="journey">
+          <div class="journey-map__text">
+            <h3>Journey Mapping</h3>
+            <p>
+              Unlike other artifacts we created from the in-depth interviews, the journey map
+              did not have as much prep work behind it, emerging from what we learned from
+              readings instead of a combination of individual work.
+            </p>
+            <p>
+              When creating the journey map, we considered the most emotional and relevant
+              parts of Nick's persona. We thought including his mother in the discovery phase
+              to be realistic and relatable to similar users. Filters/reviews were another
+              very crucial aspect we wanted to touch on. From there, we included other minor
+              issues we encountered, such as an interrupted checkout flow and very few
+              in-person store return options.
+            </p>
+          </div>
+          <div class="journey-map__img">
+            <img
+              src="images/JourneyMapping.png"
+              alt="Journey map artifact"
+            />
+          </div>
+        </div>
+
+        <!-- Row 3: IDI quote spanning full width -->
+        <div class="idi-quote-row">
+          <img
+            class="pull-quote__svg pull-quote__svg--open"
+            src="images/Quotes.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="pull-quote__text">
+            <strong class="bold-italic">Finding:</strong>
+            <em> Mixing Online &amp; Offline Shopping— Our interviewees tend to prefer in-person
+            shopping for larger or more expensive pieces and online shopping for the convenience.
+            Many shoppers mixed these experiences, utilizing online shopping for more varied
+            furniture options and for more time to decide on an item after leaving the store.</em>
+            <br /><br />
+            <strong class="bold-italic">Redesign Recommendation:</strong>
+            <em> Allow users to create curated lists of furniture online from in-store locations
+            near them, so that we can help users prepare the items they want to look at when
+            they enter the store.</em>
+          </p>
+          <img
+            class="pull-quote__svg pull-quote__svg--close"
+            src="images/Quotes.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider" aria-hidden="true">
+      <img
+        src="images/Divider.svg"
+        alt="divider"
+      />
+    </div>
+
+    <!-- SECTION 05 — CARD SORT -->
+    <section class="card-sort-section" id="cardsort">
+
+      <!-- Full-width mockup image -->
+      <div class="card-sort-image-wrap">
+        <div class="card-sort-mockup">
+          <img
+            src="images/CardSort.png"
+            alt="Card sort interface mockup from Bananacom"
+          />
+        </div>
+        <p class="caption">
+          Card sort from
+          <a href="https://bananacom.optimalworkshop.com/optimalsort/bananacom-demo-survey-open" target="_blank" rel="noopener">Bananacom</a>.
+        </p>
+      </div>
+
+      <!-- Heading + body text -->
+      <div class="two-col">
+        <!-- col 1 — section heading -->
+        <div class="section-heading" style="justify-content:center; align-items:center; flex-wrap:wrap;">
+          <span class="section-heading__num">05</span>
+          <span class="section-heading__name" style="white-space:normal; max-width:22rem;">
+            Card Sort, Tree Tests, and First-Click Testing
+          </span>
+        </div>
+
+        <!-- col 2 — body text -->
+        <div style="color:var(--color-white); font-size:var(--fs-16); line-height:normal;">
+          <p style="margin-bottom:1rem;">
+            Moving away from Wayfair now and looking at methodologies used by the field of
+            UX Research as a whole, I participated in three open card sorts.
+          </p>
+          <p style="margin-bottom:1rem;">
+            As an introduction to the topic, one of these card sorts was an online unmoderated
+            card sort. I learned about the challenges of categorizing information without knowing
+            the labels, but how, as a researcher, you learn a lot more about how your users think
+            that way. In my research on the topic of information hierarchies, I also read about
+            tree tests and first-click testing.
+          </p>
+          <p>
+            The other two card sorts were moderated, where for one session I was the moderator,
+            then transitioned into a participant. As the moderator, I set out to observe areas of
+            difference among the participant group, identify content that didn't make sense, and
+            think about how different types of participants view content. From their proposed card
+            sort, my team created a web navigation scheme.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider" aria-hidden="true">
+      <img
+        src="images/Divider.svg"
+        alt="divider"
+      />
+    </div>
+
+    <!-- SECTION 06 — CONTENT STRATEGY -->
+    <section class="two-col content-strategy" id="content">
+
+      <!-- col 1 — body text -->
+      <div class="content-strategy__left">
+        <h3>Content Quality Assessment</h3>
+        <p>
+          Another UX methodology we utilized was evaluating a company's content strategy
+          approach. To practice, my team &amp; I looked at Student Life pages of prestigious
+          universities, identifying the tone of the page and if that matched to what their
+          branding should be. I learned how much page content influences tone, not just design
+          choices, but even the fact of if people in a picture are smiling or not.
+        </p>
+        <p>
+          Circling back on Wayfair research, I audited Wayfair's homepage content using
+          Content Science Review's
+          <a href="https://review.content-science.com/content-quality-checklist/" target="_blank" rel="noopener">Content Quality Checklist</a>.
+          I found that all of Wayfair's content is there, but the site gets lost in the voice
+          &amp; style category. For example, vocabulary like "staycation" and "vibes" don't
+          make much sense to use when trying to appeal to homeowners, a demographic that is
+          largely not Gen-Z.
+        </p>
+
+        <h3 style="margin-top:0.5rem;">Design Persona</h3>
+        <p>
+          Like the persona before it, this design persona was built off of each team member
+          creating their own unique design persona. Some went more in the direction of a
+          friendly neighbor, while others went in a more AI-focused direction, but we decided
+          on an HGTV-inspired stylish and inspirational design persona, since Wayfair fits
+          these personality traits the most.
+        </p>
+        <p>
+          I learned a lot about how even the smallest copy, such as error messages, can be a
+          great place to explore tone and emphasize branding.
+        </p>
+      </div>
+
+      <!-- col 2 — heading + mockup -->
+      <div class="content-strategy__right">
+        <div class="section-heading" style="justify-content:center; width:100%; white-space:nowrap;">
+          <span class="section-heading__num">06</span>
+          <span class="section-heading__name">Content Strategy</span>
+        </div>
+
+        <div class="cs-mockup">
+          <!-- Back: Content Quality screenshot -->
+          <div class="cs-mockup__frame cs-mockup__frame--back">
+            <div class="cs-screen cs-screen--back">
+              <img
+                src="images/ContentQuality.png"
+                alt="Content quality assessment screenshot"
+              />
+            </div>
+          </div>
+          <!-- Front: Persona screenshot -->
+          <div class="cs-mockup__frame cs-mockup__frame--front">
+            <div class="cs-screen cs-screen--front">
+              <img
+                src="images/DesignPersona.png"
+                alt="Design persona document"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER BACK LINK -->
+    <footer class="footer-back">
+      <a href="../index.html">Back to Home</a>
+    </footer>
+
+  </div>
+</main>
+
+<script>
+  // Smooth scroll for TOC anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
