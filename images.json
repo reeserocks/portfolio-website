@@ -96,20 +96,36 @@
     "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes' target='_blank'>Through Our Eyes</a>. Programs: Maya, Procreate, Substance Painter, Unreal"
   },
   {
-    "class": "filterDiv 3d",
-    "image": "",
-    "youtube": "https://www.youtube.com/embed/oPmX2Xyiwbg",
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/26.03_propDesign_1.PNG",
+    "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | Detailed zoom render for a <a href='https://reesehausman-3d.carrd.co/#project6-218' target='_blank'>military nomad-themed 3D diorama</a> | Programs: Maya, Procreate, Substance Painter"
+    "paragraph": "March 2026 | Weapons concept art for the deepwinter vein warrior class, powered by their lava-vomit. Programs: Procreate"
   },
-  {
+    {
     "class": "filterDiv 3d",
     "image": "",
     "youtube": "https://www.youtube.com/embed/da-9HYyaaVg",
     "href": "",
     "sketchfab": "",
     "paragraph": "February 2025 | Jean turntable. | Programs: Autodesk Maya, Procreate, Mixamo, Marmoset"
+  },
+  {
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/26.03_creatureDesign.PNG",
+    "youtube": "",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "March 2026 | Giant underwater creature concept art for deepwinter vein. Programs: Procreate"
+  },
+  {
+    "class": "filterDiv 3d",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/oPmX2Xyiwbg",
+    "href": "",
+    "sketchfab": "",
+    "paragraph": "May 2025 | Detailed zoom render for a <a href='https://reesehausman-3d.carrd.co/#project6-218' target='_blank'>military nomad-themed 3D diorama</a> | Programs: Maya, Procreate, Substance Painter"
   },
   {
     "class": "filterDiv 2d",
