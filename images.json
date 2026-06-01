@@ -88,12 +88,12 @@
     "paragraph": "November 2025 | Enemy for my game So Long, Long Time. Meant to symbolize grief. | Programs: Autodesk Maya, Procreate"
   },
   {
-    "class": "filterDiv 3d",
-    "image": "",
-    "youtube": "https://www.youtube.com/embed/d2MJRL9BjmA",
+    "class": "filterDiv 2d",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/26.03_creatureDesign.PNG",
+    "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes' target='_blank'>Through Our Eyes</a>. Programs: Maya, Procreate, Substance Painter, Unreal"
+    "paragraph": "March 2026 | Giant underwater creature concept art for deepwinter vein. Programs: Procreate"
   },
   {
     "class": "filterDiv 2d",
@@ -103,7 +103,7 @@
     "sketchfab": "",
     "paragraph": "March 2026 | Weapons concept art for the deepwinter vein warrior class, powered by their lava-vomit. Programs: Procreate"
   },
-    {
+  {
     "class": "filterDiv 3d",
     "image": "",
     "youtube": "https://www.youtube.com/embed/da-9HYyaaVg",
@@ -113,12 +113,12 @@
   },
   {
     "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/26.03_creatureDesign.PNG",
+    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.05_willow_ghost.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
-    "paragraph": "March 2026 | Giant underwater creature concept art for deepwinter vein. Programs: Procreate"
-  },
+    "paragraph": "May 2024 | In-game character dialogue sprite for my character Willow from melody lain. | Programs: Procreate"
+  }, 
   {
     "class": "filterDiv 3d",
     "image": "",
@@ -136,13 +136,13 @@
     "paragraph": "May 2024 | In-game character dialogue sprite for my character Oliver from melody lain. | Programs: Procreate"
   },
   {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.05_willow_ghost.png",
-    "youtube": "",
+    "class": "filterDiv 3d",
+    "image": "",
+    "youtube": "https://www.youtube.com/embed/d2MJRL9BjmA",
     "href": "",
     "sketchfab": "",
-    "paragraph": "May 2024 | In-game character dialogue sprite for my character Willow from melody lain. | Programs: Procreate"
-  }, 
+    "paragraph": "May 2025 | Art demo reel for our VR game <a href='https://reeserocks.itch.io/through-our-eyes' target='_blank'>Through Our Eyes</a>. Programs: Maya, Procreate, Substance Painter, Unreal"
+  },
   {
     "class": "filterDiv 2d",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.02_jean_concept.png",
