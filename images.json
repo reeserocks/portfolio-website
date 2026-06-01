@@ -152,14 +152,6 @@
     "paragraph": "November 2025"
   },
   {
-    "class": "filterDiv design",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/26.03_figmaDeepSea.jpg",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "March 2026 | Prototype for a website design for a fictional exhibit at the Cincinnati Museum Center. | Programs: Figma"
-  },
-  {
     "class": "filterDiv 2d design",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/25.10_slltUI.png",
     "youtube": "",
@@ -304,14 +296,6 @@
     "paragraph": "September 2024 | Guardian angel concept for Heartlines. Focused on blending military uniform/weapon components from across multiple eras and combining those with angelic motifs. | Programs: Procreate"
   },
   {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.07_alto_af.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "July 2024 | Artfight attack with characters from @skiddyup, playing with warm and vibrant lighting. | Programs: Procreate"
-  },
-  {
     "class": "filterDiv games",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.05_MELODY-LAIN.png",
     "youtube": "",
@@ -366,15 +350,7 @@
     "href": "",
     "sketchfab": "",
     "paragraph": "January 2024 | Walk cycle animations for the main player character. | Programs: Procreate"
-  }, 
-  {
-    "class": "filterDiv 2d design",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.01_icon.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "Janurary 2024 | UI icons that depict branching player choices on how to react. | Programs: Procreate"
-  }, 
+  },
   {
     "class": "filterDiv games",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/24.01_SCHMELDON.png",
@@ -409,14 +385,6 @@
   },
   {
     "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.10_gb_showcase.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "October 2023 | 2-bit character sprite sheets, backgrounds, and items for my GB Studio game. | Programs: Procreate"
-  }, 
-  {
-    "class": "filterDiv 2d",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.09_elysia_.png",
     "youtube": "",
     "href": "",
@@ -438,14 +406,6 @@
     "href": "",
     "sketchfab": "",
     "paragraph": "March 2023 | AP 2D Art & Design piece exploring mortality. | Programs: Procreate"
-  },
-  {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/23.02_ap_13.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "February 2023 | AP 2D Art & Design piece titled <i>How do fleeting moments create lasting memories?</i> | Programs: Procreate"
   },
   {
     "class": "filterDiv 2d",
@@ -481,28 +441,12 @@
   },
   {
     "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/22.08_roblo.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "August 2022 | Character lineup. | Programs: Procreate"
-  },
-  {
-    "class": "filterDiv 2d",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/22.07_game_design_char_.png",
     "youtube": "",
     "href": "",
     "sketchfab": "",
     "paragraph": "July 2022 | Character design sketches for a potential game character, taking place in a post-apocalyptic military world. | Programs: Procreate"
-  },
-  {
-    "class": "filterDiv 2d",
-    "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/22.07_clam_city_final_char_designs.png",
-    "youtube": "",
-    "href": "",
-    "sketchfab": "",
-    "paragraph": "July 2022 | Character lineup of bosses for our game Clam City Calamity | Programs: Procreate"
-  },
+  }
   {
     "class": "filterDiv 2d",
     "image": "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images/22.03_dazey.png",
