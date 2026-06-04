@@ -57,7 +57,7 @@ const PROJECTS = [
     category: 'Worldbuilding',
     name: 'Heartlines',
     tags: ['games', '2d', '3d', 'animation'],
-    href: '#',
+    href: 'https://reese-rocks.notion.site/heartlines-203d94b076a880318f36d498a62c2e41',
     image: 'images/projectCards/heartlines.png'
   }
 ];
@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupHamburger();
   setupLightbox();
   fetchImages();
+  setupMobileHeaderScroll();
 });
 
 // ----------------------------------------------------------------
@@ -546,6 +547,19 @@ function closeSidebar() {
   document.getElementById('sidebar-backdrop').classList.remove('visible');
   document.getElementById('hamburger').classList.remove('open');
   document.body.style.overflow = '';
+}
+
+function setupMobileHeaderScroll() {
+  const target = document.querySelector('.mobile-left');
+
+  if (!target) return;
+
+  target.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
 
 // ----------------------------------------------------------------

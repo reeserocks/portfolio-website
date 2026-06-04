@@ -384,6 +384,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
   }
 
   .mobile-flower {
