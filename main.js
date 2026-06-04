@@ -445,7 +445,7 @@ function renderProjectCards(filter) {
     : PROJECTS.filter(p => p.tags.includes(filter));
 
   heading.textContent = filter === 'all'
-    ? 'Projects'
+    ? 'Project Case Studies'
     : `${CATEGORY_LABELS[filter] || filter} Project Case Studies`;
 
   list.forEach((project, index) => {
