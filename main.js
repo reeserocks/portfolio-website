@@ -13,7 +13,7 @@ const IMAGES_JSON_URL =
 
 const ABOUT_ME_AFTER = 6;
 const EAGER_COUNT    = 12;
-const SPEEDPAINT_DELAY = 2000;
+const SPEEDPAINT_DELAY = 500;
 const SPEEDPAINT_DIR = 'images/speedpaints/';
 
 // ----------------------------------------------------------------
