@@ -11,7 +11,7 @@
 const IMAGES_JSON_URL =
   'https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images.json';
 
-const ABOUT_ME_AFTER = 8;
+const ABOUT_ME_AFTER = 6;
 const EAGER_COUNT    = 12;
 const SPEEDPAINT_DELAY = 2000;
 const SPEEDPAINT_DIR = 'images/speedpaints/';
