@@ -96,6 +96,7 @@ const SOFTWARE_ICONS = {
   'html':               'images/SoftwareIcons/html.png',
   'css':                'images/SoftwareIcons/css.png',
   'javascript':         'images/SoftwareIcons/javascript.png',
+  'firebase':           'images/SoftwareIcons/firebase.png',
 };
 
 // ----------------------------------------------------------------
@@ -445,7 +446,7 @@ function renderProjectCards(filter) {
 
   heading.textContent = filter === 'all'
     ? 'Projects'
-    : `${CATEGORY_LABELS[filter] || filter} Projects`;
+    : `${CATEGORY_LABELS[filter] || filter} Project Case Studies`;
 
   list.forEach((project, index) => {
     const a = document.createElement('a');
