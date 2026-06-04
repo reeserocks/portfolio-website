@@ -1,314 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="favi.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reese Hausman's Portfolio</title>
-    <link href="main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reese Hausman | Artist &amp; Game Developer</title>
+  <link rel="icon" type="image/x-icon" href="flower.svg">
+  <link rel="stylesheet" href="main.css">
 
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
 
-    <!--icons-->
-    <script src="https://kit.fontawesome.com/cb9d674058.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/cb9d674058.js" crossorigin="anonymous" defer></script>
 </head>
-
 <body>
-    <!-- header -->
-    <div class="header">
-        <div class="headline">
-            <h1 id="name">Reese Hausman&nbsp;</h1>
-            <h1>| Artist & Game Developer</h1>
-            <button style="margin-left: auto" onclick="openCard()">About & Resume</button>
-        </div>
-        <!-- about -->
-        <div id="about-card">
-            <div id="resumetextContainer">
-                <div id="text-container">
-                    <p>Reese Hausman is a third-year Games + Simulation major at Miami University with a minor in Studio Art. She is a 2D/3D art generalist specializing in stylized assets with handdrawn textures. As a logical & strategic ISTJ, she excels at problem-solving and working under a tight deadline. Reese is passionate about storytelling in design, particularly in the realms of illustration, video games, websites, and animation.</p>
-                </div>
-                <div style="text-align: center; margin-bottom: 1em;">
-                    <iframe id="resume" src="Hausman, Reese - Resume.pdf#toolbar=0" title="Embedded PDF Viewer" style="aspect-ratio: inherit; width: 100%; min-height: 400px; max-height: 100%;"></iframe>
-                    <a href="Hausman, Reese - Resume.pdf" target="_blank" style="font-size: 0.7em; color: #a3a3a3">Open Resume in New Tab</a>
-                </div>
-            </div>
-            <div class="softwares">
-                    <img src="images/SoftwareIcons/maya.png">
-                    <img src="images/SoftwareIcons/mudbox.png">
-                    <img src="images/SoftwareIcons/zbrush.png">
-                    <img src="images/SoftwareIcons/substancepainter.png">
-                    <img src="images/SoftwareIcons/procreate.png">
-                    <img src="images/SoftwareIcons/marmoset.png">
-                    <img src="images/SoftwareIcons/unreal.png">
-                    <img src="images/SoftwareIcons/unity.png">
-                    <img src="images/SoftwareIcons/photoshop.png">
-                    <img src="images/SoftwareIcons/illustrator.png">
-                    <img src="images/SoftwareIcons/godot.png">
-                    <img src="images/SoftwareIcons/rpgmaker.png">
-                    <img src="images/SoftwareIcons/html.png">
-                    <img src="images/SoftwareIcons/css.png">
-            </div>
-            <ul>
-                <li>
-                    <a href="mailto:reesehausmanm@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> Mail</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/reese-hausman" target="_blank"><i class="fa-brands fa-square-linkedin"></i> LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://reeserocks.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i> itch.io</a>
-                </li>
-                <li>
-                    <a href="https://sketchfab.com/reeserocks" target="_blank"><img src="https://static.sketchfab.com/img/press/logos/sketchfab-logo-white.png" id="sketchfab"></img> Sketchfab</a>
-                </li>
-                <li>
-                    <a href="https://linktr.ee/reekrockk" target="_blank"><i class="fa-brands fa-linktree"></i> Social Media</a>
-                </li>
-            </ul>
-            <hr>
-            <br>
-        </div>
-        <!-- button filters -->
-        <div id="btn-container">
-            <button class="btn active" onclick="filterSelection('all')">All</button>
-            <button class="btn" onclick="filterSelection('games')">Games</button>
-            <button class="btn" onclick="filterSelection('3d')">3D Art</button>
-            <button class="btn" onclick="filterSelection('2d')">2D Art</button>
-            <button class="btn" onclick="filterSelection('animation')">Animation</button>
-            <button class="btn" onclick="filterSelection('design')">Design/Web Design</button>
-        </div>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-flower-ring">
+        <img src="flower.svg" alt="" class="loader-flower-img">
+      </div>
+      <p class="loader-text">Loading<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></p>
     </div>
-    <!-- body -->
-    <div class="container">
-        <div class="content">
-            <div id="lightbox" class="lightbox">
-                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-                <img class="lightbox-img" id="lightbox-img">
-                <div class="lightbox-caption" id="lightbox-caption"></div>
-            </div>
-        </div>
-        <div class="projects">
-            <h1 style="text-align: center;">Projects</h1>
-            <div class="projectCards">
-                <a href="deepSeaLuminosity/deepSeaLuminosity.html">
-                    <div class="projectCard">
-                        <img src="images/projectCards/project1.png" alt="Project 1">
-                        <h2>UI/UX Design</h2>
-                        <p>Deep Sea Luminosity</p>
-                    </div>
-                </a>
-                <a href="uxResearch/index.html">
-                    <div class="projectCard">
-                        <img src="uxResearch/images/HeaderImg.jpg" alt="Project 2">
-                        <h2>UX Research</h2>
-                        <p>Wayfair Team UX Research</p>
-                    </div>
-                </a>
-                <a href="https://reeserocks.itch.io">
-                    <div class="projectCard">
-                        <img src="images/projectCards/project3.png" alt="Project 3">
-                        <h2>Game Development</h2>
-                        <p>itch.io page</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <footer>
-            <ul>
-                <li><a href="https://reesehausman-3d.carrd.co">In-Depth 3D Portfolio Breakdown</a></li>
-                <li><a href="https://reese-rocks.notion.site/heartlines-203d94b076a880318f36d498a62c2e41">'Heartlines' Narrative Design Website</a></li>
-            </ul>
-        </footer>
+  </div>
+
+  <!-- ===================== MOBILE HEADER ===================== -->
+  <header class="mobile-header" id="mobile-header">
+    <div class="mobile-left">
+      <img src="flower.svg" alt="logo" class="mobile-flower">
+      <span class="mobile-name">Reese Hausman</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Sidebar backdrop -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+  <!-- ===================== SIDEBAR / NAV ===================== -->
+  <nav class="sidebar" id="sidebar">
+
+    <!-- Profile -->
+    <div class="sidebar-profile">
+      <img src="flower.svg" alt="flower logo" class="sidebar-logo">
+      <div>
+        <h1 class="sidebar-name">Reese Hausman</h1>
+        <p class="sidebar-role">Artist &amp; Game Developer</p>
+      </div>
+      <p class="sidebar-bio">Reese Hausman is a rising senior at Miami University pursuing a B.S. in Games + Simulation. She loves storytelling in design, strategic leadership, defining deliverables, and creating cool characters.</p>
     </div>
 
-<script>
-// GET IMAGES
-    const content = document.querySelector('.content');
-    let pages = [];
+    <!-- Featured Projects -->
+    <div class="sidebar-section" id="sidebar-featured">
+      <p class="sidebar-label">FEATURED PROJECTS</p>
+      <div class="featured-item">
+        <a href="#" class="featured-link">SPIRAL</a>
+        <span class="featured-cats">3D Art, Games</span>
+      </div>
+      <div class="featured-item">
+        <a href="#" class="featured-link">deepwinter vein</a>
+        <span class="featured-cats">2D Art</span>
+      </div>
+      <div class="featured-item">
+        <a href="deepSeaLuminosity/index.html" class="featured-link">Deep Sea Luminosity</a>
+        <span class="featured-cats">UI/X Design</span>
+      </div>
+    </div>
 
-    const getContent = async () => {
-        const url = "https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images.json";
-        
-        const response = await fetch(url);
-        const data = await response.json();
-        pages = [...data];
+    <!-- Filter Buttons -->
+    <div class="sidebar-section" id="sidebar-filters">
+      <p class="sidebar-label">FILTER PAGE BY:</p>
+      <div class="filter-buttons" id="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Homepage</button>
+        <button class="filter-btn" data-filter="2d">2D Art</button>
+        <button class="filter-btn" data-filter="3d">3D Art</button>
+        <button class="filter-btn" data-filter="animation">Animation</button>
+        <button class="filter-btn" data-filter="games">Games</button>
+        <button class="filter-btn" data-filter="design">UI/X Design</button>
+      </div>
+    </div>
 
-        addPages();
-    }
+    <!-- Links -->
+    <div class="sidebar-section sidebar-links">
+      <a href="Hausman, Reese - Resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+        RESUME <i class="fa-solid fa-arrow-up-right-from-square sidebar-link-icon"></i>
+      </a>
+      <a href="https://linktr.ee/reekrockk" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+        SOCIALS <i class="fa-brands fa-linktree sidebar-link-icon"></i>
+      </a>
+      <a href="mailto:reesehausmanm@gmail.com" class="sidebar-link">
+        CONTACT <i class="fa-regular fa-envelope sidebar-link-icon"></i>
+      </a>
+    </div>
 
-    const addPages = () => {
-        const fragment = document.createDocumentFragment();
-        const created = [];
+  </nav>
 
-        pages.forEach((item, i) => {
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="main" id="main">
 
-            const div = document.createElement("div");
-            div.id = `page_${i}`;
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="section-header">
+        <h2 class="section-title" id="section-title">Projects</h2>
+        <span class="section-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="projects-row" id="projects-row">
+      </div>
+    </section>
 
-            item.class.trim().split(/\s+/).forEach(cls => div.classList.add(cls));
-           
-            if (item.image) {
-                const img = document.createElement("img");
-                img.src = item.image;
-                img.classList.add("portfolio-img");
+    <!-- Category Page Title -->
+    <div class="category-header hidden" id="category-header">
+      <h2 class="category-page-title" id="category-page-title"></h2>
+    </div>
 
-                if (item.href) {
-                    const imgLink = document.createElement("a");
-                    imgLink.href = item.href;
-                    imgLink.target = "_blank";
-                    imgLink.appendChild(img);
-                    div.appendChild(imgLink);
-                } else {
-                    img.addEventListener("click", () => openLightbox(item.image, item.paragraph));
-                    div.appendChild(img);
-                }
-            }
+    <!-- Masonry Grid -->
+    <div class="masonry-grid homepage" id="masonry-grid">
+    </div>
 
-            if (item.youtube) {
-                const videoId = item.youtube.split("/embed/")[1].split("?")[0];
-                const separator = item.youtube.includes("?") ? "&" : "?";
+    <footer class="site-footer">
+    <h3>
+        <em>
+        AI Disclosure: All visual design, UX decisions, and prototyping were created by hand in Figma. Implementation was completed with AI-assisted programming support from Claude.
+        <br>
+        No AI was used to create any of my artwork, game assets, animations, etc.
+        </em>
+    </h3>
+    </footer>
 
-                const iframe = document.createElement("iframe");
-                iframe.src = `${item.youtube}${separator}autoplay=1&loop=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&mute=1&playlist=${videoId}`;
-                iframe.setAttribute(
-                    "allow",
-                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                );
+  </main>
 
-                div.appendChild(iframe);
-            }
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-panel">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
 
-            if (item.sketchfab) {
-                const iframe = document.createElement("iframe");
-                iframe.src = item.sketchfab;
-                div.appendChild(iframe);
-            }
+  <!-- ===================== CUSTOM CURSOR ===================== -->
+  <div id="coming-soon-cursor">
+    <img src="ComingSoonCursor.svg" alt="Coming Soon Cursor">
+  </div>
 
-            const paragraph = document.createElement("p");
-            paragraph.innerHTML = item.paragraph;
-            paragraph.classList.add("caption");
-
-            paragraph.querySelectorAll("a").forEach(link => {
-                link.setAttribute("target", "_blank");
-                link.setAttribute("rel", "noopener noreferrer");
-            });
-
-            div.appendChild(paragraph);
-            
-            fragment.appendChild(div);
-            created.push(div);
-        });
-
-        content.appendChild(fragment);
-        
-        filterSelection("all");
-
-        requestAnimationFrame(() => {
-            created.forEach((d, idx) => {
-                setTimeout(() => d.classList.add('loaded'), idx * 30);
-            });
-        });
-
-        function applyMasonry() {
-            const grid = document.querySelector('.content');
-            const items = grid.children;
-
-            for (const item of items) {
-                item.style.gridRowEnd = "";
-
-                const rowHeight = 10;
-                const rowGap = 5;
-
-                const height = item.getBoundingClientRect().height;
-                const rowSpan = Math.ceil((height + rowGap) / rowHeight);
-
-                item.style.gridRowEnd = `span ${rowSpan}`;
-            }
-        }
-
-        requestAnimationFrame(() => {
-            created.forEach((d, idx) => {
-                setTimeout(() => {
-                    d.classList.add('loaded');
-                    applyMasonry();
-                }, idx * 30);
-            });
-        });
-
-        window.addEventListener('load', applyMasonry);
-        window.addEventListener('resize', applyMasonry);
-        applyMasonry();
-    };
-
-    getContent();
-
-// ABOUT CARD FUNCTIONALITY
-    function openCard() {
-        const aboutCard = document.getElementById('about-card');
-        aboutCard.classList.toggle('show');
-    }
-
-// FILTER BUTTONS
-    function filterSelection(type) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (type == "all") type = "";
-        for (i = 0; i < x.length; i++) {
-            removeClass(x[i], "show");
-            if (x[i].className.indexOf(type) > -1) addClass(x[i], "show");
-        }
-    }
-    // show filtered elements
-    function addClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-            }
-        }
-    }
-    // hide other elements
-    function removeClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-        }
-        element.className = arr1.join(" ");
-    }
-    // add active class to current filter
-    var btnContainer = document.getElementById("btn-container");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
-
-// LIGHTBOX
-    function openLightbox(imageSrc, captionHtml) {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxCaption = document.getElementById('lightbox-caption');
-
-        lightboxImg.src = imageSrc;
-        lightboxCaption.innerHTML = captionHtml;
-        lightbox.style.display = 'block'; 
-    }
-
-    function closeLightbox() {
-        document.getElementById('lightbox').style.display = 'none';
-    }
-</script>
+  <script src="main.js"></script>
 </body>
 </html>
