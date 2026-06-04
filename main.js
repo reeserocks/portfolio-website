@@ -311,7 +311,6 @@ function buildImageMedia(item, altText, eager = false) {
 
 // ----------------------------------------------------------------
 // BUILD LOCAL VIDEO
-// JSON field: "video": "videos/my_clip.mp4"
 // ----------------------------------------------------------------
 function buildLocalVideoMedia(item) {
   const wrapper     = document.createElement('div');
@@ -321,6 +320,9 @@ function buildLocalVideoMedia(item) {
   video.controls      = true;
   video.playsInline   = true;
   video.preload       = 'metadata';
+  video.loop          = true;
+  video.autoplay      = true;
+  video.muted         = true;
 
   const src     = document.createElement('source');
   src.src       = item.video;
