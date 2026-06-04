@@ -163,23 +163,6 @@ function getSpeedpaintUrl(imageUrl) {
 }
 
 // ----------------------------------------------------------------
-// EXTRACT YOUTUBE VIDEO ID
-// ----------------------------------------------------------------
-function extractYouTubeId(url) {
-  if (!url) return null;
-  const patterns = [
-    /\/embed\/([a-zA-Z0-9_-]+)/,
-    /[?&]v=([a-zA-Z0-9_-]+)/,
-    /youtu\.be\/([a-zA-Z0-9_-]+)/
-  ];
-  for (const re of patterns) {
-    const m = url.match(re);
-    if (m) return m[1];
-  }
-  return null;
-}
-
-// ----------------------------------------------------------------
 // SOFTWARE TAGS
 // ----------------------------------------------------------------
 function buildSoftwareTags(softwareStr) {
@@ -227,8 +210,6 @@ function createGridItem(item, index, eager = false) {
   // --- MEDIA ---
   if (item.image) {
     el.appendChild(buildImageMedia(item, description, eager));
-  } else if (item.youtube) {
-    el.appendChild(buildYouTubeMedia(item, description));
   } else if (item.video) {
     el.appendChild(buildLocalVideoMedia(item));
   }
@@ -324,27 +305,6 @@ function buildImageMedia(item, altText, eager = false) {
     img.addEventListener('click', () => openLightbox(item.image, item.paragraph));
     wrapper.appendChild(img);
   }
-
-  return wrapper;
-}
-
-// ----------------------------------------------------------------
-// BUILD YOUTUBE EMBED
-// ----------------------------------------------------------------
-function buildYouTubeMedia(item, altText) {
-  const wrapper     = document.createElement('div');
-  wrapper.className = 'item-media item-video-wrapper';
-
-  const id = extractYouTubeId(item.youtube);
-  if (!id) return wrapper;
-
-  const iframe           = document.createElement('iframe');
-  iframe.src             = `https://www.youtube-nocookie.com/embed/${id}?modestbranding=1&rel=0`;
-  iframe.title           = altText || 'Video';
-  iframe.allow           = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-  iframe.allowFullscreen = true;
-  iframe.loading         = 'lazy';
-  wrapper.appendChild(iframe);
 
   return wrapper;
 }
