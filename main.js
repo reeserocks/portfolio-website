@@ -41,7 +41,7 @@ const PROJECTS = [
     category: 'UI/UX Design',
     name: 'Deep Sea Luminosity',
     tags: ['design'],
-    href: 'deepSeaLuminosity/index.html',
+    href: 'deepSeaLuminosity/',
     image: 'images/projectCards/deepsealuminosity.png'
   },
   {
@@ -49,7 +49,7 @@ const PROJECTS = [
     category: 'UX Research',
     name: 'Wayfair Team',
     tags: ['design'],
-    href: 'uxResearch/index.html',
+    href: 'uxResearch/',
     image: 'images/projectCards/uxresearch.png'
   },
   {
