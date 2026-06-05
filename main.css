@@ -735,7 +735,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   flex-direction: column;
   gap: 8px;
 
-  max-height: 200px;
+  max-height: 100%;
   overflow: hidden;
 
   transition:
@@ -765,7 +765,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 
 .masonry-grid.homepage .grid-item:hover .item-caption {
-  max-height: 160px;
+  max-height: 100%;
   opacity: 1;
   padding-top: 10px;
   padding-bottom: 10px;
