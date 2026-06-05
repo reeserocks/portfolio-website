@@ -601,6 +601,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   font-weight: 400;
   color: #fff;
   line-height: 1.2;
+  white-space: normal;
 }
 
 .project-card.coming-soon {
