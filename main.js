@@ -62,11 +62,11 @@ const PROJECTS = [
   },
   {
     date: 'May 2025',
-    category: '3D Character Design',
+    category: '3D Art',
     name: 'Military Crab Character',
     tags: ['3d'],
     href: 'https://www.instructables.com/3D-Character-Design-/',
-    image: 'images/projectCards/heartlines.png'
+    image: 'images/projectCards/crabchar.jpg'
   }
 ];
 
