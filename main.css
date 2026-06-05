@@ -691,6 +691,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 .item-media {
   width: 100%;
   position: relative;
+  overflow: hidden;
   line-height: 0;
 }
 
