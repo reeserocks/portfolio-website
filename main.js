@@ -59,6 +59,14 @@ const PROJECTS = [
     tags: ['games', '2d', '3d', 'animation'],
     href: 'https://reese-rocks.notion.site/heartlines-203d94b076a880318f36d498a62c2e41',
     image: 'images/projectCards/heartlines.png'
+  },
+  {
+    date: 'May 2025',
+    category: '3D Character Design',
+    name: 'Military Crab Character',
+    tags: ['3d'],
+    href: 'https://www.instructables.com/3D-Character-Design-/',
+    image: 'images/projectCards/heartlines.png'
   }
 ];
 
