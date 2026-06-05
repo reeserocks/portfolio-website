@@ -98,7 +98,7 @@ const SOFTWARE_ICONS = {
   'illustrator':        'images/SoftwareIcons/illustrator.png',
   'adobe illustrator':  'images/SoftwareIcons/illustrator.png',
   'godot':              'images/SoftwareIcons/godot.png',
-  'rpg maker':          'images/SoftwareIcons/rpgmaker.png',
+  'rpg maker 2003':     'images/SoftwareIcons/rpgmaker.png',
   'gimp':               'images/SoftwareIcons/gimp.png',
   'mixamo':             'images/SoftwareIcons/mixamo.png',
   'html':               'images/SoftwareIcons/html.png',
@@ -205,7 +205,6 @@ function buildSoftwareTags(softwareStr) {
 // CREATE GRID ITEM
 // ----------------------------------------------------------------
 function createGridItem(item, index, eager = false) {
-  // Parse categories from the class string: "filterDiv 2d animation" → ['2d','animation']
   const categories = item.class
     ? item.class.replace(/\bfilterDiv\b/g, '').trim().split(/\s+/).filter(Boolean)
     : [];
@@ -270,15 +269,21 @@ function buildImageMedia(item, altText, eager = false) {
 
   // --- Speedpaint hover ---
   let spTimer = null;
+  let hovering = false;
+  let swapTimer = null;
 
   wrapper.addEventListener('mouseenter', () => {
-    spTimer = setTimeout(() => {
-      const spUrl    = getSpeedpaintUrl(item.image);
-      const testImg  = new Image();
+    hovering = true;
 
+    spTimer = setTimeout(() => {
+      const spUrl = getSpeedpaintUrl(item.image);
+      const testImg = new Image();
+      
       testImg.onload = () => {
+        if (!hovering) return;
         img.style.opacity = '0';
-        setTimeout(() => {
+        swapTimer = setTimeout(() => {
+          if (!hovering) return;
           img.src = spUrl;
           img.classList.add('speedpaint-showing');
           img.style.opacity = '1';
@@ -290,8 +295,11 @@ function buildImageMedia(item, altText, eager = false) {
   });
 
   wrapper.addEventListener('mouseleave', () => {
+    hovering = false;
     clearTimeout(spTimer);
+    clearTimeout(swapTimer);
     spTimer = null;
+    swapTimer = null;
 
     if (img.classList.contains('speedpaint-showing')) {
       img.style.opacity = '0';
@@ -336,7 +344,6 @@ function buildLocalVideoMedia(item) {
 
   const src     = document.createElement('source');
   src.src       = item.video;
-  // infer type from extension
   const ext     = item.video.split('.').pop().toLowerCase();
   const typeMap = { mp4: 'video/mp4', webm: 'video/webm', ogg: 'video/ogg' };
   if (typeMap[ext]) src.type = typeMap[ext];
