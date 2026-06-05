@@ -545,10 +545,6 @@ function setupHamburger() {
   });
 
   backdrop.addEventListener('click', closeSidebar);
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeSidebar();
-  });
 }
 
 function openSidebar() {
@@ -584,7 +580,6 @@ function setupMobileHeaderScroll() {
 function setupLightbox() {
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
   document.getElementById('lightbox-overlay').addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 }
 
 function openLightbox(src, paragraphRaw) {
