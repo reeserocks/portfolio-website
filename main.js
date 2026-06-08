@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------
 // CONFIGURATION
 // ----------------------------------------------------------------
-const IMAGES_JSON_URL = 'https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images.json';
+const IMAGES_JSON_URL = 'images.json';
 const ABOUT_ME_AFTER = 6;
 const EAGER_COUNT    = getColumnCount();
 const SPEEDPAINT_DELAY = 500;
