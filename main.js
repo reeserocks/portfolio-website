@@ -13,12 +13,12 @@ const SPEEDPAINT_DIR = 'images/speedpaints/';
 // PROJECT CARDS & SOFTWARE DATA
 // ----------------------------------------------------------------
 const PROJECTS = [
-  { date: '2026 – Ongoing', category: 'Game Art', name: 'SPIRAL', tags: ['3d', 'games'], href: '#', image: 'images/projectCards/spiral.png' },
-  { date: 'Spring 2026', category: 'Concept Art', name: 'deepwinter vein', tags: ['2d'], href: '#', image: 'images/projectCards/deepwintervein.png' },
-  { date: 'Spring 2026', category: 'UI/UX Design', name: 'Deep Sea Luminosity', tags: ['design'], href: 'deepSeaLuminosity/', image: 'images/projectCards/deepsealuminosity.png' },
-  { date: 'Spring 2026', category: 'UX Research', name: 'Wayfair Team', tags: ['design'], href: 'uxResearch/', image: 'images/projectCards/uxresearch.png' },
-  { date: 'Fall 2024', category: 'Worldbuilding', name: 'Heartlines', tags: ['games', '2d', '3d', 'animation'], href: 'https://reese-rocks.notion.site/heartlines-203d94b076a880318f36d498a62c2e41', image: 'images/projectCards/heartlines.png' },
-  { date: 'May 2025', category: '3D Art', name: 'Military Crab Character', tags: ['3d'], href: 'https://www.instructables.com/3D-Character-Design-/', image: 'images/projectCards/crabchar.jpg' }
+  { date: '2026 – Ongoing', category: 'Game Art', name: 'SPIRAL', tags: ['3d', 'games'], href: '#', image: 'images/projectCards/spiral.webp' },
+  { date: 'Spring 2026', category: 'Concept Art', name: 'deepwinter vein', tags: ['2d'], href: '#', image: 'images/projectCards/deepwintervein.webp' },
+  { date: 'Spring 2026', category: 'UI/UX Design', name: 'Deep Sea Luminosity', tags: ['design'], href: 'deepSeaLuminosity/', image: 'images/projectCards/deepsealuminosity.webp' },
+  { date: 'Spring 2026', category: 'UX Research', name: 'Wayfair Team', tags: ['design'], href: 'uxResearch/', image: 'images/projectCards/uxresearch.webp' },
+  { date: 'Fall 2024', category: 'Worldbuilding', name: 'Heartlines', tags: ['games', '2d', '3d', 'animation'], href: 'https://reese-rocks.notion.site/heartlines-203d94b076a880318f36d498a62c2e41', image: 'images/projectCards/heartlines.webp' },
+  { date: 'May 2025', category: '3D Art', name: 'Military Crab Character', tags: ['3d'], href: 'https://www.instructables.com/3D-Character-Design-/', image: 'images/projectCards/crabchar.webp' }
 ];
 
 const CATEGORY_LABELS = {
@@ -26,13 +26,13 @@ const CATEGORY_LABELS = {
 };
 
 const SOFTWARE_ICONS = {
-  'procreate': 'images/SoftwareIcons/procreate.png', 'maya': 'images/SoftwareIcons/maya.png', 'mudbox': 'images/SoftwareIcons/mudbox.png',
-  'zbrush': 'images/SoftwareIcons/zbrush.png', 'substance painter': 'images/SoftwareIcons/substancepainter.png', 'marmoset': 'images/SoftwareIcons/marmoset.png',
-  'unreal': 'images/SoftwareIcons/unreal.png', 'unity': 'images/SoftwareIcons/unity.png', 'photoshop': 'images/SoftwareIcons/photoshop.png',
-  'adobe photoshop': 'images/SoftwareIcons/photoshop.png', 'illustrator': 'images/SoftwareIcons/illustrator.png', 'adobe illustrator': 'images/SoftwareIcons/illustrator.png',
-  'godot': 'images/SoftwareIcons/godot.png', 'rpg maker': 'images/SoftwareIcons/rpgmaker.png', 'gimp': 'images/SoftwareIcons/gimp.png',
-  'mixamo': 'images/SoftwareIcons/mixamo.png', 'html': 'images/SoftwareIcons/html.png', 'css': 'images/SoftwareIcons/css.png',
-  'javascript': 'images/SoftwareIcons/javascript.png', 'firebase': 'images/SoftwareIcons/firebase.png',
+  'procreate': 'images/SoftwareIcons/procreate.webp', 'maya': 'images/SoftwareIcons/maya.webp', 'mudbox': 'images/SoftwareIcons/mudbox.webp',
+  'zbrush': 'images/SoftwareIcons/zbrush.webp', 'substance painter': 'images/SoftwareIcons/substancepainter.webp', 'marmoset': 'images/SoftwareIcons/marmoset.webp',
+  'unreal': 'images/SoftwareIcons/unreal.webp', 'unity': 'images/SoftwareIcons/unity.webp', 'photoshop': 'images/SoftwareIcons/photoshop.webp',
+  'adobe photoshop': 'images/SoftwareIcons/photoshop.webp', 'illustrator': 'images/SoftwareIcons/illustrator.webp', 'adobe illustrator': 'images/SoftwareIcons/illustrator.webp',
+  'godot': 'images/SoftwareIcons/godot.webp', 'rpg maker': 'images/SoftwareIcons/rpgmaker.webp', 'gimp': 'images/SoftwareIcons/gimp.webp',
+  'mixamo': 'images/SoftwareIcons/mixamo.webp', 'html': 'images/SoftwareIcons/html.webp', 'css': 'images/SoftwareIcons/css.webp',
+  'javascript': 'images/SoftwareIcons/javascript.webp', 'firebase': 'images/SoftwareIcons/firebase.webp',
 };
 
 // ----------------------------------------------------------------
@@ -263,32 +263,36 @@ function buildImageMedia(item, altText, eager = false) {
 
   wrapper.appendChild(img);
 
-  const spVideo = document.createElement('img');
-  spVideo.className = 'speedpaint';
+  const hasSpeedpaint = !item.noSpeedpaint;
 
-  if (item.alignSpeedpaint) {
-    spVideo.style.objectPosition = item.alignSpeedpaint;
+  if (hasSpeedpaint) {
+    const spVideo = document.createElement('img');
+    spVideo.className = 'speedpaint';
+
+    if (item.alignSpeedpaint) {
+      spVideo.style.objectPosition = item.alignSpeedpaint;
+    }
+    
+    let spTimer = null;
+    let hovering = false;
+
+    wrapper.addEventListener('mouseenter', () => {
+      hovering = true;
+      spTimer = setTimeout(() => {
+        if (!hovering) return;
+        if (!spVideo.src) spVideo.src = getSpeedpaintUrl(item.image);
+        wrapper.classList.add('show-speedpaint');
+      }, SPEEDPAINT_DELAY);
+    });
+
+    wrapper.addEventListener('mouseleave', () => {
+      hovering = false;
+      clearTimeout(spTimer);
+      wrapper.classList.remove('show-speedpaint');
+    });
+    
+    wrapper.appendChild(spVideo);
   }
-  
-  let spTimer = null;
-  let hovering = false;
-
-  wrapper.addEventListener('mouseenter', () => {
-    hovering = true;
-    spTimer = setTimeout(() => {
-      if (!hovering) return;
-      if (!spVideo.src) spVideo.src = getSpeedpaintUrl(item.image);
-      wrapper.classList.add('show-speedpaint');
-    }, SPEEDPAINT_DELAY);
-  });
-
-  wrapper.addEventListener('mouseleave', () => {
-    hovering = false;
-    clearTimeout(spTimer);
-    wrapper.classList.remove('show-speedpaint');
-  });
-  
-  wrapper.appendChild(spVideo);
 
   if (item.href) {
     const a = document.createElement('a');
@@ -322,7 +326,7 @@ function createAboutMeBlock() {
   const el = document.createElement('div');
   el.className = 'about-me-block';
   el.id = 'about-me';
-  el.innerHTML = `<div class="about-headshot"><img src="headshot.jpg" alt="Reese Hausman" class="headshot-img"></div><div class="about-text"><p class="about-headline"><span class="about-name">REESE HAUSMAN</span><span class="about-subtitle"> is a designer whose passions revolve around all things art&nbsp;+&nbsp;technology.</span></p><p>Reese works to create, package, and sell immersive narrative experiences such as video games ("SPIRAL") or websites ("ground zero"). She loves the challenge of learning a new program from scratch with a tight one-month or even two-week deadline ("Heartlines," Godot).</p><p>On teams of one, four, or seven, her role often centers around 2D concepting, animation, 3D modeling/texturing, scheduling deadlines, upkeeping Trello boards, and helping to problem-solve stubborn code.</p><p>Outside of the classroom, she takes advantage of opportunities that will develop her leadership skills and strengthen her connections within her local community. She has led personal development sessions as Vice President of Alpha Lambda Delta, facilitated community service events as a Scholar Leader, marketed a vertical development growth workshop as part of the Eli Lilly Leadership Institute, and more.</p><a href="mailto:reesehausmanm@gmail.com" class="contact-btn"><i class="fa-regular fa-envelope"></i> Contact Me</a></div>`;
+  el.innerHTML = `<div class="about-headshot"><img src="headshot.webp" alt="Reese Hausman" class="headshot-img"></div><div class="about-text"><p class="about-headline"><span class="about-name">REESE HAUSMAN</span><span class="about-subtitle"> is a designer whose passions revolve around all things art&nbsp;+&nbsp;technology.</span></p><p>Reese works to create, package, and sell immersive narrative experiences such as video games ("SPIRAL") or websites ("ground zero"). She loves the challenge of learning a new program from scratch with a tight one-month or even two-week deadline ("Heartlines," Godot).</p><p>On teams of one, four, or seven, her role often centers around 2D concepting, animation, 3D modeling/texturing, scheduling deadlines, upkeeping Trello boards, and helping to problem-solve stubborn code.</p><p>Outside of the classroom, she takes advantage of opportunities that will develop her leadership skills and strengthen her connections within her local community. She has led personal development sessions as Vice President of Alpha Lambda Delta, facilitated community service events as a Scholar Leader, marketed a vertical development growth workshop as part of the Eli Lilly Leadership Institute, and more.</p><a href="mailto:reesehausmanm@gmail.com" class="contact-btn"><i class="fa-regular fa-envelope"></i> Contact Me</a></div>`;
   return el;
 }
 function renderProjectCards(filter) {
