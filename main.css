@@ -532,7 +532,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   background: var(--near-black);
   border: 2px solid var(--near-black);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
   text-decoration: none;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
@@ -584,7 +583,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   font-size: 20px;
   font-weight: 700;
   color: #fff;
-  line-height: 1.1;
+  line-height: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -594,15 +593,12 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  line-height: 1.2;
+  line-height: 1;
   white-space: normal;
 }
 
 .project-card.coming-soon {
   cursor: not-allowed;
-}
-
-.project-card.coming-soon {
   position: relative;
 }
 
@@ -691,15 +687,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-
-/* Interleaving Motion System Alignment */
-.grid-item.visible {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.grid-item.visible:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 
 /* ---- Media Wrapper ---- */
@@ -994,7 +981,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   z-index: 9999;
 
   opacity: 0;
-  transition: opacity 0.15s ease;
 
   transform: translate(-9999px, -9999px);
 

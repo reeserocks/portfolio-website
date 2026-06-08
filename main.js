@@ -5,7 +5,7 @@
 // ----------------------------------------------------------------
 const IMAGES_JSON_URL = 'https://raw.githubusercontent.com/reeserocks/portfolio-website/refs/heads/main/images.json';
 const ABOUT_ME_AFTER = 6;
-const EAGER_COUNT    = 12;
+const EAGER_COUNT    = getColumnCount();
 const SPEEDPAINT_DELAY = 500;
 const SPEEDPAINT_DIR = 'images/speedpaints/';
 
@@ -81,6 +81,11 @@ async function fetchImages() {
     const res  = await fetch(IMAGES_JSON_URL);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allItems = await res.json();
+    allItems.forEach(item => {
+      item.categories = item.class
+        ? item.class.split(/\s+/).filter(cat => cat !== 'filterDiv')
+        : [];
+    });
     currentCols = getColumnCount();
     renderGrid(allItems, 'all');
     await waitForEagerImages(document.body);
@@ -159,16 +164,16 @@ function renderGrid(items, filter) {
     catHeader.classList.remove('hidden');
     catTitle.textContent = `${CATEGORY_LABELS[filter] || filter}`;
 
-    const filtered = items.filter(item => {
-      if (!item.class) return false;
-      return item.class.replace(/\bfilterDiv\b/g, '').trim().split(/\s+/).includes(filter);
-    });
+    const filtered = items.filter(item =>
+      item.categories.includes(filter)
+    );
     
     const group = createMasonryGroup(filtered, currentCols, 0);
     grid.appendChild(group);
   }
-
-  setupScrollAnimations();
+  if (document.getElementById('loader').classList.contains('hidden')) {
+    setupScrollAnimations();
+  }
 }
 
 function createMasonryGroup(items, numCols, offsetIndex) {
@@ -197,7 +202,7 @@ function createMasonryGroup(items, numCols, offsetIndex) {
 // CREATE GRID ITEM
 // ----------------------------------------------------------------
 function createGridItem(item, index, eager = false) {
-  const categories = item.class ? item.class.replace(/\bfilterDiv\b/g, '').trim().split(/\s+/).filter(Boolean) : [];
+  const categories = item.categories || [];
   const { date, description, software } = parseParagraph(item.paragraph || '');
 
   const el = document.createElement('div');
@@ -258,34 +263,32 @@ function buildImageMedia(item, altText, eager = false) {
 
   wrapper.appendChild(img);
 
-  if (item.image) {
-    const spVideo = document.createElement('img');
-    spVideo.className = 'speedpaint';
+  const spVideo = document.createElement('img');
+  spVideo.className = 'speedpaint';
 
-    if (item.alignSpeedpaint) {
-      spVideo.style.objectPosition = item.alignSpeedpaint;
-    }
-    
-    let spTimer = null;
-    let hovering = false;
-
-    wrapper.addEventListener('mouseenter', () => {
-      hovering = true;
-      spTimer = setTimeout(() => {
-        if (!hovering) return;
-        if (!spVideo.src) spVideo.src = getSpeedpaintUrl(item.image);
-        wrapper.classList.add('show-speedpaint');
-      }, SPEEDPAINT_DELAY);
-    });
-
-    wrapper.addEventListener('mouseleave', () => {
-      hovering = false;
-      clearTimeout(spTimer);
-      wrapper.classList.remove('show-speedpaint');
-    });
-    
-    wrapper.appendChild(spVideo);
+  if (item.alignSpeedpaint) {
+    spVideo.style.objectPosition = item.alignSpeedpaint;
   }
+  
+  let spTimer = null;
+  let hovering = false;
+
+  wrapper.addEventListener('mouseenter', () => {
+    hovering = true;
+    spTimer = setTimeout(() => {
+      if (!hovering) return;
+      if (!spVideo.src) spVideo.src = getSpeedpaintUrl(item.image);
+      wrapper.classList.add('show-speedpaint');
+    }, SPEEDPAINT_DELAY);
+  });
+
+  wrapper.addEventListener('mouseleave', () => {
+    hovering = false;
+    clearTimeout(spTimer);
+    wrapper.classList.remove('show-speedpaint');
+  });
+  
+  wrapper.appendChild(spVideo);
 
   if (item.href) {
     const a = document.createElement('a');
@@ -353,5 +356,22 @@ function setupScrollAnimations() {
 }
 
 async function waitForEagerImages(container) { const imgs = [...container.querySelectorAll('img:not([loading="lazy"])')]; await Promise.all(imgs.map(async img => { try { if (!img.complete) { await new Promise(resolve => { img.addEventListener('load', resolve, { once: true }); img.addEventListener('error', resolve, { once: true }); }); } if (img.decode) { await img.decode(); } } catch {} })); }
-function hideLoader() { const loader = document.getElementById('loader'); setTimeout(() => { loader.classList.add('hidden'); const row = document.getElementById('projects-row'); row.classList.add('projects-loaded'); }, 150); }
+// ----------------------------------------------------------------
+// HIDE LOADER
+// ----------------------------------------------------------------
+function hideLoader() {
+  const loader = document.getElementById('loader');
+  
+  setTimeout(() => {
+    loader.classList.add('hidden'); 
+    
+    const row = document.getElementById('projects-row');
+    row.classList.add('projects-loaded');
+
+    setTimeout(() => {
+      setupScrollAnimations();
+    }, 300);
+
+  }, 150);
+}
 function setupComingSoonCursor() { const cursor = document.getElementById('coming-soon-cursor'); const cards = document.querySelectorAll('.project-card.coming-soon'); cards.forEach(card => { card.addEventListener('mouseenter', () => { cursor.style.opacity = '1'; }); card.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; }); card.addEventListener('mousemove', e => { cursor.style.transform = `translate(${e.clientX + 8}px, ${e.clientY + 8}px)`; }); }); }
