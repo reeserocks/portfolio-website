@@ -74,7 +74,8 @@
     "image": "./images/25.11_enemy.webp",
     "video": "",
     "href": "",
-    "paragraph": "November 2025 | Enemy for my game So Long, Long Time. Meant be the horrific manifestation of sorrow and grief. | Programs: Maya, Procreate"
+    "paragraph": "November 2025 | Enemy for my game So Long, Long Time. Meant be the horrific manifestation of sorrow and grief. | Programs: Maya, Procreate",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 2d",
@@ -139,21 +140,24 @@
     "image": "./images/25.12_sllt.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/solong-longtime",
-    "paragraph": "December 2025 | So Long, Long Time, a visuals-driven 3D solo game built in 3 months. Most of the focus was placed on investigation into my own feelings following the loss of my brother. | Programs: Unreal, Maya, Procreate, Mixamo"
+    "paragraph": "December 2025 | So Long, Long Time, a visuals-driven 3D solo game built in 3 months. Most of the focus was placed on investigation into my own feelings following the loss of my brother. | Programs: Unreal, Maya, Procreate, Mixamo",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv design",
     "image": "./images/25.11_notesProject.webp",
     "video": "",
     "href": "https://multimediaproject-d0c45.web.app",
-    "paragraph": "November 2025 | A web app I created for a Women's Gender Studies class final. The site prompts users to share their queer experiences, an idea inspired by The Unsent Project. I taught myself Firebase to store the user-submitted notes. | Programs: HTML, CSS, JavaScript, Firebase"
+    "paragraph": "November 2025 | A web app I created for a Women's Gender Studies class final. The site prompts users to share their queer experiences, an idea inspired by The Unsent Project. I taught myself Firebase to store the user-submitted notes. | Programs: HTML, CSS, JavaScript, Firebase",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 2d design",
     "image": "./images/25.10_slltUI.webp",
     "video": "",
     "href": "",
-    "paragraph": "October 2025 | UI artwork for the player HUD depicting health, ammo, and states. Strong lineart and shadows align with the dark theming of So Long, Long Time. | Programs: Procreate"
+    "paragraph": "October 2025 | UI artwork for the player HUD depicting health, ammo, and states. Strong lineart and shadows align with the dark theming of So Long, Long Time. | Programs: Procreate",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 3d",
@@ -167,7 +171,8 @@
     "image": "./images/25.05_finalDiorama.webp",
     "video": "",
     "href": "",
-    "paragraph": "April 2025 | Military nomad-themed 3D diorama process page, showing various final renders and references. | Programs: Maya, Procreate, Substance Painter"
+    "paragraph": "April 2025 | Military nomad-themed 3D diorama process page, showing various final renders and references. | Programs: Maya, Procreate, Substance Painter",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 3d",
@@ -188,14 +193,16 @@
     "image": "./images/25.05_crabChar_comp.webp",
     "video": "",
     "href": "",
-    "paragraph": "May 2025 | Still detail renders of my military crab 3d character design. Sketchfab <a href='https://sketchfab.com/3d-models/military-crab-character-6de6bc10d67d40af898dbb45173f73a8' target='_blank' style='text-decoration: underline;'>here</a>. | Programs: Maya, ZBrush, Substance Painter, Procreate, Mixamo"
+    "paragraph": "May 2025 | Still detail renders of my military crab 3d character design. Sketchfab <a href='https://sketchfab.com/3d-models/military-crab-character-6de6bc10d67d40af898dbb45173f73a8' target='_blank' style='text-decoration: underline;'>here</a>. | Programs: Maya, ZBrush, Substance Painter, Procreate, Mixamo",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv games",
     "image": "./images/25.05_THROUGHOUREYES.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/through-our-eyes",
-    "paragraph": "May 2025 | Through Our Eyes is a VR experience exploring the diversity inherent in the human condition as players experience a day in the life of friends from wildly different backgrounds, aided by eye tracking and other methods of interaction in the VR space. I was the sole artist on our team of four people. | Programs: Maya, Procreate, Substance Painter, Unreal"
+    "paragraph": "May 2025 | Through Our Eyes is a VR experience exploring the diversity inherent in the human condition as players experience a day in the life of friends from wildly different backgrounds, aided by eye tracking and other methods of interaction in the VR space. I was the sole artist on our team of four people. | Programs: Maya, Procreate, Substance Painter, Unreal",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 3d",
@@ -230,14 +237,16 @@
     "image": "./images/24.12_heartlinesWalkCycles.webp",
     "video": "",
     "href": "",
-    "paragraph": "December 2024 | In-game sprite walk cycles for the main characters of the Heartlines 2D Demo. | Programs: Procreate"
+    "paragraph": "December 2024 | In-game sprite walk cycles for the main characters of the Heartlines 2D Demo. | Programs: Procreate",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv games",
     "image": "./images/24.12_HEARTLINES.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/heartlines-demo",
-    "paragraph": "December 2024 | Heartlines: Heaven Beside You (Limerick Demo) was made in about three and half weeks, meant to focus on storytelling and narrative design. Solo project. | Programs: Procreate, Godot"
+    "paragraph": "December 2024 | Heartlines: Heaven Beside You (Limerick Demo) was made in about three and half weeks, meant to focus on storytelling and narrative design. Solo project. | Programs: Procreate, Godot",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 3d",
@@ -258,7 +267,8 @@
     "image": "./images/24.11_p6.webp",
     "video": "",
     "href": "",
-    "paragraph": "November 2025 | In-progress renders, textures, and concepting for the Ashley character model turntable. | Programs: Maya, Procreate"
+    "paragraph": "November 2025 | In-progress renders, textures, and concepting for the Ashley character model turntable. | Programs: Maya, Procreate",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 2d",
@@ -272,28 +282,32 @@
     "image": "./images/24.05_MELODY-LAIN.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/melody-lain",
-    "paragraph": "May 2024 | Melody Lain is a platformer and visual novel mix that follows Willow as she ventures through a familiar old mansion, recovering memories she’s not sure if she should forget. Solo project crafted in about a month. | Programs: Unreal, Maya, Procreate"
+    "paragraph": "May 2024 | Melody Lain is a platformer and visual novel mix that follows Willow as she ventures through a familiar old mansion, recovering memories she’s not sure if she should forget. Solo project crafted in about a month. | Programs: Unreal, Maya, Procreate",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv games design",
     "image": "./images/24.05_GROUND-ZERO.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/ground-zero",
-    "paragraph": "May 2024 | A short interactive narrative about Gavin's cold, no-good Saturday night. The goal was to use HTML, CSS, and Javascript to explore single-page applications, APIs, and other core principles of JS. | Programs: HTML, CSS, JavaScript"
+    "paragraph": "May 2024 | A short interactive narrative about Gavin's cold, no-good Saturday night. The goal was to use HTML, CSS, and Javascript to explore single-page applications, APIs, and other core principles of JS. | Programs: HTML, CSS, JavaScript",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv 3d",
     "image": "./images/24.04_midterm.webp",
     "video": "",
     "href": "",
-    "paragraph": "April 2024 | 3D model of my dorm room using image file textures from pictures I took of my stuff. First foray into a larger-scale 3D project. | Programs: Maya"
+    "paragraph": "April 2024 | 3D model of my dorm room using image file textures from pictures I took of my stuff. First foray into a larger-scale 3D project. | Programs: Maya",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv design",
     "image": "./images/24.03_smallProject.webp",
     "video": "",
     "href": "https://reeserocks.github.io/smallProject/",
-    "paragraph": "March 2024 | A simple web design project practicingHTML, CSS, and JavaScript. First time using CSV file to store data. | Programs: HTML, CSS, JavaScript"
+    "paragraph": "March 2024 | A simple web design project practicingHTML, CSS, and JavaScript. First time using CSV file to store data. | Programs: HTML, CSS, JavaScript",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv 2d animation",
@@ -307,35 +321,40 @@
     "image": "./images/24.01_sideDown.webp",
     "video": "",
     "href": "",
-    "paragraph": "January 2024 | Walk cycle animations for the main player character of Welcome to Schmeldon, a Game Jam project. | Programs: Procreate"
+    "paragraph": "January 2024 | Walk cycle animations for the main player character of Welcome to Schmeldon, a Game Jam project. | Programs: Procreate",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv games",
     "image": "./images/24.01_SCHMELDON.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/welcome-to-schmeldon",
-    "paragraph": "January 2024 | Created for 2024 Global Game Jam, Make Me Laugh. I worked as the 2D artist on this game as a part of my first team-made game in college. | Programs: Procreate, Unreal"
+    "paragraph": "January 2024 | Created for 2024 Global Game Jam, Make Me Laugh. I worked as the 2D artist on this game as a part of my first team-made game in college. | Programs: Procreate, Unreal",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv games",
     "image": "./images/23.12_IN-PURRPETUITY.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/in-purrpetuity",
-    "paragraph": "December 2023 | The first full game I made in college. In Purrpetuity is a single-player puzzle RPG following Luna, the protagonist, as she revisits her childhood home to save her three cats, who send her into a nostalgic spiral of soul-searching and introspection. Solo project. | Programs: RPG Maker 2003, Procreate, Gimp"
+    "paragraph": "December 2023 | The first full game I made in college. In Purrpetuity is a single-player puzzle RPG following Luna, the protagonist, as she revisits her childhood home to save her three cats, who send her into a nostalgic spiral of soul-searching and introspection. Solo project. | Programs: RPG Maker 2003, Procreate, Gimp",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv 2d animation design",
     "image": "./images/23.11_logos_gif.webp",
     "video": "",
     "href": "",
-    "paragraph": "November 2023 | Animated logo design for an existing company, based on their website's fantastical narrative content and values. | Programs: Adobe Illustrator, Procreate"
+    "paragraph": "November 2023 | Animated logo design for an existing company, based on their website's fantastical narrative content and values. | Programs: Adobe Illustrator, Procreate",
+    "noSpeedpaint": true
   }, 
   {
     "class": "filterDiv 2d",
     "image": "./images/23.11_charset.webp",
     "video": "",
     "href": "",
-    "paragraph": "November 2023 | 8-bit character sprite sheets for my cat-themed RPG Maker 2003 Game. | Programs: Procreate, Gimp"
+    "paragraph": "November 2023 | 8-bit character sprite sheets for my cat-themed RPG Maker 2003 Game. | Programs: Procreate, Gimp",
+    "noSpeedpaint": true
   },
   {
     "class": "filterDiv 2d",
