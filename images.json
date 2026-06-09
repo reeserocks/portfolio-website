@@ -440,6 +440,17 @@
     "aspectRatio": 1.26
   },
   {
+    "class": "filterDiv 2d design",
+    "image": "./images/23.11_posterFINAL.webp",
+    "video": "",
+    "href": "",
+    "paragraph": "November 2023 | Photoshop design project with the goal to create a new brand for a 90s band that is different from their current branding direction. Culminated in a poster showcasing the logo typography and accompanying illustration, listing design choices right somewhere on it. | Programs: Photoshop, Procreate",
+    "noSpeedpaint": true,
+    "width": 3300,
+    "height": 5100,
+    "aspectRatio": 0.6470588235
+  },
+  {
     "class": "filterDiv 2d animation design",
     "image": "./images/23.11_logos_gif.webp",
     "video": "",
