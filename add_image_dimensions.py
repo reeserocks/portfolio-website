@@ -4,7 +4,7 @@ import json
 from PIL import Image
 
 JSON_PATH = Path("images.json")
-IMAGE_ROOT = Path(".")  # assumes paths like "./images/22.09_1.webp"
+IMAGE_ROOT = Path(".")
 
 
 def add_image_dimensions_to_json(json_path: Path, image_root: Path) -> None:
