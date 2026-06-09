@@ -814,6 +814,10 @@ button {
   grid-template-rows: 1fr;
 }
 
+.masonry-grid.filter-active .item-caption {
+  grid-template-rows: 1fr;
+}
+
 .caption-inner {
   overflow: hidden;
   display: flex;
