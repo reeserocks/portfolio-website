@@ -73,6 +73,7 @@ button {
   transition:
     opacity 0.7s ease,
     visibility 0.7s ease;
+  cursor: wait;
 }
 #loader.hidden {
   opacity: 0;
@@ -85,6 +86,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  cursor: wait;
 }
 
 .loader-flower-ring {
@@ -919,7 +921,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 24px 24px 0;
+  padding: 0px 24px 24px 0;
 }
 
 .about-headline {
@@ -946,6 +948,12 @@ button {
   line-height: 1.65;
 }
 
+.about-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 48px;
+}
+
 .contact-btn {
   display: inline-flex;
   align-items: center;
@@ -956,7 +964,6 @@ button {
   font-size: 16px;
   font-weight: 600;
   color: var(--pink);
-  align-self: flex-start;
   margin-top: 8px;
   transition:
     background 0.2s,
@@ -964,6 +971,21 @@ button {
 }
 .contact-btn:hover {
   background: rgba(73, 4, 21, 0.2);
+  color: #fff;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--pink);
+  margin-top: 8px;
+  transition:
+    color 0.2s;
+}
+.linkedin-btn:hover {
   color: #fff;
 }
 

@@ -4,7 +4,7 @@
 // CONFIGURATION
 // ----------------------------------------------------------------
 const IMAGES_JSON_URL = "images.json";
-const ABOUT_ME_AFTER = 6;
+const ABOUT_ME_AFTER = 7;
 const EAGER_COUNT = getColumnCount();
 const SPEEDPAINT_DELAY = 500;
 const SPEEDPAINT_DIR = "images/speedpaints/";
@@ -242,17 +242,26 @@ function createMasonryGroup(items, numCols, offsetIndex) {
   const group = document.createElement("div");
   group.className = "masonry-group";
   const columns = [];
+  const columnHeights = [];
   for (let i = 0; i < numCols; i++) {
     const col = document.createElement("div");
     col.className = "masonry-column";
     columns.push(col);
+    columnHeights.push(0);
     group.appendChild(col);
   }
   items.forEach((item, i) => {
     const globalIndex = offsetIndex + i;
     const el = createGridItem(item, globalIndex, globalIndex < EAGER_COUNT);
-    el.dataset.col = (i % numCols) + 1;
-    columns[i % numCols].appendChild(el);
+    const estimatedHeight = item.width && item.height ? item.height / item.width : 1;
+    let shortestIndex = 0;
+    for (let c = 1; c < numCols; c++) {
+      if (columnHeights[c] < columnHeights[shortestIndex]) {
+        shortestIndex = c;
+      }
+    }
+    columns[shortestIndex].appendChild(el);
+    columnHeights[shortestIndex] += estimatedHeight;
   });
   return group;
 }
@@ -383,7 +392,7 @@ function createAboutMeBlock() {
   const el = document.createElement("div");
   el.className = "about-me-block";
   el.id = "about-me";
-  el.innerHTML = `<div class="about-headshot"><img src="headshot.webp" alt="Reese Hausman" class="headshot-img"></div><div class="about-text"><p class="about-headline"><span class="about-name">REESE HAUSMAN</span><span class="about-subtitle"> is a designer whose passions revolve around all things art&nbsp;+&nbsp;technology.</span></p><p>Reese works to create, package, and sell immersive narrative experiences such as video games ("SPIRAL") or websites ("ground zero"). She loves the challenge of learning a new program from scratch with a tight one-month or even two-week deadline ("Heartlines," Godot).</p><p>On teams of one, four, or seven, her role often centers around 2D concepting, animation, 3D modeling/texturing, scheduling deadlines, upkeeping Trello boards, and helping to problem-solve stubborn code.</p><p>Outside of the classroom, she takes advantage of opportunities that will develop her leadership skills and strengthen her connections within her local community. She has led personal development sessions as Vice President of Alpha Lambda Delta, facilitated community service events as a Scholar Leader, marketed a vertical development growth workshop as part of the Eli Lilly Leadership Institute, and more.</p><a href="mailto:reesehausmanm@gmail.com" class="contact-btn"><i class="fa-regular fa-envelope"></i> Contact Me</a></div>`;
+  el.innerHTML = `<div class="about-headshot"><img src="headshot.webp" alt="Reese Hausman" class="headshot-img"></div><div class="about-text"><p class="about-headline"><span class="about-name">REESE HAUSMAN</span><span class="about-subtitle"> is a designer whose passions revolve around all things art&nbsp;+&nbsp;technology.</span></p><p>Reese works to create, package, and sell immersive narrative experiences such as video games ("SPIRAL") or websites ("ground zero"). She loves the challenge of learning a new program from scratch with a tight one-month or even two-week deadline ("Heartlines," Godot).</p><p>On teams of one, four, or seven, her role often centers around 2D concepting, animation, 3D modeling/texturing, scheduling deadlines, upkeeping Trello boards, and helping to problem-solve stubborn code.</p><p>Outside of the classroom, she takes advantage of opportunities that will develop her leadership skills and strengthen her connections within her local community. She has led personal development sessions as Vice President of Alpha Lambda Delta, facilitated community service events as a Scholar Leader, marketed a vertical development growth workshop as part of the Eli Lilly Leadership Institute, and more.</p><div class="about-buttons"><a href="mailto:reesehausmanm@gmail.com" class="contact-btn"><i class="fa-regular fa-envelope"></i> Contact Me</a> <a href="https://www.linkedin.com/in/reese-hausman" class="linkedin-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a></div></div>`;
   return el;
 }
 
@@ -536,7 +545,7 @@ function setupMobileHeaderScroll() {
 }
 
 function setupScrollAnimations() {
-  if (scrollObserver) scrollObserver.disconnect(); // Safely remove old listeners when regenerating columns
+  if (scrollObserver) scrollObserver.disconnect();
   const items = document.querySelectorAll(".scroll-fade");
   scrollObserver = new IntersectionObserver(
     (entries) => {

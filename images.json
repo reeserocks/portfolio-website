@@ -4,21 +4,30 @@
     "image": "./images/25.05_charlie.webp",
     "video": "",
     "href": "",
-    "paragraph": "May 2025 | Illustration of my character Charlie from Heartlines. Explores pure black as a comic book-style shadow color. | Programs: Procreate"
+    "paragraph": "May 2025 | Illustration of my character Charlie from Heartlines. Explores pure black as a comic book-style shadow color. | Programs: Procreate",
+    "width": 1668,
+    "height": 2224,
+    "aspectRatio": 0.75
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/26.02_charDesign_1.webp",
     "video": "",
     "href": "",
-    "paragraph": "February 2026 | Process page of the first character design for deepwinter vein. Bio-modified warrior class protagonist who vomits lava to fill their lava blaster’s ammo. | Programs: Procreate"
+    "paragraph": "February 2026 | Process page of the first character design for deepwinter vein. Bio-modified warrior class protagonist who vomits lava to fill their lava blaster’s ammo. | Programs: Procreate",
+    "width": 2752,
+    "height": 2064,
+    "aspectRatio": 1.333333
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/24.09_poster.webp",
     "video": "",
     "href": "",
-    "paragraph": "September 2024 | Poster illustration for Heartlines. Uses a comic book-style to depict Aempyriel in their guardian angel getup looking after Sam Diaz. | Programs: Procreate"
+    "paragraph": "September 2024 | Poster illustration for Heartlines. Uses a comic book-style to depict Aempyriel in their guardian angel getup looking after Sam Diaz. | Programs: Procreate",
+    "width": 2550,
+    "height": 3330,
+    "aspectRatio": 0.765766
   },
   {
     "class": "filterDiv 3d",
@@ -32,28 +41,51 @@
     "image": "./images/24.11_lee_playlist.webp",
     "video": "",
     "href": "",
-    "paragraph": "November 2024 | Illustrated portrait of Aempyriel from Heartlines. Their praying hands alludes to their divine nature, while their war uniform hints at their life as Lee. | Programs: Procreate"
+    "paragraph": "November 2024 | Illustrated portrait of Aempyriel from Heartlines. Their praying hands alludes to their divine nature, while their war uniform hints at their life as Lee. | Programs: Procreate",
+    "width": 2048,
+    "height": 2048,
+    "aspectRatio": 1.0
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/24.11_sammy_playlist.webp",
     "video": "",
     "href": "",
-    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines. Builds up from black shadows into color. | Programs: Procreate"
+    "paragraph": "November 2024 | Illustrated portrait of Sam from Heartlines. Builds up from black shadows into color. | Programs: Procreate",
+    "width": 2048,
+    "height": 2048,
+    "aspectRatio": 1.0
+  },
+  {
+    "class": "filterDiv games design",
+    "image": "./images/24.05_GROUND-ZERO.webp",
+    "video": "",
+    "href": "https://reeserocks.itch.io/ground-zero",
+    "paragraph": "May 2024 | A short interactive narrative about Gavin's cold, no-good Saturday night. The goal was to use HTML, CSS, and Javascript to explore single-page applications, APIs, and other core principles of JS. | Programs: HTML, CSS, JavaScript",
+    "noSpeedpaint": true,
+    "width": 315,
+    "height": 250,
+    "aspectRatio": 1.26
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/26.02_charDesign_2.webp",
     "video": "",
     "href": "",
-    "paragraph": "February 2026 | Second character design created for deepwinter vein. She is a sassy higher class member of society, meant to contrast the grim warrior protagonist. | Programs: Procreate"
+    "paragraph": "February 2026 | Second character design created for deepwinter vein. She is a sassy higher class member of society, meant to contrast the grim warrior protagonist. | Programs: Procreate",
+    "width": 2752,
+    "height": 2064,
+    "aspectRatio": 1.333333
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/24.09_heartlines_lineup.webp",
     "video": "",
     "href": "",
-    "paragraph": "September 2024 | Character design lineup of all main characters in the Heartlines universe. Fashion, in line with the world's lore, is meant to span across time periods. | Programs: Procreate"
+    "paragraph": "September 2024 | Character design lineup of all main characters in the Heartlines universe. Fashion, in line with the world's lore, is meant to span across time periods. | Programs: Procreate",
+    "width": 5392,
+    "height": 1627,
+    "aspectRatio": 3.314075
   },
   {
     "class": "filterDiv 3d",
@@ -75,21 +107,30 @@
     "video": "",
     "href": "",
     "paragraph": "November 2025 | Enemy for my game So Long, Long Time. Meant be the horrific manifestation of sorrow and grief. | Programs: Maya, Procreate",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 1920,
+    "height": 1080,
+    "aspectRatio": 1.777778
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/26.03_creatureDesign.webp",
     "video": "",
     "href": "",
-    "paragraph": "March 2026 | Giant underwater evil creature concept art for deepwinter vein. This design is loosely based on the idea of someone who has been left to rot underwater for a very long time, decaying and merging with the sea around her. | Programs: Procreate"
+    "paragraph": "March 2026 | Giant underwater evil creature concept art for deepwinter vein. This design is loosely based on the idea of someone who has been left to rot underwater for a very long time, decaying and merging with the sea around her. | Programs: Procreate",
+    "width": 2752,
+    "height": 2064,
+    "aspectRatio": 1.333333
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/26.03_propDesign_1.webp",
     "video": "",
     "href": "",
-    "paragraph": "March 2026 | Weapons concept art for the deepwinter vein warrior class, powered by their lava-vomit. | Programs: Procreate"
+    "paragraph": "March 2026 | Weapons concept art for the deepwinter vein warrior class, powered by their lava-vomit. | Programs: Procreate",
+    "width": 2752,
+    "height": 2064,
+    "aspectRatio": 1.333333
   },
   {
     "class": "filterDiv 3d",
@@ -104,22 +145,31 @@
     "video": "",
     "href": "",
     "paragraph": "May 2024 | In-game character dialogue sprite for my character Willow from melody lain. She's nervous to talk to the voices she's hearing. | Programs: Procreate",
-    "alignSpeedpaint": "right"
-  }, 
+    "alignSpeedpaint": "right",
+    "width": 1336,
+    "height": 1080,
+    "aspectRatio": 1.237037
+  },
   {
     "class": "filterDiv 2d",
     "image": "./images/24.05_oli_ghost.webp",
     "video": "",
     "href": "",
     "paragraph": "May 2024 | In-game character dialogue sprite for my character Oliver from melody lain. He laughs maliciously, changed for the worse now that he's a ghost. | Programs: Procreate",
-    "alignSpeedpaint": "right"
+    "alignSpeedpaint": "right",
+    "width": 1090,
+    "height": 1080,
+    "aspectRatio": 1.009259
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/25.02_jean_concept.webp",
     "video": "",
     "href": "",
-    "paragraph": "February 2025 | Character design for Jean from Through Our Eyes. She is a alternative masc lesbian with an attitude. I used feedback from my fellow studio members to ditch the sportiness and settle on an edgier design. | Programs: Procreate"
+    "paragraph": "February 2025 | Character design for Jean from Through Our Eyes. She is a alternative masc lesbian with an attitude. I used feedback from my fellow studio members to ditch the sportiness and settle on an edgier design. | Programs: Procreate",
+    "width": 4311,
+    "height": 2509,
+    "aspectRatio": 1.718214
   },
   {
     "class": "filterDiv 3d",
@@ -141,7 +191,10 @@
     "video": "",
     "href": "https://reeserocks.itch.io/solong-longtime",
     "paragraph": "December 2025 | So Long, Long Time, a visuals-driven 3D solo game built in 3 months. Most of the focus was placed on investigation into my own feelings following the loss of my brother. | Programs: Unreal, Maya, Procreate, Mixamo",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 630,
+    "height": 500,
+    "aspectRatio": 1.26
   },
   {
     "class": "filterDiv design",
@@ -149,7 +202,10 @@
     "video": "",
     "href": "https://multimediaproject-d0c45.web.app",
     "paragraph": "November 2025 | A web app I created for a Women's Gender Studies class final. The site prompts users to share their queer experiences, an idea inspired by The Unsent Project. I taught myself Firebase to store the user-submitted notes. | Programs: HTML, CSS, JavaScript, Firebase",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 2469,
+    "height": 1405,
+    "aspectRatio": 1.757295
   },
   {
     "class": "filterDiv 2d design",
@@ -157,7 +213,10 @@
     "video": "",
     "href": "",
     "paragraph": "October 2025 | UI artwork for the player HUD depicting health, ammo, and states. Strong lineart and shadows align with the dark theming of So Long, Long Time. | Programs: Procreate",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 2039,
+    "height": 1857,
+    "aspectRatio": 1.098008
   },
   {
     "class": "filterDiv 3d",
@@ -172,7 +231,10 @@
     "video": "",
     "href": "",
     "paragraph": "April 2025 | Military nomad-themed 3D diorama process page, showing various final renders and references. | Programs: Maya, Procreate, Substance Painter",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 2880,
+    "height": 1620,
+    "aspectRatio": 1.777778
   },
   {
     "class": "filterDiv 3d",
@@ -186,7 +248,10 @@
     "image": "./images//25.01_charConcepting.webp",
     "video": "",
     "href": "",
-    "paragraph": "January 2025 | Design process for a future 3D character. Light worldbuilding before finalizing the character, then reference gathering and sketching. Loved the crab textures and want to utilize for clothing and such. | Programs: Procreate"
+    "paragraph": "January 2025 | Design process for a future 3D character. Light worldbuilding before finalizing the character, then reference gathering and sketching. Loved the crab textures and want to utilize for clothing and such. | Programs: Procreate",
+    "width": 3640,
+    "height": 4096,
+    "aspectRatio": 0.888672
   },
   {
     "class": "filterDiv 3d",
@@ -194,7 +259,10 @@
     "video": "",
     "href": "",
     "paragraph": "May 2025 | Still detail renders of my military crab 3d character design. Sketchfab <a href='https://sketchfab.com/3d-models/military-crab-character-6de6bc10d67d40af898dbb45173f73a8' target='_blank' style='text-decoration: underline;'>here</a>. | Programs: Maya, ZBrush, Substance Painter, Procreate, Mixamo",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 3861,
+    "height": 2181,
+    "aspectRatio": 1.770289
   },
   {
     "class": "filterDiv games",
@@ -202,7 +270,10 @@
     "video": "",
     "href": "https://reeserocks.itch.io/through-our-eyes",
     "paragraph": "May 2025 | Through Our Eyes is a VR experience exploring the diversity inherent in the human condition as players experience a day in the life of friends from wildly different backgrounds, aided by eye tracking and other methods of interaction in the VR space. I was the sole artist on our team of four people. | Programs: Maya, Procreate, Substance Painter, Unreal",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 315,
+    "height": 250,
+    "aspectRatio": 1.26
   },
   {
     "class": "filterDiv 3d",
@@ -223,7 +294,10 @@
     "image": "./images/25.02_gert_concept.webp",
     "video": "",
     "href": "",
-    "paragraph": "February 2025 | Character design for Gert from Through Our Eyes. She is a whimsical and shy slightly-closeted trans-woman. I used feedback from my fellow studio members to settle on a final design. | Programs: Procreate"
+    "paragraph": "February 2025 | Character design for Gert from Through Our Eyes. She is a whimsical and shy slightly-closeted trans-woman. I used feedback from my fellow studio members to settle on a final design. | Programs: Procreate",
+    "width": 5070,
+    "height": 3098,
+    "aspectRatio": 1.63654
   },
   {
     "class": "filterDiv 3d",
@@ -238,7 +312,10 @@
     "video": "",
     "href": "",
     "paragraph": "December 2024 | In-game sprite walk cycles for the main characters of the Heartlines 2D Demo. | Programs: Procreate",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 864,
+    "height": 308,
+    "aspectRatio": 2.805195
   },
   {
     "class": "filterDiv games",
@@ -246,7 +323,10 @@
     "video": "",
     "href": "https://reeserocks.itch.io/heartlines-demo",
     "paragraph": "December 2024 | Heartlines: Heaven Beside You (Limerick Demo) was made in about three and half weeks, meant to focus on storytelling and narrative design. Solo project. | Programs: Procreate, Godot",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 315,
+    "height": 250,
+    "aspectRatio": 1.26
   },
   {
     "class": "filterDiv 3d",
@@ -268,14 +348,20 @@
     "video": "",
     "href": "",
     "paragraph": "November 2025 | In-progress renders, textures, and concepting for the Ashley character model turntable. | Programs: Maya, Procreate",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 2880,
+    "height": 1620,
+    "aspectRatio": 1.777778
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/24.09_guardian.webp",
     "video": "",
     "href": "",
-    "paragraph": "September 2024 | Guardian angel concept for Heartlines. Focused on blending military uniform/weapon components from across multiple eras and combining those with angelic motifs. | Programs: Procreate"
+    "paragraph": "September 2024 | Guardian angel concept for Heartlines. Focused on blending military uniform/weapon components from across multiple eras and combining those with angelic motifs. | Programs: Procreate",
+    "width": 2224,
+    "height": 1668,
+    "aspectRatio": 1.333333
   },
   {
     "class": "filterDiv games",
@@ -283,46 +369,53 @@
     "video": "",
     "href": "https://reeserocks.itch.io/melody-lain",
     "paragraph": "May 2024 | Melody Lain is a platformer and visual novel mix that follows Willow as she ventures through a familiar old mansion, recovering memories she’s not sure if she should forget. Solo project crafted in about a month. | Programs: Unreal, Maya, Procreate",
-    "noSpeedpaint": true
-  }, 
-  {
-    "class": "filterDiv games design",
-    "image": "./images/24.05_GROUND-ZERO.webp",
-    "video": "",
-    "href": "https://reeserocks.itch.io/ground-zero",
-    "paragraph": "May 2024 | A short interactive narrative about Gavin's cold, no-good Saturday night. The goal was to use HTML, CSS, and Javascript to explore single-page applications, APIs, and other core principles of JS. | Programs: HTML, CSS, JavaScript",
-    "noSpeedpaint": true
-  }, 
+    "noSpeedpaint": true,
+    "width": 315,
+    "height": 250,
+    "aspectRatio": 1.26
+  },
   {
     "class": "filterDiv 3d",
     "image": "./images/24.04_midterm.webp",
     "video": "",
     "href": "",
     "paragraph": "April 2024 | 3D model of my dorm room using image file textures from pictures I took of my stuff. First foray into a larger-scale 3D project. | Programs: Maya",
-    "noSpeedpaint": true
-  }, 
+    "noSpeedpaint": true,
+    "width": 1920,
+    "height": 2160,
+    "aspectRatio": 0.888889
+  },
   {
     "class": "filterDiv design",
     "image": "./images/24.03_smallProject.webp",
     "video": "",
     "href": "https://reeserocks.github.io/smallProject/",
-    "paragraph": "March 2024 | A simple web design project practicingHTML, CSS, and JavaScript. First time using CSV file to store data. | Programs: HTML, CSS, JavaScript",
-    "noSpeedpaint": true
-  }, 
+    "paragraph": "March 2024 | A simple web design project practicing HTML, CSS, and JavaScript. First time using CSV file to store data. | Programs: HTML, CSS, JavaScript",
+    "noSpeedpaint": true,
+    "width": 2604,
+    "height": 1395,
+    "aspectRatio": 1.866667
+  },
   {
     "class": "filterDiv 2d animation",
     "image": "./images/24.01_meckla_fucking_dies.webp",
     "video": "",
     "href": "",
-    "paragraph": "January 2024 | End of a cutscene animation made for a Game Jam game (Welcome to Schmeldon), meant to be humorous. | Programs: Procreate"
-  }, 
+    "paragraph": "January 2024 | End of a cutscene animation made for a Game Jam game (Welcome to Schmeldon), meant to be humorous. | Programs: Procreate",
+    "width": 2160,
+    "height": 1080,
+    "aspectRatio": 2.0
+  },
   {
     "class": "filterDiv 2d animation",
     "image": "./images/24.01_sideDown.webp",
     "video": "",
     "href": "",
     "paragraph": "January 2024 | Walk cycle animations for the main player character of Welcome to Schmeldon, a Game Jam project. | Programs: Procreate",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 2160,
+    "height": 1080,
+    "aspectRatio": 2.0
   },
   {
     "class": "filterDiv games",
@@ -330,86 +423,123 @@
     "video": "",
     "href": "https://reeserocks.itch.io/welcome-to-schmeldon",
     "paragraph": "January 2024 | Created for 2024 Global Game Jam, Make Me Laugh. I worked as the 2D artist on this game as a part of my first team-made game in college. | Programs: Procreate, Unreal",
-    "noSpeedpaint": true
-  }, 
+    "noSpeedpaint": true,
+    "width": 315,
+    "height": 250,
+    "aspectRatio": 1.26
+  },
   {
     "class": "filterDiv games",
     "image": "./images/23.12_IN-PURRPETUITY.webp",
     "video": "",
     "href": "https://reeserocks.itch.io/in-purrpetuity",
     "paragraph": "December 2023 | The first full game I made in college. In Purrpetuity is a single-player puzzle RPG following Luna, the protagonist, as she revisits her childhood home to save her three cats, who send her into a nostalgic spiral of soul-searching and introspection. Solo project. | Programs: RPG Maker 2003, Procreate, Gimp",
-    "noSpeedpaint": true
-  }, 
+    "noSpeedpaint": true,
+    "width": 315,
+    "height": 250,
+    "aspectRatio": 1.26
+  },
   {
     "class": "filterDiv 2d animation design",
     "image": "./images/23.11_logos_gif.webp",
     "video": "",
     "href": "",
     "paragraph": "November 2023 | Animated logo design for an existing company, based on their website's fantastical narrative content and values. | Programs: Adobe Illustrator, Procreate",
-    "noSpeedpaint": true
-  }, 
+    "noSpeedpaint": true,
+    "width": 1920,
+    "height": 1398,
+    "aspectRatio": 1.373391
+  },
   {
     "class": "filterDiv 2d",
     "image": "./images/23.11_charset.webp",
     "video": "",
     "href": "",
     "paragraph": "November 2023 | 8-bit character sprite sheets for my cat-themed RPG Maker 2003 Game. | Programs: Procreate, Gimp",
-    "noSpeedpaint": true
+    "noSpeedpaint": true,
+    "width": 288,
+    "height": 256,
+    "aspectRatio": 1.125
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/23.09_elysia_.webp",
     "video": "",
     "href": "",
-    "paragraph": "September 2023 | Promotional art for my board game, depicting Elysia at the end of the game. | Programs: Procreate"
+    "paragraph": "September 2023 | Promotional art for my board game, depicting Elysia at the end of the game. | Programs: Procreate",
+    "width": 996,
+    "height": 1152,
+    "aspectRatio": 0.864583
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/23.03_ap_15.webp",
     "video": "",
     "href": "",
-    "paragraph": "March 2023 | AP 2D Art & Design piece exploring mortality. Built up from many thumbnail sketches to a full piece.| Programs: Procreate"
+    "paragraph": "March 2023 | AP 2D Art & Design piece exploring mortality. Built up from many thumbnail sketches to a full piece.| Programs: Procreate",
+    "width": 1275,
+    "height": 2224,
+    "aspectRatio": 0.573291
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/22.12_ap_08.webp",
     "video": "",
     "href": "",
-    "paragraph": "December 2022 | AP 2D Art & Design piece exploring the existential quandary of time. Built up from many references and thumbnail sketches to a full piece. Grisaille to color gradient map. | Programs: Procreate"
+    "paragraph": "December 2022 | AP 2D Art & Design piece exploring the existential quandary of time. Built up from many references and thumbnail sketches to a full piece. Grisaille to color gradient map. | Programs: Procreate",
+    "width": 1679,
+    "height": 1371,
+    "aspectRatio": 1.224654
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/22.10_char_design_2.webp",
     "video": "",
     "href": "",
-    "paragraph": "October 2022 | Exploratory character design for a clown character. Expanded upon from a gijinkas I created for a pre-college course. | Programs: Procreate"
+    "paragraph": "October 2022 | Exploratory character design for a clown character. Expanded upon from a gijinkas I created for a pre-college course. | Programs: Procreate",
+    "width": 3695,
+    "height": 1668,
+    "aspectRatio": 2.215228
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/22.10_ap_03_final.webp",
     "video": "",
     "href": "",
-    "paragraph": "October 2022 | AP 2D Art & Design piece exploring the concept of the relationship between people and a God. Grisaille to color. | Programs: Procreate"
+    "paragraph": "October 2022 | AP 2D Art & Design piece exploring the concept of the relationship between people and a God. Grisaille to color. | Programs: Procreate",
+    "width": 1668,
+    "height": 2224,
+    "aspectRatio": 0.75
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/22.09_1.webp",
     "video": "",
     "href": "",
-    "paragraph": "September 2022 | AP 2D Art & Design painting exploring how humans view death. | Medium: Oil on canvas"
+    "paragraph": "September 2022 | AP 2D Art & Design painting exploring how humans view death. | Medium: Oil on canvas",
+    "noSpeedpaint": true,
+    "width": 3604,
+    "height": 2776,
+    "aspectRatio": 1.298271
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/22.07_game_design_char_.webp",
     "video": "",
     "href": "",
-    "paragraph": "July 2022 | Character design sketches for a potential game character, taking place in a post-apocalyptic military world. | Programs: Procreate"
+    "paragraph": "July 2022 | Character design sketches for a potential game character, taking place in a post-apocalyptic military world. | Programs: Procreate",
+    "width": 4044,
+    "height": 2565,
+    "aspectRatio": 1.576608
   },
   {
     "class": "filterDiv 2d",
     "image": "./images/22.03_dazey.webp",
     "video": "",
     "href": "",
-    "paragraph": "March 2022 | Character sketches of my D&D rogue character Dazey. | Programs: Procreate"
+    "paragraph": "March 2022 | Character sketches of my D&D rogue character Dazey. | Programs: Procreate",
+    "width": 2337,
+    "height": 1668,
+    "aspectRatio": 1.401079
   }
 ]
