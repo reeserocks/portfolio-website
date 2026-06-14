@@ -92,6 +92,7 @@ const SOFTWARE_ICONS = {
   css: "images/SoftwareIcons/css.webp",
   javascript: "images/SoftwareIcons/javascript.webp",
   firebase: "images/SoftwareIcons/firebase.webp",
+  figma: "images/SoftwareIcons/figma.webp"
 };
 
 // ----------------------------------------------------------------
