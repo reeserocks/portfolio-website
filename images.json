@@ -102,6 +102,17 @@
     "paragraph": "October 2025 | Turntable showcasing the high-res player character from So Long, Long Time. The giant cavern in their chest symbolizes their grief. | Programs: Maya, Procreate, Mixamo, Marmoset"
   },
   {
+    "class": "filterDiv design",
+    "image": "",
+    "video": "images/26.05_hifiapp.webp",
+    "href": "",
+    "paragraph": "May 2026 | App page mockups for my Cincinnati Museum Center conceptual project, Deep Sea Luminosity. | Programs: Figma, Illustrator, Photoshop",
+    "noSpeedpaint": true,
+    "width": 3720,
+    "height": 1560,
+    "aspectRatio": 2.254545455
+  },
+  {
     "class": "filterDiv 3d",
     "image": "./images/25.11_enemy.webp",
     "video": "",
