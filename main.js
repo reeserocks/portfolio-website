@@ -22,6 +22,14 @@ const PROJECTS = [
     image: "images/projectCards/spiral.webp",
   },
   {
+    date: "Summer 2026",
+    category: "Design",
+    name: "Bear-ly Fishin'",
+    tags: ["design", "games"],
+    href: "#",
+    image: "images/projectCards/bearly-fishing.webp",
+  },
+  {
     date: "Spring 2026",
     category: "Concept Art",
     name: "deepwinter vein",
