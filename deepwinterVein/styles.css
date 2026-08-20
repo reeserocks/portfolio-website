@@ -102,8 +102,6 @@ a {
 
 .body-content {
   width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
   padding: 72px 100px 80px;
   display: flex;
   flex-direction: column;
@@ -453,6 +451,7 @@ a {
   .body-content {
     padding-left: 32px;
     padding-right: 32px;
+    gap: 50px;
   }
 
   .project-overview,
@@ -469,6 +468,21 @@ a {
     top: 110px;
     font-size: 52px;
   }
+
+  .section-heading {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    white-space: normal;
+    margin-bottom: 0;
+  }
+
+  .copy-row,
+  .sprint-6-copy,
+  .sprint-9-copy {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -484,15 +498,16 @@ a {
 
   .body-content {
     padding: 56px 20px 56px;
-    gap: 32px;
+    gap: 50px;
   }
 
   .section-heading {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
     white-space: normal;
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 
   .center-heading {
@@ -511,12 +526,23 @@ a {
   .world-grid,
   .special-split,
   .sprint-6-grid,
+  .sprint-7-grid,
   .sprint-9-grid {
     grid-template-columns: 1fr;
   }
 
   .special-split .art-card {
     height: auto;
+  }
+
+  .sprint-7-grid .art-card {
+    height: auto;
+  }
+
+  .copy-row,
+  .sprint-6-copy,
+  .sprint-9-copy {
+    gap: 20px;
   }
 
   .reflection-box,
