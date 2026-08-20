@@ -1025,9 +1025,11 @@ button {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: block;
+  display: flex;
+  align-items: center;
   justify-content: center;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 .lightbox.hidden {
@@ -1035,6 +1037,7 @@ button {
 }
 .lightbox.open {
   opacity: 1;
+  pointer-events: auto;
 }
 .lightbox-overlay {
   position: absolute;
@@ -1051,7 +1054,6 @@ button {
   justify-items: center;
   width: min-content;
   max-width: 90vw;
-  margin: 5vh auto;
 }
 
 .lightbox-close {

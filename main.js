@@ -34,7 +34,7 @@ const PROJECTS = [
     category: "Concept Art",
     name: "deepwinter vein",
     tags: ["2d"],
-    href: "#",
+    href: "deepwinterVein/",
     image: "images/projectCards/deepwintervein.webp",
   },
   {
