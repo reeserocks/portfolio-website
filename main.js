@@ -93,7 +93,7 @@ const SOFTWARE_ICONS = {
   illustrator: "images/SoftwareIcons/illustrator.webp",
   "adobe illustrator": "images/SoftwareIcons/illustrator.webp",
   godot: "images/SoftwareIcons/godot.webp",
-  "rpg maker": "images/SoftwareIcons/rpgmaker.webp",
+  "rpg maker 2003": "images/SoftwareIcons/rpgmaker.webp",
   gimp: "images/SoftwareIcons/gimp.webp",
   mixamo: "images/SoftwareIcons/mixamo.webp",
   html: "images/SoftwareIcons/html.webp",
