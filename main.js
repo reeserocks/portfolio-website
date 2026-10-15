@@ -26,7 +26,7 @@ const PROJECTS = [
     category: "Design",
     name: "Bear-ly Fishin'",
     tags: ["design", "games"],
-    href: "#",
+    href: "bearlyFishing/",
     image: "images/projectCards/bearly-fishing.webp",
   },
   {

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Bearly Fishin’ | Reese Hausman</title>
+  <link rel="icon" type="image/x-icon" href="favi.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="portfolio">
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <nav class="hero-nav" aria-label="Page navigation">
+        <a class="back-link" href="../">
+          <img src="images/arrow.png" alt="" width="32" height="32">
+          <span>Back to Home</span>
+        </a>
+      </nav>
+    </header>
+    <h1 class="page-title">Bear-ly Fishin’</h1>
+
+    <main class="body-content">
+      <section class="overview" aria-labelledby="overview-title">
+        <div class="overview-copy">
+          <div class="intro-copy">
+            <h2 id="overview-title" class="section-title">Project Introduction</h2>
+            <div class="body-copy">
+              <p>For one month in London, my team &amp; I worked on a real client project for Birkdale Neuro Physio, a clinic that helps patients with neurological conditions.</p>
+              <p>Birkdale’s physios use Tobii eye-tracking equipment to train and evaluate patients’ eye movements, but that clinical-grade equipment is expensive, so patients can’t continue their exercises at home.</p>
+              <p>Our challenge was to build a free, accessible game that runs in a web browser on an ordinary webcam. It needed to keep patients motivated and give therapists useful feedback.</p>
+              <p><strong>My role in this project was designer and game developer.</strong></p>
+            </div>
+          </div>
+
+          <div class="programs">
+            <h2 class="section-title">Software Used by Team</h2>
+            <div class="program-icons" aria-label="Software used">
+              <img src="images/godot.png" alt="Godot" width="100" height="100">
+              <img src="images/webgazer.png" alt="WebGazer.js" width="71" height="100">
+              <img src="images/claude.png" alt="Claude" width="100" height="100">
+              <img src="images/ai.png" alt="AI tools" width="100" height="100">
+              <img src="images/anthropic.png" alt="Anthropic" width="102" height="100">
+            </div>
+            <p class="caption">*AI used for programming support.</p>
+          </div>
+        </div>
+
+        <img class="laptop" src="images/Laptop.png" alt="Laptop displaying the Bearly Fishin’ game">
+      </section>
+
+      <section class="research section-stack" aria-labelledby="research-title">
+        <figure class="wide-image tobii-image">
+          <img src="images/tobii-mockup.png" alt="A patient using eye-tracking equipment during a therapy session">
+          <figcaption>Image from <a href="https://uk.tobiidynavox.com/products/gaze-viewer" target="_blank" rel="noopener noreferrer">Tobii Dynavox</a>.</figcaption>
+        </figure>
+        <div class="section-grid research-intro">
+          <h2 id="research-title" class="numbered-heading"><span>01</span> Research &amp; Observation</h2>
+          <div class="body-copy">
+            <p>We started by learning how eye tracking is used in rehab. Physios train two kinds of eye movement: <em>smooth pursuit</em>, which means following a slow-moving object, and <em>saccades</em>, which are quick jumps between two points.</p>
+            <p>We also conducted a competitive analysis on the current market for eye-tracking games and software, and found them to fall short when meeting our project goals of ease of use and accessible cost.</p>
+            <p>Before designing anything, we tried Birkdale’s Tobii games ourselves. The tracker was hypersensitive, and using our eyes as a controller felt strange, so we were glad the physios gave us clear instructions. It was a small taste of how a new patient might feel.</p>
+          </div>
+        </div>
+        <div class="body-copy">
+          <p>Before designing anything, we tried Birkdale’s Tobii games ourselves. The tracker was hypersensitive, and using our eyes as a controller felt strange, so we were glad the physios gave us clear instructions. It was a small taste of how a new patient might feel.</p>
+          <p>We also sat in on a couple of therapy sessions, and a few things stood out:</p>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card"><p><strong>Attention is short.</strong> One young patient stayed engaged for only 30 seconds, and most of that engagement came from the therapist and parent, not the game.</p></article>
+          <article class="insight-card"><p><strong>Distraction is part of therapy.</strong> Physios add distractions on purpose so patients practice refocusing.</p></article>
+          <article class="insight-card"><p><strong>Calibration changes from patient to patient</strong>, with fewer targets for children and more for adults.</p></article>
+          <article class="insight-card"><p><strong>Physios want progress feedback.</strong> We needed to consider many different end users, including physios and caretakers.</p></article>
+          <article class="insight-card"><p><strong>Styling matters.</strong> Some older patients feel the clinic’s existing games are childish, and many clinic games use black backgrounds to create high contrast.</p></article>
+        </div>
+        <p class="finding">Finding: Our first game ideas were too complicated. Watching real sessions showed us that simplicity matters most, and that a game can be simple while still keeping patients engaged. I learned that sitting in a real session can quickly overturn assumptions you spent a week building.</p>
+      </section>
+
+      <section class="ideation section-stack" aria-labelledby="ideation-title">
+        <div class="section-banner ideation-banner">
+          <h2 id="ideation-title" class="numbered-heading"><span>02</span> Ideation &amp; Choosing a Concept</h2>
+        </div>
+        <div class="section-grid process-grid">
+          <div class="process-copy">
+            <h3 class="subheading">Process</h3>
+            <ol class="process-list">
+              <li><span class="process-number" aria-hidden="true">1</span><span>Each of us wrote insight statements from a patient’s or therapist’s point of view, then turned them into “How might we?” questions for an IDEO-style brainstorm. Dot voting left us with three game ideas: cooking, fishing, and a circus.</span></li>
+              <li><span class="process-number" aria-hidden="true">2</span><span>We scored the ideas on a Pugh decision matrix, using criteria like visual simplicity, both eye movement types, and learning curve. We also asked students from other teams to score them, so our own bias wouldn’t steer the results.</span></li>
+              <li><span class="process-number" aria-hidden="true">3</span><span>After observing patients, we added two more concepts in week three: a “follow the video” game &amp; a soccer game. We built digital trailer-type prototypes of both and brought them to the physios. In the end, every concept except fishing was dropped.</span></li>
+            </ol>
+          </div>
+          <img class="process-image" src="images/game-ideas.png" alt="Pugh decision matrix comparing cooking, fishing, and circus game concepts">
+        </div>
+        <div class="section-grid narrowing-grid">
+          <div class="screen-collage" aria-label="Early Bearly Fishin’ game prototypes">
+            <img class="prototype prototype-a" src="images/screen-1.jpg" alt="Early game screen prototype">
+            <img class="prototype prototype-b" src="images/screen-3.png" alt="Calibration screen prototype">
+            <img class="prototype prototype-c" src="images/screen-2.png" alt="Game menu prototype">
+            <video class="prototype prototype-main" autoplay muted loop playsinline preload="metadata" aria-label="Bearly Fishin’ prototype gameplay" src="images/fishingPrototype.MOV"></video>
+          </div>
+          <div class="narrowing-copy body-copy">
+            <h3 class="subheading">Narrowing it Down</h3>
+            <ul>
+              <li>Cooking needed too many steps for patients with limited cognitive ability.</li>
+              <li>The circus theme had limited appeal and opportunity for miscommunication across US-UK cultural differences.</li>
+              <li>Follow the video was too passive, since the physios wanted patients to think &amp; interact.</li>
+              <li>Soccer could get repetitive.</li>
+            </ul>
+            <p class="finding">Finding: The matrix helped us compare ideas, but it never made the decision for us. Cooking and Follow Video each scored highest in a round, and client feedback still decided the Fishing outcome.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"><img src="images/divider.svg" alt=""></div>
+
+      <section class="playtesting section-stack" aria-labelledby="playtesting-title">
+        <div class="section-grid playtesting-grid">
+          <div class="playtest-image-frame">
+            <img class="playtest-image" src="images/prototype-game.png" alt="A player testing the Bearly Fishin’ game on a laptop">
+          </div>
+          <div class="playtest-copy body-copy">
+            <h2 id="playtesting-title" class="numbered-heading"><span>03</span> Prototyping &amp; Playtesting</h2>
+            <p>Fishing was simple, familiar, and easy to build on. You play as a fishing bear, and you catch fish by looking at them. Slow, drifting fish train smooth pursuit, while fast, darting fish train saccades.</p>
+            <p>I built the game in Godot and used WebGazer.js, a free, open-source library, for eye tracking. I also built the calibration flow, which turned out to be the hardest part of the whole project.</p>
+            <p>We ran three rounds of playtesting, and calibration got in the way almost every time.</p>
+            <p>In the first round, our tester couldn’t pass calibration, so they never reached the game at all. Their feedback was still valuable: they wanted clearer instructions, a reminder to keep their head still, and buttons that change color on hover. We added instruction screens before calibration and before play.</p>
+            <p>In rounds two &amp; three, calibration got less accurate the longer it ran. Blinking made it worse, and the bottom points were the least accurate, since people naturally half-close their eyes when looking down. During play, fish entered from too many directions, and the shrimp moved too fast.</p>
+          </div>
+          <div class="body-copy changes-copy">
+            <p>We made these changes:</p>
+            <ul>
+              <li>Shortened the calibration time to reduce fatigue.</li>
+              <li>Raised the laptop to eye level, which improved the bottom points.</li>
+              <li>Slowed the shrimp &amp; simplified how fish enter the screen.</li>
+              <li>Added a loading screen, so players know their input registered.</li>
+              <li>Added a setup checklist for posture, lighting, and camera position.</li>
+              <li>Let therapists choose 3, 5, or 9 calibration points to match each patient.</li>
+            </ul>
+            <p>We also compared cameras, and the external webcam tracked more accurately than a built-in laptop camera because of its higher capture resolution.</p>
+          </div>
+          <img class="changes-image" src="images/playtesting.png" alt="Bearly Fishin’ setup checklist and calibration instructions">
+        </div>
+        <p class="finding">Finding: Calibration was the biggest barrier for users, so we stopped treating it like a setup chore and designed it as part of the experience. I learned that a feature can work perfectly for me as the developer and still fail for a first-time user.</p>
+      </section>
+
+      <div class="divider"><img src="images/divider.svg" alt=""></div>
+
+      <section class="accessibility section-grid" aria-labelledby="accessibility-title">
+        <div class="accessibility-art">
+          <h2 id="accessibility-title" class="numbered-heading"><span>04</span> Designing for Accessibility</h2>
+          <div class="accessibility-images">
+            <img src="images/accessibility-1.png" alt="Bearly Fishin’ title and menu artwork">
+            <img src="images/accessibility-2.png" alt="Bearly Fishin’ title and menu artwork, alternate view">
+          </div>
+          <p>Every design choice needed a reason.</p>
+        </div>
+        <div class="accessibility-cards">
+          <article class="insight-card"><p><strong>Contrast.</strong> Our first sea was light blue, and the light-colored fish got lost in it. We deepened the water and changed the sky to a sunset gradient, since blue and orange contrast strongly. That made the play area stand apart from the background.</p></article>
+          <article class="insight-card"><p><strong>Type.</strong> The font is bold, simple, &amp; large, with careful spacing and capitalization so it’s easy to read.</p></article>
+          <article class="insight-card"><p><strong>Art style.</strong> We tested bright vs. muted colors and big vs. small eyes on the fish. We chose bright colors and big eyes, which were easier to see and let the fish show emotion. The bear mascot keeps the style friendly without feeling childish.</p></article>
+          <article class="insight-card"><p><strong>Sound.</strong> Physios wanted audio that doesn’t overwhelm. We chose background music with no lyrics or strong beat, so players can still hear the reel sound that signals a catch.</p></article>
+          <article class="insight-card"><p><strong>Distractions.</strong> Multiple types of fish at once forces the patient to choose a focus.</p></article>
+          <article class="insight-card"><p><strong>Difficulty.</strong> Players pick easy, medium, or hard.</p></article>
+          <article class="insight-card"><p><strong>No losing.</strong> The game ends when time runs out. We didn’t want to punish patients for a lower score.</p></article>
+        </div>
+      </section>
+
+      <section class="feedback section-grid" aria-labelledby="feedback-title">
+        <div class="feedback-copy body-copy">
+          <h2 id="feedback-title" class="numbered-heading"><span>05</span> Feedback for Physios</h2>
+          <p>Physios asked for progress tracking, so the game shows an accuracy percentage and a heatmap of where the player looked, with red marking the longest fixations.</p>
+          <p>We also kept the gameplay consistent from round to round. That way, physios see real change over time, not change caused by the game’s mechanics. Above all else, we wanted the numbers to mean something to the people reading them.</p>
+        </div>
+        <video class="feedback-video" autoplay muted loop playsinline preload="metadata" aria-label="Eye-tracking test showing player gaze data" src="images/eyeTracking_test4.mp4"></video>
+      </section>
+
+      <section class="results section-stack" aria-labelledby="results-title">
+        <video class="results-video" controls playsinline preload="metadata" aria-label="Bearly Fishin’ trailer" src="images/Bearly%20Fishing%20Trailer.mp4"></video>
+        <div class="section-grid results-intro">
+          <h2 id="results-title" class="numbered-heading"><span>06</span> Results &amp; Reflection</h2>
+          <p class="body-copy">We demoed the game live for Birkdale. The room turned out to be too dark for eye tracking, but a clip-on flashlight luckily saved the demo. The client liked that the game is free, runs in a browser, and needs no extra equipment, and they were most interested in the accuracy &amp; heatmap feedback.</p>
+        </div>
+        <p>What’s still unsolved:</p>
+        <div class="insight-grid results-cards">
+          <article class="insight-card"><p>Calibration still has a margin of error because of limits in the open-source library.</p></article>
+          <article class="insight-card"><p>WebGazer.js stopped receiving regular updates after February 24, 2026, so future work may need a different eye-tracking tool.</p></article>
+          <article class="insight-card"><p>At the time of the demo, the game worked only on PC browsers, despite efforts to port to mobile.</p></article>
+        </div>
+        <p class="finding">Overall, I learned that watching real patients changed our design more than any matrix did, and that the best fix for a technical limit is often a design decision.</p>
+      </section>
+
+      <a class="footer-back" href="../">Back to Home</a>
+    </main>
+  </div>
+</body>
+</html>
